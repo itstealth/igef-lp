@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indo Global Group of Colleges – Admissions Open 2026 | Apply Now</title>
+    <meta name="description"
+        content="Join Indo Global Group of Colleges – Punjab's top-ranked engineering, architecture & management college near Chandigarh. B.Tech, MBA, BArch & more. 92.5% placements. Apply today!" />
+    <meta name="keywords"
+        content="Indo Global College, IGEF, B.Tech Chandigarh, engineering college Punjab, MBA college Mohali, admissions 2026, BArch, top college near Chandigarh" />
+    <meta property="og:title" content="Indo Global Group of Colleges – Admissions Open 2026" />
+    <meta property="og:description"
+        content="Punjab's #3 ranked college near Chandigarh. 92.5% placements | 150+ recruiters | 35-acre campus." />
+    <meta property="og:type" content="website" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Tailwind CDN with custom theme -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        red: '#c0281e',
+                        'red-dark': '#961f17',
+                        'red-deeper': '#7a1710',
+                        'red-light': '#e84235',
+                        'red-pale': '#fdf0ef',
+                        dark: '#1a1a1a',
+                        'grey-dark': '#2e2e2e',
+                        grey: '#555555',
+                        'grey-light': '#888888',
+                        border: '#e0e0e0',
+                        gold: '#f5a623',
+                        'off-white': '#f5f5f5',
+                    },
+                    fontFamily: {
+                        mont: ['Montserrat', 'sans-serif'],
+                        sans: ['Open Sans', 'sans-serif'],
+                    },
+                    keyframes: {
+                        ticker: { '0%': { transform: 'translateX(0)' }, '100%': { transform: 'translateX(-50%)' } },
+                        fadeUp: { from: { opacity: '0', transform: 'translateY(22px)' }, to: { opacity: '1', transform: 'translateY(0)' } },
+                        waPulse: { '0%,100%': { boxShadow: '0 4px 16px rgba(37,211,102,0.45)' }, '50%': { boxShadow: '0 4px 28px rgba(37,211,102,0.7)' } },
+                    },
+                    animation: {
+                        ticker: 'ticker 28s linear infinite',
+                        fadeUp: 'fadeUp 0.55s ease both',
+                        waPulse: 'waPulse 2.5s ease-in-out infinite',
+                    },
+                }
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        /* Ticker animation */
+        .ticker-track {
+            overflow: hidden;
+            flex: 1;
+        }
+
+        .ticker-inner {
+            display: flex;
+            animation: ticker 28s linear infinite;
+            white-space: nowrap;
+        }
+
+        .ticker-inner:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes ticker {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Fade-up scroll animation */
+        .fade-up {
+            opacity: 0;
+        }
+
+        .fade-up.visible {
+            animation: fadeUp 0.55s ease both;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(22px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hero decorative circles */
+        .hero-circle-1 {
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 380px;
+            height: 380px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.06);
+            pointer-events: none;
+        }
+
+        .hero-circle-2 {
+            position: absolute;
+            bottom: -80px;
+            left: 40%;
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.04);
+            pointer-events: none;
+        }
+
+        .hero-slash {
+            position: absolute;
+            top: 0;
+            right: 320px;
+            width: 3px;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.08);
+            transform: skewX(-15deg);
+        }
+
+        /* Course card bottom bar */
+        .course-card {
+            position: relative;
+            overflow: hidden;
+            transition: transform .2s, box-shadow .2s, border-color .2s;
+        }
+
+        .course-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #c0281e;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform .3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 36px rgba(192, 40, 30, 0.12);
+            border-color: #c0281e;
+        }
+
+        .course-card:hover::after {
+            transform: scaleX(1);
+        }
+
+        .course-arrow {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #c0281e;
+            font-size: 18px;
+            opacity: 0;
+            transform: translateX(-4px);
+            transition: all .2s;
+        }
+
+        .course-card:hover .course-arrow {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Rank card top bar */
+        .rank-card {
+            position: relative;
+            overflow: hidden;
+            transition: transform .2s, box-shadow .2s, border-color .2s;
+        }
+
+        .rank-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #c0281e, #f5a623);
+        }
+
+        .rank-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(192, 40, 30, 0.12);
+            border-color: #c0281e;
+        }
+
+        /* Testimonial quote mark */
+        .testi-card {
+            position: relative;
+            transition: transform .2s, box-shadow .2s;
+        }
+
+        .testi-card::before {
+            content: '"';
+            position: absolute;
+            top: 14px;
+            right: 20px;
+            font-size: 72px;
+            line-height: 1;
+            color: #fdf0ef;
+            font-family: Georgia, serif;
+            font-weight: 900;
+        }
+
+        .testi-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 28px rgba(192, 40, 30, 0.1);
+        }
+
+        /* About image block decorative circles */
+        .about-img-block {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-img-circle-1 {
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            pointer-events: none;
+        }
+
+        .about-img-circle-2 {
+            position: absolute;
+            bottom: -40px;
+            left: -30px;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.04);
+            pointer-events: none;
+        }
+
+        /* Bottom CTA decorative circle */
+        .cta-circle {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            top: -150px;
+            right: -100px;
+        }
+
+        /* Pillar card hover */
+        .pillar-item {
+            transition: background .2s;
+        }
+
+        .pillar-item:hover {
+            background: #fdf0ef;
+        }
+
+        /* Submit button transition */
+        .submit-btn {
+            transition: background .2s, transform .15s;
+        }
+
+        .submit-btn:hover {
+            background: #961f17;
+            transform: translateY(-1px);
+        }
+
+        /* WhatsApp float */
+        .wa-float {
+            animation: waPulse 2.5s ease-in-out infinite;
+        }
+
+        @keyframes waPulse {
+
+            0%,
+            100% {
+                box-shadow: 0 4px 16px rgba(37, 211, 102, 0.45);
+            }
+
+            50% {
+                box-shadow: 0 4px 28px rgba(37, 211, 102, 0.7);
+            }
+        }
+
+        /* Responsive helpers */
+        @media(max-width:960px) {
+            .hero-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            .about-grid-inner {
+                grid-template-columns: 1fr !important;
+            }
+
+            .placement-grid {
+                grid-template-columns: 1fr 1fr !important;
+            }
+
+            .hide-mobile {
+                display: none !important;
+            }
+
+            .hero-section {
+                min-height: unset !important;
+                padding: 48px 28px !important;
+                text-align: center;
+            }
+
+            .hero-stats-row {
+                max-width: 100% !important;
+            }
+
+            .hero-approvals {
+                justify-content: center;
+            }
+
+            .section-pad {
+                padding: 56px 28px !important;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-right-text {
+                text-align: center !important;
+            }
+
+            .nav-phone-link {
+                display: none !important;
+            }
+        }
+
+        @media(max-width:520px) {
+            .form-row-2col {
+                grid-template-columns: 1fr !important;
+            }
+
+            .cta-btns-row {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-white text-dark leading-relaxed">
+
+    <!-- ─────────────── TOP BAR ─────────────── -->
+    <div class="hide-mobile bg-red-deeper px-10 py-1.5 flex items-center justify-between text-xs text-white/80">
+        <span>📍 Indo Global Education City, Abhipur, Mohali, Punjab — 5 KM from Chandigarh</span>
+        <div class="flex gap-5">
+            <a href="mailto:contact@igef.net" class="text-white/90 no-underline hover:text-white">✉ contact@igef.net</a>
+            <a href="tel:+917307211222" class="text-white/90 no-underline hover:text-white">📞 7307211222</a>
+        </div>
+    </div>
+
+    <!-- ─────────────── NAV ─────────────── -->
+    <nav class="sticky top-0 z-[200] bg-white flex items-center justify-between px-10 py-2.5"
+        style="box-shadow:0 2px 12px rgba(0,0,0,0.12)">
+        <a href="#" class="flex items-center gap-3.5 no-underline">
+            <div
+                class="w-[54px] h-[54px] bg-red rounded-md flex items-center justify-center text-white font-mont font-black text-lg tracking-tighter flex-shrink-0">
+                IG</div>
+            <div>
+                <div class="font-mont text-[17px] font-extrabold text-red uppercase tracking-wide leading-tight">Indo
+                    Global Colleges</div>
+                <div class="text-[10px] text-grey font-semibold tracking-[1.5px] uppercase mt-0.5">Indo Global Education
+                    Foundation</div>
+            </div>
+        </a>
+        <div class="flex items-center gap-3">
+            <a href="tel:+917307211222" class="nav-phone-link font-mont font-bold text-sm text-red no-underline">📞
+                7307211222</a>
+            <a href="#apply"
+                class="bg-red text-white font-mont font-bold text-[13px] px-[22px] py-2.5 rounded no-underline uppercase tracking-wide hover:bg-red-dark transition-colors duration-200">Apply
+                Now</a>
+        </div>
+    </nav>
+
+    <!-- ─────────────── HERO ─────────────── -->
+    <section class="hero-section relative overflow-hidden"
+        style="background:linear-gradient(105deg,#7a1710 0%,#c0281e 52%,#e84235 100%);min-height:88vh;padding:70px 60px;">
+        <div class="hero-circle-1"></div>
+        <div class="hero-circle-2"></div>
+        <div class="hero-slash"></div>
+
+        <div class="hero-grid grid items-center gap-14" style="grid-template-columns:1fr 430px;">
+
+            <!-- LEFT CONTENT -->
+            <div class="relative z-10">
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-2 border border-white/30 rounded-sm px-4 py-1.5 text-white/95 text-xs font-semibold tracking-[1.5px] uppercase mb-5"
+                    style="background:rgba(255,255,255,0.15)">
+                    <span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span>
+                    Admissions 2026 Now Open · Limited Seats
+                </div>
+
+                <h1 class="font-mont font-black uppercase text-white mb-4 leading-[1.12]"
+                    style="font-size:clamp(2rem,3.5vw,3.2rem);letter-spacing:-0.5px;">
+                    Punjab's Leading<br />
+                    <span class="text-gold block">Education Group</span>
+                    Near Chandigarh
+                </h1>
+
+                <p class="text-white/82 text-base leading-[1.75] mb-9 max-w-[520px]">
+                    35-acre campus in the Shivalik foothills, just 5 km from Chandigarh. Offering B.Tech, B.Arch, MBA,
+                    BCA, BBA, M.Tech, Diploma, B.Ed and more — with 92.5% placement records.
+                </p>
+
+                <!-- Stats bar -->
+                <div class="hero-stats-row flex rounded overflow-hidden mb-9 max-w-[520px]"
+                    style="background:rgba(0,0,0,0.18);">
+                    <div class="flex-1 text-center py-4 px-3 border-r border-white/10">
+                        <span class="font-mont font-black text-gold text-[1.7rem] leading-none block">92.5%</span>
+                        <span
+                            class="text-white/65 text-[10px] font-semibold uppercase tracking-wide mt-1 block">Placements</span>
+                    </div>
+                    <div class="flex-1 text-center py-4 px-3 border-r border-white/10">
+                        <span class="font-mont font-black text-gold text-[1.7rem] leading-none block">150+</span>
+                        <span
+                            class="text-white/65 text-[10px] font-semibold uppercase tracking-wide mt-1 block">Recruiters</span>
+                    </div>
+                    <div class="flex-1 text-center py-4 px-3 border-r border-white/10">
+                        <span class="font-mont font-black text-gold text-[1.7rem] leading-none block">40 LPA</span>
+                        <span class="text-white/65 text-[10px] font-semibold uppercase tracking-wide mt-1 block">Highest
+                            Pkg</span>
+                    </div>
+                    <div class="flex-1 text-center py-4 px-3">
+                        <span class="font-mont font-black text-gold text-[1.7rem] leading-none block">20+</span>
+                        <span
+                            class="text-white/65 text-[10px] font-semibold uppercase tracking-wide mt-1 block">Programs</span>
+                    </div>
+                </div>
+
+                <!-- Approvals -->
+                <div class="hero-approvals flex items-center gap-2 flex-wrap">
+                    <span class="text-white/55 text-[11px] tracking-widest uppercase">Approved by</span>
+                    <span
+                        class="border border-white/20 text-white/90 text-[11px] font-bold px-2.5 py-0.5 rounded-sm tracking-[0.8px]"
+                        style="background:rgba(255,255,255,0.12)">AICTE</span>
+                    <span
+                        class="border border-white/20 text-white/90 text-[11px] font-bold px-2.5 py-0.5 rounded-sm tracking-[0.8px]"
+                        style="background:rgba(255,255,255,0.12)">CoA</span>
+                    <span
+                        class="border border-white/20 text-white/90 text-[11px] font-bold px-2.5 py-0.5 rounded-sm tracking-[0.8px]"
+                        style="background:rgba(255,255,255,0.12)">NCTE</span>
+                    <span
+                        class="border border-white/20 text-white/90 text-[11px] font-bold px-2.5 py-0.5 rounded-sm tracking-[0.8px]"
+                        style="background:rgba(255,255,255,0.12)">PTU</span>
+                    <span
+                        class="border border-white/20 text-white/90 text-[11px] font-bold px-2.5 py-0.5 rounded-sm tracking-[0.8px]"
+                        style="background:rgba(255,255,255,0.12)">Panjab Univ</span>
+                </div>
+            </div>
+
+            <!-- LEAD FORM -->
+            <div class="relative z-10 bg-white rounded p-8" id="apply"
+                style="box-shadow:0 20px 80px rgba(0,0,0,0.3);padding:34px 28px;">
+                <!-- Flag -->
+                <div class="bg-red text-white font-mont font-extrabold text-[11px] tracking-[2px] uppercase text-center py-2 rounded-t"
+                    style="margin:-34px -28px 24px;">🎓 Free Counselling · Admissions 2026</div>
+                <div class="mb-5">
+                    <h2 class="font-mont font-extrabold text-xl text-dark uppercase mb-1">Apply Now</h2>
+                    <p class="text-grey text-[13px]">Fill in your details — we'll call you within 24 hrs</p>
+                </div>
+
+                <div class="mb-3">
+                    <label class="block text-[11px] font-bold text-grey-dark uppercase tracking-wide mb-1.5">Full Name
+                        *</label>
+                    <input id="f-name" type="text" placeholder="Your full name"
+                        class="w-full px-3.5 py-[11px] border-[1.5px] border-border rounded-sm text-sm text-dark bg-off-white outline-none transition-all duration-200 focus:border-red focus:bg-white font-sans"
+                        style="box-sizing:border-box;" />
+                </div>
+
+                <div class="form-row-2col grid gap-2.5 mb-3" style="grid-template-columns:1fr 1fr;">
+                    <div>
+                        <label class="block text-[11px] font-bold text-grey-dark uppercase tracking-wide mb-1.5">Mobile
+                            *</label>
+                        <input id="f-phone" type="tel" placeholder="+91 XXXXX XXXXX"
+                            class="w-full px-3.5 py-[11px] border-[1.5px] border-border rounded-sm text-sm text-dark bg-off-white outline-none transition-all duration-200 focus:border-red focus:bg-white font-sans" />
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-bold text-grey-dark uppercase tracking-wide mb-1.5">Email
+                            *</label>
+                        <input id="f-email" type="email" placeholder="you@email.com"
+                            class="w-full px-3.5 py-[11px] border-[1.5px] border-border rounded-sm text-sm text-dark bg-off-white outline-none transition-all duration-200 focus:border-red focus:bg-white font-sans" />
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="block text-[11px] font-bold text-grey-dark uppercase tracking-wide mb-1.5">Program
+                        Interested In *</label>
+                    <select id="f-course"
+                        class="w-full px-3.5 py-[11px] border-[1.5px] border-border rounded-sm text-sm text-dark bg-off-white outline-none transition-all duration-200 focus:border-red focus:bg-white font-sans appearance-none">
+                        <option value="">— Select Program —</option>
+                        <option>B.Tech (Engineering)</option>
+                        <option>B.Arch (Architecture)</option>
+                        <option>MBA (Management)</option>
+                        <option>BCA (Computer Applications)</option>
+                        <option>BBA (Business Administration)</option>
+                        <option>M.Tech</option>
+                        <option>Diploma in Engineering</option>
+                        <option>B.Ed / ETT (Education)</option>
+                        <option>BSc Paramedical</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="block text-[11px] font-bold text-grey-dark uppercase tracking-wide mb-1.5">Highest
+                        Qualification *</label>
+                    <select id="f-qual"
+                        class="w-full px-3.5 py-[11px] border-[1.5px] border-border rounded-sm text-sm text-dark bg-off-white outline-none transition-all duration-200 focus:border-red focus:bg-white font-sans appearance-none">
+                        <option value="">— Select Qualification —</option>
+                        <option>10th (Appearing / Passed)</option>
+                        <option>12th (Appearing / Passed)</option>
+                        <option>Graduation (Appearing / Passed)</option>
+                        <option>Post Graduation</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label
+                        class="block text-[11px] font-bold text-grey-dark uppercase tracking-wide mb-1.5">City</label>
+                    <input id="f-city" type="text" placeholder="Your city"
+                        class="w-full px-3.5 py-[11px] border-[1.5px] border-border rounded-sm text-sm text-dark bg-off-white outline-none transition-all duration-200 focus:border-red focus:bg-white font-sans" />
+                </div>
+
+                <button onclick="handleSubmit()"
+                    class="submit-btn w-full py-3.5 bg-red text-white font-mont font-extrabold text-sm uppercase tracking-widest rounded-sm mt-1.5 border-0 cursor-pointer">
+                    Get Free Counselling →
+                </button>
+
+                <div id="success-msg"
+                    class="hidden mt-2.5 bg-[#edf7f0] border-[1.5px] border-[#27ae60] rounded-sm p-3.5 text-center text-[#1e8a4a] font-bold text-sm font-mont">
+                    ✅ Thank you! Our counsellor will reach you within 24 hours.
+                </div>
+                <div class="flex items-center justify-center gap-1.5 mt-2.5 text-grey-light text-[11px]">
+                    🔒 100% secure · No spam ever
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─────────────── TICKER ─────────────── -->
+    <div class="bg-dark flex items-stretch overflow-hidden">
+        <div class="bg-red text-white font-mont font-extrabold text-[11px] tracking-[2px] uppercase px-4.5 flex items-center whitespace-nowrap flex-shrink-0"
+            style="padding:12px 18px;">Highlights</div>
+        <div class="ticker-track">
+            <div class="ticker-inner">
+                <span class="inline-flex items-center gap-2 text-white/75 text-xs font-medium tracking-wide"
+                    style="padding:12px 28px;"><span class="text-red font-black">▸</span> 35-Acre Green Campus</span>
+                <span class="inline-flex items-center gap-2 text-white/75 text-xs font-medium tracking-wide"
+                    style="padding:12px 28px;"><span class="text-red font-black">▸</span> IBM Centre of
+                    Excellence</span>
+                <span class="inline-flex items-center gap-2 text-white/75 text-xs font-medium tracking-wide"
+                    style="padding:12px 28px;"><span class="text-red font-black">▸</span> Ranked #3 in Punjab by
+                    PTU</span>
+                <span class="inline-flex items-center gap-2 text-white/75 text-xs font-medium tracking-wide"
+                    style="padding:12px 28px;"><span class="text-red font-black">▸</span> AICTE-CII Platinum
+                    Award</span>
+                <span class="inline-flex items-center gap-2 text-white/75 text-xs font-medium tracking-wide"
+                    style="padding:12px 28px;"><span class="text-red font-black">▸</span> Wi-Fi Enabled Campus</span>
+                <span class="inline-flex items-center gap-2 text-white/75 text-xs font-medium tracking-wide"
+                    style="padding:12px 28px;"><span class="text-red font-black">▸</span> Boys &amp; Girls
+                    Hostels</span>
+                <span class="inline-flex items-center gap-2 text-white/75 text-xs font-medium tracking-wide"
+                    style="padding:12px 28px;"><span class="text-red font-black">▸</span> 4000+ Alumni Worldwide</span>
+                <span class="inline-flex items-center gap-2 text-white/75 text-xs font-medium tracking-wide"
+                    style="padding:12px 28px;"><span class="text-red font-black">▸</span> 250+ Expert Faculty</span>
+                <span class="inline-flex items-center gap-2 text-white/75 text-xs font-medium tracking-wide"
+                    style="padding:12px 28px;"><span class="text-red font-black">▸</span> Sports Complex &amp;
+                    Gym</span>
+                <span class="inline-flex items-center gap-2 text-white/75 text-xs font-medium tracking-wide"
+                    style="padding:12px 28px;"><span class="text-red font-black">▸</span> Digital Smart
+                    Classrooms</span>
+                <!-- duplicate for seamless loop -->
+                <span class="inline-flex items-center gap-2 text-white/75 text-xs font-medium tracking-wide"
+                    style="padding:12px 28px;"><span class="text-red font-black">▸</span> 35-Acre Green Campus</span>
+                <span class="inline-flex items-center gap-2 text-white/75 text-xs font-medium tracking-wide"
+                    style="padding:12px 28px;"><span class="text-red font-black">▸</span> IBM Centre of
+                    Excellence</span>
+                <span class="inline-flex items-center gap-2 text-white/75 text-xs font-medium tracking-wide"
+                    style="padding:12px 28px;"><span class="text-red font-black">▸</span> Ranked #3 in Punjab by
+                    PTU</span>
+                <span class="inline-flex items-center gap-2 text-white/75 text-xs font-medium tracking-wide"
+                    style="padding:12px 28px;"><span class="text-red font-black">▸</span> AICTE-CII Platinum
+                    Award</span>
+                <span class="inline-flex items-center gap-2 text-white/75 text-xs font-medium tracking-wide"
+                    style="padding:12px 28px;"><span class="text-red font-black">▸</span> Wi-Fi Enabled Campus</span>
+                <span class="inline-flex items-center gap-2 text-white/75 text-xs font-medium tracking-wide"
+                    style="padding:12px 28px;"><span class="text-red font-black">▸</span> Boys &amp; Girls
+                    Hostels</span>
+                <span class="inline-flex items-center gap-2 text-white/75 text-xs font-medium tracking-wide"
+                    style="padding:12px 28px;"><span class="text-red font-black">▸</span> 4000+ Alumni Worldwide</span>
+                <span class="inline-flex items-center gap-2 text-white/75 text-xs font-medium tracking-wide"
+                    style="padding:12px 28px;"><span class="text-red font-black">▸</span> 250+ Expert Faculty</span>
+                <span class="inline-flex items-center gap-2 text-white/75 text-xs font-medium tracking-wide"
+                    style="padding:12px 28px;"><span class="text-red font-black">▸</span> Sports Complex &amp;
+                    Gym</span>
+                <span class="inline-flex items-center gap-2 text-white/75 text-xs font-medium tracking-wide"
+                    style="padding:12px 28px;"><span class="text-red font-black">▸</span> Digital Smart
+                    Classrooms</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ─────────────── ABOUT ─────────────── -->
+    <section class="section-pad px-16 py-[72px]">
+        <!-- Header -->
+        <div
+            class="inline-block bg-red-pale text-red font-mont font-extrabold text-[10px] tracking-[2.5px] uppercase px-3 py-1 rounded-sm mb-2.5">
+            About Us</div>
+        <h2 class="font-mont font-black uppercase text-dark leading-[1.15] mb-3"
+            style="font-size:clamp(1.6rem,2.5vw,2.4rem);">About <span class="text-red">Indo Global Group</span> of
+            Colleges</h2>
+        <div class="w-[50px] h-[3px] bg-red"></div>
+
+        <!-- Two-column grid -->
+        <div class="about-grid-inner grid gap-[60px] items-center mt-11" style="grid-template-columns:1fr 1fr;">
+
+            <!-- Visual block -->
+            <div class="about-img-block rounded-md p-10"
+                style="background:linear-gradient(135deg,#7a1710,#c0281e);padding:40px 36px;">
+                <div class="about-img-circle-1"></div>
+                <div class="about-img-circle-2"></div>
+                <div class="text-[11px] font-bold tracking-[3px] uppercase text-white/60 mb-2.5 relative z-10">Est. 2003
+                    · Abhipur, Mohali, Punjab</div>
+                <div class="font-mont font-black text-[1.6rem] uppercase text-white leading-[1.2] mb-1.5 relative z-10">
+                    Shaping Leaders<br /><span class="text-gold">Since 2003</span>
+                </div>
+                <div class="text-white/70 text-sm leading-relaxed mb-7 relative z-10">A 70-acre education city in the
+                    Shivalik foothills, just 5 km from Chandigarh — home to four premier colleges.</div>
+                <div class="grid grid-cols-2 gap-3 relative z-10">
+                    <div class="rounded p-3 border border-white/12" style="background:rgba(255,255,255,0.10);">
+                        <div class="font-mont font-black text-[1.3rem] text-gold leading-none">70</div>
+                        <div class="text-[11px] text-white/65 mt-0.5">Acres Campus</div>
+                    </div>
+                    <div class="rounded p-3 border border-white/12" style="background:rgba(255,255,255,0.10);">
+                        <div class="font-mont font-black text-[1.3rem] text-gold leading-none">20+</div>
+                        <div class="text-[11px] text-white/65 mt-0.5">Years of Excellence</div>
+                    </div>
+                    <div class="rounded p-3 border border-white/12" style="background:rgba(255,255,255,0.10);">
+                        <div class="font-mont font-black text-[1.3rem] text-gold leading-none">4</div>
+                        <div class="text-[11px] text-white/65 mt-0.5">Premier Colleges</div>
+                    </div>
+                    <div class="rounded p-3 border border-white/12" style="background:rgba(255,255,255,0.10);">
+                        <div class="font-mont font-black text-[1.3rem] text-gold leading-none">3000+</div>
+                        <div class="text-[11px] text-white/65 mt-0.5">Students Enrolled</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text content -->
+            <div>
+                <p class="text-[15px] leading-[1.8] text-grey-dark mb-5">
+                    Indo Global Group of Colleges is a group of self-financed, unaided private institutes established in
+                    2003 by the <strong>Indo Global Education Foundation (IGEF)</strong>. Strategically located at Indo
+                    Global Education City in Abhipur, Mohali — just 5 km from Chandigarh — the group comprises four
+                    specialised colleges offering programs in Engineering, Architecture, Management, and Education.
+                </p>
+                <p class="text-[15px] leading-[1.8] text-grey-dark mb-6">
+                    Affiliated with <strong>IKG Punjab Technical University (PTU)</strong> and approved by AICTE, CoA,
+                    and NCTE, the institution has consistently set benchmarks in academics, industry interface, and
+                    student placements. With an on-campus <strong>IBM Centre of Excellence</strong>, live industry
+                    projects, and 150+ recruiting partners, IGEF bridges the gap between classroom learning and
+                    real-world careers.
+                </p>
+
+                <div class="flex flex-col gap-3.5">
+                    <div
+                        class="pillar-item fade-up flex items-start gap-3.5 p-3.5 bg-off-white rounded border-l-[3px] border-red">
+                        <div class="text-xl flex-shrink-0 mt-0.5">🏫</div>
+                        <div>
+                            <div class="font-mont font-extrabold text-[13px] uppercase text-dark tracking-wide mb-1">4
+                                Specialised Colleges Under One Roof</div>
+                            <div class="text-[13px] text-grey leading-relaxed">Engineering, Architecture, Management
+                                &amp; Education — a complete ecosystem for professional growth on a single world-class
+                                campus.</div>
+                        </div>
+                    </div>
+                    <div
+                        class="pillar-item fade-up flex items-start gap-3.5 p-3.5 bg-off-white rounded border-l-[3px] border-red">
+                        <div class="text-xl flex-shrink-0 mt-0.5">🤝</div>
+                        <div>
+                            <div class="font-mont font-extrabold text-[13px] uppercase text-dark tracking-wide mb-1">
+                                Industry-Integrated Learning</div>
+                            <div class="text-[13px] text-grey leading-relaxed">Campus Business Park with live projects,
+                                MoU with IBM, EC-Council USA, and Pearson Education for cutting-edge, industry-ready
+                                curriculum.</div>
+                        </div>
+                    </div>
+                    <div
+                        class="pillar-item fade-up flex items-start gap-3.5 p-3.5 bg-off-white rounded border-l-[3px] border-red">
+                        <div class="text-xl flex-shrink-0 mt-0.5">🌍</div>
+                        <div>
+                            <div class="font-mont font-extrabold text-[13px] uppercase text-dark tracking-wide mb-1">
+                                Global Connections, Local Roots</div>
+                            <div class="text-[13px] text-grey leading-relaxed">International MoUs, 4000+ alumni across
+                                the globe, and India Today's list of Top Professional Schools in North India (2012).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─────────────── RANKINGS ─────────────── -->
+    <section class="section-pad bg-off-white px-16 py-[72px]">
+        <div
+            class="inline-block bg-red-pale text-red font-mont font-extrabold text-[10px] tracking-[2.5px] uppercase px-3 py-1 rounded-sm mb-2.5">
+            Rankings &amp; Recognition</div>
+        <h2 class="font-mont font-black uppercase text-dark leading-[1.15] mb-3"
+            style="font-size:clamp(1.6rem,2.5vw,2.4rem);">Nationally <span class="text-red">Ranked &amp;
+                Recognised</span></h2>
+        <div class="w-[50px] h-[3px] bg-red mb-3"></div>
+        <p class="text-grey text-[15px] max-w-[560px] leading-[1.7] mt-3">Indo Global Group of Colleges has been
+            consistently recognised by India's leading education and industry bodies for academic excellence and
+            industry interface.</p>
+
+        <!-- Ranking cards -->
+        <div class="grid gap-5 mt-11" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr));">
+
+            <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center fade-up">
+                <div
+                    class="w-14 h-14 bg-red-pale rounded-full flex items-center justify-center text-[26px] mx-auto mb-3.5">
+                    🏆</div>
+                <div class="font-mont font-black text-red leading-none mb-1" style="font-size:2rem;">#3<sup
+                        class="text-base">rd</sup></div>
+                <div class="font-mont font-extrabold text-[13px] text-dark uppercase tracking-wide mb-1.5">Best
+                    Placements in Punjab</div>
+                <div class="text-[12px] text-grey-light font-medium mb-2.5">Punjab Technical University (PTU)</div>
+                <div class="text-[12px] text-grey leading-relaxed">Officially ranked third among all colleges in Punjab
+                    on placement records by IKG Punjab Technical University, Jalandhar.</div>
+            </div>
+
+            <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center fade-up">
+                <div
+                    class="w-14 h-14 bg-red-pale rounded-full flex items-center justify-center text-[26px] mx-auto mb-3.5">
+                    🥇</div>
+                <div class="font-mont font-black text-red leading-none mb-1 text-2xl">PLATINUM</div>
+                <div class="font-mont font-extrabold text-[13px] text-dark uppercase tracking-wide mb-1.5">Best Industry
+                    Interface</div>
+                <div class="text-[12px] text-grey-light font-medium mb-2.5">AICTE-CII Survey of Industries</div>
+                <div class="text-[12px] text-grey leading-relaxed">Awarded Platinum rating in the AICTE-CII Industry
+                    Institute Interaction Survey — highest grade for industry collaboration in Punjab.</div>
+            </div>
+
+            <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center fade-up">
+                <div
+                    class="w-14 h-14 bg-red-pale rounded-full flex items-center justify-center text-[26px] mx-auto mb-3.5">
+                    📰</div>
+                <div class="font-mont font-black text-dark leading-none mb-1 text-xl">India Today</div>
+                <div class="font-mont font-extrabold text-[13px] text-dark uppercase tracking-wide mb-1.5">Top
+                    Professional School</div>
+                <div class="text-[12px] text-grey-light font-medium mb-2.5">India Today Rankings, 2012</div>
+                <div class="text-[12px] text-grey leading-relaxed">Indo Global College of Engineering featured in India
+                    Today's prestigious list of top professional schools in North India.</div>
+            </div>
+
+            <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center fade-up">
+                <div
+                    class="w-14 h-14 bg-red-pale rounded-full flex items-center justify-center text-[26px] mx-auto mb-3.5">
+                    🎖️</div>
+                <div class="font-mont font-black text-dark leading-none mb-1 text-xl">CMAI</div>
+                <div class="font-mont font-extrabold text-[13px] text-dark uppercase tracking-wide mb-1.5">Excellent
+                    Industry Interface Award</div>
+                <div class="text-[12px] text-grey-light font-medium mb-2.5">CMAI National Punjab Education Awards, 2013
+                </div>
+                <div class="text-[12px] text-grey leading-relaxed">Recognised for outstanding industry-academia
+                    partnership and consistent efforts to bridge the gap between education and employment.</div>
+            </div>
+
+            <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center fade-up">
+                <div
+                    class="w-14 h-14 bg-red-pale rounded-full flex items-center justify-center text-[26px] mx-auto mb-3.5">
+                    🪖</div>
+                <div class="font-mont font-black text-dark leading-none mb-1" style="font-size:1.1rem;">Army &amp; Navy
+                </div>
+                <div class="font-mont font-extrabold text-[13px] text-dark uppercase tracking-wide mb-1.5">Nodal Centre
+                    for Officer Recruitment</div>
+                <div class="text-[12px] text-grey-light font-medium mb-2.5">Indian Army &amp; Indian Navy — UES</div>
+                <div class="text-[12px] text-grey leading-relaxed">Served as a Nodal Centre for Indian Army and Indian
+                    Navy Commissioned Officer recruitment under the University Entry Scheme (UES).</div>
+            </div>
+
+            <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center fade-up">
+                <div
+                    class="w-14 h-14 bg-red-pale rounded-full flex items-center justify-center text-[26px] mx-auto mb-3.5">
+                    🖥️</div>
+                <div class="font-mont font-black text-dark leading-none mb-1 text-xl">IBM CoE</div>
+                <div class="font-mont font-extrabold text-[13px] text-dark uppercase tracking-wide mb-1.5">IBM Centre of
+                    Excellence</div>
+                <div class="text-[12px] text-grey-light font-medium mb-2.5">IBM India Partnership</div>
+                <div class="text-[12px] text-grey leading-relaxed">One of very few colleges in North India to host an
+                    on-campus IBM Centre of Excellence, giving students access to global tech resources.</div>
+            </div>
+
+        </div>
+
+        <!-- Accreditation badges -->
+        <div class="flex flex-wrap gap-3.5 mt-11 justify-center">
+            <div class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
+                style="padding:10px 18px;">✅ AICTE Approved</div>
+            <div class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
+                style="padding:10px 18px;">✅ CoA (Council of Architecture)</div>
+            <div class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
+                style="padding:10px 18px;">✅ NCTE Approved</div>
+            <div class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
+                style="padding:10px 18px;">✅ IKG PTU Affiliated</div>
+            <div class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
+                style="padding:10px 18px;">✅ Panjab University Affiliated</div>
+            <div class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
+                style="padding:10px 18px;">✅ MoU — EC-Council USA</div>
+            <div class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
+                style="padding:10px 18px;">✅ MoU — Pearson Education USA</div>
+        </div>
+    </section>
+
+    <!-- ─────────────── COURSES ─────────────── -->
+    <section class="section-pad bg-off-white px-16 py-[72px]">
+        <div
+            class="inline-block bg-red-pale text-red font-mont font-extrabold text-[10px] tracking-[2.5px] uppercase px-3 py-1 rounded-sm mb-2.5">
+            Programs Offered</div>
+        <h2 class="font-mont font-black uppercase text-dark leading-[1.15] mb-3"
+            style="font-size:clamp(1.6rem,2.5vw,2.4rem);">Choose Your <span class="text-red">Program</span></h2>
+        <div class="w-[50px] h-[3px] bg-red mb-3"></div>
+        <p class="text-grey text-[15px] max-w-[560px] leading-[1.7] mt-3">20+ undergraduate, postgraduate &amp; diploma
+            programs across engineering, management, architecture, education and more.</p>
+
+        <div class="grid gap-4 mt-11" style="grid-template-columns:repeat(auto-fill,minmax(230px,1fr));">
+            <div class="course-card fade-up bg-white border-[1.5px] border-border rounded p-5 cursor-pointer"
+                onclick="scrollToForm()">
+                <span class="course-arrow">→</span>
+                <div class="w-[46px] h-[46px] bg-red-pale rounded flex items-center justify-center text-xl mb-3.5">⚙️
+                </div>
+                <div class="font-mont font-extrabold text-[15px] text-dark uppercase mb-1">B.Tech</div>
+                <div class="text-grey text-xs mb-3">4 Years · CSE, ECE, Civil, Mechanical, IT</div>
+                <span
+                    class="inline-block bg-red text-white text-[10px] font-bold px-2 py-0.5 rounded-sm uppercase tracking-wide">AICTE
+                    Approved</span>
+            </div>
+            <div class="course-card fade-up bg-white border-[1.5px] border-border rounded p-5 cursor-pointer"
+                onclick="scrollToForm()">
+                <span class="course-arrow">→</span>
+                <div class="w-[46px] h-[46px] bg-red-pale rounded flex items-center justify-center text-xl mb-3.5">🏛️
+                </div>
+                <div class="font-mont font-extrabold text-[15px] text-dark uppercase mb-1">B.Arch</div>
+                <div class="text-grey text-xs mb-3">5 Years · Bachelor of Architecture</div>
+                <span
+                    class="inline-block bg-red text-white text-[10px] font-bold px-2 py-0.5 rounded-sm uppercase tracking-wide">CoA
+                    Approved</span>
+            </div>
+            <div class="course-card fade-up bg-white border-[1.5px] border-border rounded p-5 cursor-pointer"
+                onclick="scrollToForm()">
+                <span class="course-arrow">→</span>
+                <div class="w-[46px] h-[46px] bg-red-pale rounded flex items-center justify-center text-xl mb-3.5">📊
+                </div>
+                <div class="font-mont font-extrabold text-[15px] text-dark uppercase mb-1">MBA</div>
+                <div class="text-grey text-xs mb-3">2 Years · HR, Marketing, Finance, IT</div>
+                <span
+                    class="inline-block bg-red text-white text-[10px] font-bold px-2 py-0.5 rounded-sm uppercase tracking-wide">AICTE
+                    Approved</span>
+            </div>
+            <div class="course-card fade-up bg-white border-[1.5px] border-border rounded p-5 cursor-pointer"
+                onclick="scrollToForm()">
+                <span class="course-arrow">→</span>
+                <div class="w-[46px] h-[46px] bg-red-pale rounded flex items-center justify-center text-xl mb-3.5">💻
+                </div>
+                <div class="font-mont font-extrabold text-[15px] text-dark uppercase mb-1">BCA</div>
+                <div class="text-grey text-xs mb-3">3 Years · Computer Applications</div>
+                <span
+                    class="inline-block bg-red text-white text-[10px] font-bold px-2 py-0.5 rounded-sm uppercase tracking-wide">PTU
+                    Affiliated</span>
+            </div>
+            <div class="course-card fade-up bg-white border-[1.5px] border-border rounded p-5 cursor-pointer"
+                onclick="scrollToForm()">
+                <span class="course-arrow">→</span>
+                <div class="w-[46px] h-[46px] bg-red-pale rounded flex items-center justify-center text-xl mb-3.5">🏢
+                </div>
+                <div class="font-mont font-extrabold text-[15px] text-dark uppercase mb-1">BBA</div>
+                <div class="text-grey text-xs mb-3">3 Years · Business Administration</div>
+                <span
+                    class="inline-block bg-red text-white text-[10px] font-bold px-2 py-0.5 rounded-sm uppercase tracking-wide">PTU
+                    Affiliated</span>
+            </div>
+            <div class="course-card fade-up bg-white border-[1.5px] border-border rounded p-5 cursor-pointer"
+                onclick="scrollToForm()">
+                <span class="course-arrow">→</span>
+                <div class="w-[46px] h-[46px] bg-red-pale rounded flex items-center justify-center text-xl mb-3.5">🔬
+                </div>
+                <div class="font-mont font-extrabold text-[15px] text-dark uppercase mb-1">M.Tech</div>
+                <div class="text-grey text-xs mb-3">2 Years · CSE, Civil, Mechanical</div>
+                <span
+                    class="inline-block bg-red text-white text-[10px] font-bold px-2 py-0.5 rounded-sm uppercase tracking-wide">GATE
+                    Accepted</span>
+            </div>
+            <div class="course-card fade-up bg-white border-[1.5px] border-border rounded p-5 cursor-pointer"
+                onclick="scrollToForm()">
+                <span class="course-arrow">→</span>
+                <div class="w-[46px] h-[46px] bg-red-pale rounded flex items-center justify-center text-xl mb-3.5">🧰
+                </div>
+                <div class="font-mont font-extrabold text-[15px] text-dark uppercase mb-1">Diploma</div>
+                <div class="text-grey text-xs mb-3">3 Years · Civil &amp; Mechanical Engg.</div>
+                <span
+                    class="inline-block bg-red text-white text-[10px] font-bold px-2 py-0.5 rounded-sm uppercase tracking-wide">After
+                    10th</span>
+            </div>
+            <div class="course-card fade-up bg-white border-[1.5px] border-border rounded p-5 cursor-pointer"
+                onclick="scrollToForm()">
+                <span class="course-arrow">→</span>
+                <div class="w-[46px] h-[46px] bg-red-pale rounded flex items-center justify-center text-xl mb-3.5">📚
+                </div>
+                <div class="font-mont font-extrabold text-[15px] text-dark uppercase mb-1">B.Ed / ETT</div>
+                <div class="text-grey text-xs mb-3">2 Years · Education Programs</div>
+                <span
+                    class="inline-block bg-red text-white text-[10px] font-bold px-2 py-0.5 rounded-sm uppercase tracking-wide">NCTE
+                    Approved</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─────────────── WHY IGEF ─────────────── -->
+    <section class="section-pad px-16 py-[72px]" style="background:linear-gradient(135deg,#7a1710,#c0281e);">
+        <div class="inline-block font-mont font-extrabold text-[10px] tracking-[2.5px] uppercase px-3 py-1 rounded-sm mb-2.5 text-white/90"
+            style="background:rgba(255,255,255,0.12);">Why Choose Us</div>
+        <h2 class="font-mont font-black uppercase text-white leading-[1.15] mb-3"
+            style="font-size:clamp(1.6rem,2.5vw,2.4rem);">Why 3,000+ Students Choose <span class="text-gold">Indo
+                Global</span></h2>
+        <div class="w-[50px] h-[3px] bg-gold mb-3"></div>
+        <p class="text-white/65 text-[15px] max-w-[560px] leading-[1.7] mt-3">Punjab's Platinum-rated institution,
+            benchmarked by AICTE-CII for industry interface excellence.</p>
+
+        <div class="grid gap-5 mt-11" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr));">
+            <div class="fade-up rounded p-6.5 border border-white/10 hover:bg-white/10 transition-colors duration-200"
+                style="background:rgba(255,255,255,0.06);padding:26px;">
+                <div class="text-3xl mb-3">🎓</div>
+                <div class="font-mont font-extrabold text-[14px] text-gold uppercase tracking-wide mb-2">20+ Years of
+                    Excellence</div>
+                <div class="text-white/65 text-[13px] leading-[1.7]">Founded in 2003 with a mission to provide
+                    world-class education. Two decades of producing industry-ready graduates across Punjab and beyond.
+                </div>
+            </div>
+            <div class="fade-up rounded p-6.5 border border-white/10 hover:bg-white/10 transition-colors duration-200"
+                style="background:rgba(255,255,255,0.06);padding:26px;">
+                <div class="text-3xl mb-3">🏅</div>
+                <div class="font-mont font-extrabold text-[14px] text-gold uppercase tracking-wide mb-2">Ranked #3 in
+                    Punjab by PTU</div>
+                <div class="text-white/65 text-[13px] leading-[1.7]">AICTE-CII Platinum Award for Best Industry
+                    Interface. Consistently recognised for quality education and exceptional student outcomes.</div>
+            </div>
+            <div class="fade-up rounded p-6.5 border border-white/10 hover:bg-white/10 transition-colors duration-200"
+                style="background:rgba(255,255,255,0.06);padding:26px;">
+                <div class="text-3xl mb-3">🤝</div>
+                <div class="font-mont font-extrabold text-[14px] text-gold uppercase tracking-wide mb-2">IBM Centre of
+                    Excellence</div>
+                <div class="text-white/65 text-[13px] leading-[1.7]">On-campus IBM CoE with active industry partnerships
+                    — Wipro, Infosys, ICICI Bank, Vodafone, and 150+ top companies visit annually.</div>
+            </div>
+            <div class="fade-up rounded p-6.5 border border-white/10 hover:bg-white/10 transition-colors duration-200"
+                style="background:rgba(255,255,255,0.06);padding:26px;">
+                <div class="text-3xl mb-3">🌿</div>
+                <div class="font-mont font-extrabold text-[14px] text-gold uppercase tracking-wide mb-2">World-Class
+                    35-Acre Campus</div>
+                <div class="text-white/65 text-[13px] leading-[1.7]">Lush green campus in Shivalik foothills, 5 km from
+                    Chandigarh. Modern labs, smart classrooms, hostels, sports facilities and more.</div>
+            </div>
+            <div class="fade-up rounded p-6.5 border border-white/10 hover:bg-white/10 transition-colors duration-200"
+                style="background:rgba(255,255,255,0.06);padding:26px;">
+                <div class="text-3xl mb-3">💼</div>
+                <div class="font-mont font-extrabold text-[14px] text-gold uppercase tracking-wide mb-2">Strong
+                    Placement Support</div>
+                <div class="text-white/65 text-[13px] leading-[1.7]">Dedicated placement cell with aptitude training,
+                    mock interviews and entrepreneurship programs — 92.5% placed every year.</div>
+            </div>
+            <div class="fade-up rounded p-6.5 border border-white/10 hover:bg-white/10 transition-colors duration-200"
+                style="background:rgba(255,255,255,0.06);padding:26px;">
+                <div class="text-3xl mb-3">🎁</div>
+                <div class="font-mont font-extrabold text-[14px] text-gold uppercase tracking-wide mb-2">Merit
+                    Scholarships</div>
+                <div class="text-white/65 text-[13px] leading-[1.7]">Scholarships for students scoring 80%+. Financial
+                    aid available to make quality education accessible to every deserving student.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─────────────── PLACEMENTS ─────────────── -->
+    <section class="section-pad px-16 py-[72px]">
+        <div
+            class="inline-block bg-red-pale text-red font-mont font-extrabold text-[10px] tracking-[2.5px] uppercase px-3 py-1 rounded-sm mb-2.5">
+            Placement Record</div>
+        <h2 class="font-mont font-black uppercase text-dark leading-[1.15] mb-3"
+            style="font-size:clamp(1.6rem,2.5vw,2.4rem);">Our Placements <span class="text-red">Speak for
+                Themselves</span></h2>
+        <div class="w-[50px] h-[3px] bg-red mb-3"></div>
+        <p class="text-grey text-[15px] max-w-[560px] leading-[1.7] mt-3">Year after year, our students land top jobs at
+            India's leading companies across IT, infrastructure, banking and more.</p>
+
+        <div class="placement-grid grid gap-5 mt-11" style="grid-template-columns:repeat(4,1fr);">
+            <div class="fade-up bg-white border-[1.5px] border-border rounded p-7 text-center border-t-4 border-t-red hover:-translate-y-1 transition-transform duration-200"
+                style="box-shadow:none;">
+                <div class="font-mont font-black text-red leading-none" style="font-size:2.2rem;">92.5<span
+                        class="text-xl">%</span></div>
+                <div class="text-grey text-xs mt-1.5 font-semibold uppercase tracking-wide">Placement Rate</div>
+            </div>
+            <div
+                class="fade-up bg-white border-[1.5px] border-border rounded p-7 text-center border-t-4 border-t-red hover:-translate-y-1 transition-transform duration-200">
+                <div class="font-mont font-black text-red leading-none" style="font-size:2.2rem;">40<span
+                        class="text-xl"> LPA</span></div>
+                <div class="text-grey text-xs mt-1.5 font-semibold uppercase tracking-wide">Highest Package</div>
+            </div>
+            <div
+                class="fade-up bg-white border-[1.5px] border-border rounded p-7 text-center border-t-4 border-t-red hover:-translate-y-1 transition-transform duration-200">
+                <div class="font-mont font-black text-red leading-none" style="font-size:2.2rem;">150<span
+                        class="text-xl">+</span></div>
+                <div class="text-grey text-xs mt-1.5 font-semibold uppercase tracking-wide">Companies Hiring</div>
+            </div>
+            <div
+                class="fade-up bg-white border-[1.5px] border-border rounded p-7 text-center border-t-4 border-t-red hover:-translate-y-1 transition-transform duration-200">
+                <div class="font-mont font-black text-red leading-none" style="font-size:2.2rem;">4000<span
+                        class="text-xl">+</span></div>
+                <div class="text-grey text-xs mt-1.5 font-semibold uppercase tracking-wide">Alumni Strong</div>
+            </div>
+        </div>
+
+        <div class="mt-12">
+            <div class="font-mont font-extrabold text-[11px] tracking-[2px] uppercase text-grey text-center mb-4">Top
+                Recruiters</div>
+            <div class="flex flex-wrap gap-2.5 justify-center">
+                <span
+                    class="bg-white border-[1.5px] border-border rounded-sm px-4 py-1.5 text-[13px] font-bold font-mont text-dark uppercase tracking-wide hover:border-red hover:text-red hover:bg-red-pale transition-colors duration-200 cursor-default">Wipro</span>
+                <span
+                    class="bg-white border-[1.5px] border-border rounded-sm px-4 py-1.5 text-[13px] font-bold font-mont text-dark uppercase tracking-wide hover:border-red hover:text-red hover:bg-red-pale transition-colors duration-200 cursor-default">Infosys</span>
+                <span
+                    class="bg-white border-[1.5px] border-border rounded-sm px-4 py-1.5 text-[13px] font-bold font-mont text-dark uppercase tracking-wide hover:border-red hover:text-red hover:bg-red-pale transition-colors duration-200 cursor-default">IBM</span>
+                <span
+                    class="bg-white border-[1.5px] border-border rounded-sm px-4 py-1.5 text-[13px] font-bold font-mont text-dark uppercase tracking-wide hover:border-red hover:text-red hover:bg-red-pale transition-colors duration-200 cursor-default">ICICI
+                    Bank</span>
+                <span
+                    class="bg-white border-[1.5px] border-border rounded-sm px-4 py-1.5 text-[13px] font-bold font-mont text-dark uppercase tracking-wide hover:border-red hover:text-red hover:bg-red-pale transition-colors duration-200 cursor-default">HDFC
+                    Bank</span>
+                <span
+                    class="bg-white border-[1.5px] border-border rounded-sm px-4 py-1.5 text-[13px] font-bold font-mont text-dark uppercase tracking-wide hover:border-red hover:text-red hover:bg-red-pale transition-colors duration-200 cursor-default">Vodafone</span>
+                <span
+                    class="bg-white border-[1.5px] border-border rounded-sm px-4 py-1.5 text-[13px] font-bold font-mont text-dark uppercase tracking-wide hover:border-red hover:text-red hover:bg-red-pale transition-colors duration-200 cursor-default">Ashok
+                    Leyland</span>
+                <span
+                    class="bg-white border-[1.5px] border-border rounded-sm px-4 py-1.5 text-[13px] font-bold font-mont text-dark uppercase tracking-wide hover:border-red hover:text-red hover:bg-red-pale transition-colors duration-200 cursor-default">Indian
+                    Army</span>
+                <span
+                    class="bg-white border-[1.5px] border-border rounded-sm px-4 py-1.5 text-[13px] font-bold font-mont text-dark uppercase tracking-wide hover:border-red hover:text-red hover:bg-red-pale transition-colors duration-200 cursor-default">Indian
+                    Navy</span>
+                <span
+                    class="bg-white border-[1.5px] border-border rounded-sm px-4 py-1.5 text-[13px] font-bold font-mont text-dark uppercase tracking-wide hover:border-red hover:text-red hover:bg-red-pale transition-colors duration-200 cursor-default">SML
+                    Isuzu</span>
+                <span
+                    class="bg-white border-[1.5px] border-border rounded-sm px-4 py-1.5 text-[13px] font-bold font-mont text-dark uppercase tracking-wide hover:border-red hover:text-red hover:bg-red-pale transition-colors duration-200 cursor-default">DLF</span>
+                <span
+                    class="bg-white border-[1.5px] border-border rounded-sm px-4 py-1.5 text-[13px] font-bold font-mont text-dark uppercase tracking-wide hover:border-red hover:text-red hover:bg-red-pale transition-colors duration-200 cursor-default">Simplex
+                    Infra</span>
+                <span
+                    class="bg-white border-[1.5px] border-border rounded-sm px-4 py-1.5 text-[13px] font-bold font-mont text-dark uppercase tracking-wide hover:border-red hover:text-red hover:bg-red-pale transition-colors duration-200 cursor-default">Videocon</span>
+                <span
+                    class="bg-white border-[1.5px] border-border rounded-sm px-4 py-1.5 text-[13px] font-bold font-mont text-dark uppercase tracking-wide hover:border-red hover:text-red hover:bg-red-pale transition-colors duration-200 cursor-default">Jaypee
+                    India</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─────────────── TESTIMONIALS ─────────────── -->
+    <section class="section-pad bg-off-white px-16 py-[72px]">
+        <div
+            class="inline-block bg-red-pale text-red font-mont font-extrabold text-[10px] tracking-[2.5px] uppercase px-3 py-1 rounded-sm mb-2.5">
+            Alumni Stories</div>
+        <h2 class="font-mont font-black uppercase text-dark leading-[1.15] mb-3"
+            style="font-size:clamp(1.6rem,2.5vw,2.4rem);">What Our <span class="text-red">Alumni Say</span></h2>
+        <div class="w-[50px] h-[3px] bg-red"></div>
+
+        <div class="grid gap-5 mt-11" style="grid-template-columns:repeat(auto-fill,minmax(300px,1fr));">
+            <div class="testi-card fade-up bg-white border-[1.5px] border-border rounded p-6.5" style="padding:26px;">
+                <p class="text-[14px] leading-[1.75] text-grey-dark mb-5 italic">Being campus-selected in my 3rd year
+                    itself was a dream come true. The faculty at Indo Global is unmatched — they truly push you to
+                    achieve your potential every single day.</p>
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-[42px] h-[42px] rounded-full bg-red flex items-center justify-center font-mont font-black text-white text-[15px] flex-shrink-0">
+                        H</div>
+                    <div>
+                        <div class="font-mont font-bold text-[13px] text-dark uppercase">Harpreet Bains</div>
+                        <div class="text-[11px] text-grey-light mt-0.5">Sr. Talent Acquisition Manager, Edifecs · B.Tech
+                            CSE, 2012</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card fade-up bg-white border-[1.5px] border-border rounded p-6.5" style="padding:26px;">
+                <p class="text-[14px] leading-[1.75] text-grey-dark mb-5 italic">Indo Global laid the foundation for my
+                    career. I now work as a Planning Engineer at Yapı Merkezi in Riyadh. I credit my professional
+                    success entirely to the education and values I built here.</p>
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-[42px] h-[42px] rounded-full bg-red flex items-center justify-center font-mont font-black text-white text-[15px] flex-shrink-0">
+                        U</div>
+                    <div>
+                        <div class="font-mont font-bold text-[13px] text-dark uppercase">Ugam Kumar Sharma</div>
+                        <div class="text-[11px] text-grey-light mt-0.5">Planning Engineer, Yapı Merkezi, Riyadh · B.Tech
+                            Civil</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card fade-up bg-white border-[1.5px] border-border rounded p-6.5" style="padding:26px;">
+                <p class="text-[14px] leading-[1.75] text-grey-dark mb-5 italic">The campus life here was
+                    transformative. The curriculum sharpened my thinking, while events and sports activities helped me
+                    build friendships and leadership skills I carry with me today.</p>
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-[42px] h-[42px] rounded-full bg-red flex items-center justify-center font-mont font-black text-white text-[15px] flex-shrink-0">
+                        R</div>
+                    <div>
+                        <div class="font-mont font-bold text-[13px] text-dark uppercase">IGEF Graduate</div>
+                        <div class="text-[11px] text-grey-light mt-0.5">Alumni, Indo Global Group of Colleges</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─────────────── BOTTOM CTA ─────────────── -->
+    <section class="relative overflow-hidden text-center px-16 py-[72px]"
+        style="background:linear-gradient(120deg,#7a1710 0%,#c0281e 100%);">
+        <div class="cta-circle"></div>
+        <h2 class="font-mont font-black uppercase text-white relative z-10 mb-3"
+            style="font-size:clamp(1.8rem,3vw,2.8rem);">Begin Your Journey at <span class="text-gold">Indo Global</span>
+        </h2>
+        <p class="text-white/75 text-[15px] max-w-[520px] mx-auto mb-8 leading-[1.7] relative z-10">Seats are limited
+            for 2026. Apply now for free expert counselling — no obligations, just the right guidance to shape your
+            future.</p>
+        <div class="cta-btns-row flex gap-3.5 justify-center flex-wrap relative z-10">
+            <a href="#apply"
+                class="bg-white text-red font-mont font-extrabold text-[14px] px-8 py-3.5 rounded-sm no-underline uppercase tracking-wide hover:-translate-y-0.5 transition-transform duration-200"
+                style="box-shadow:none;">🎓 Apply for Free Counselling</a>
+            <a href="tel:+917307211222"
+                class="text-white font-mont font-extrabold text-[14px] px-8 py-3.5 rounded-sm no-underline uppercase tracking-wide border-2 hover:bg-white/10 transition-colors duration-200"
+                style="border-color:rgba(255,255,255,0.6);">📞 Call: 7307211222</a>
+        </div>
+    </section>
+
+    <!-- ─────────────── FOOTER ─────────────── -->
+    <footer class="bg-dark text-white/60 flex items-center justify-between flex-wrap gap-5 text-xs"
+        style="padding:32px 60px;">
+        <div class="footer-inner" style="display:contents;">
+            <div class="font-mont font-extrabold text-white text-sm uppercase">
+                Indo Global Group of Colleges
+                <span class="block text-white/40 text-[10px] font-medium tracking-[1.5px] mt-0.5">Indo Global Education
+                    Foundation (IGEF) · Est. 2003</span>
+            </div>
+            <div class="flex gap-5">
+                <a href="https://igef.net" target="_blank"
+                    class="text-white/50 no-underline hover:text-gold transition-colors duration-200">Website</a>
+                <a href="https://igef.net/contact-us" target="_blank"
+                    class="text-white/50 no-underline hover:text-gold transition-colors duration-200">Contact</a>
+                <a href="#apply"
+                    class="text-white/50 no-underline hover:text-gold transition-colors duration-200">Apply</a>
+            </div>
+            <div class="footer-right-text text-right">
+                📍 Abhipur, New Chandigarh (Mohali), Punjab<br />
+                ✉ <a href="mailto:contact@igef.net" class="text-gold no-underline">contact@igef.net</a> · 📞 <a
+                    href="tel:+917307211222" class="text-gold no-underline">7307211222</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ─────────────── WHATSAPP FLOAT ─────────────── -->
+    <a href="https://wa.me/917307211222?text=Hi%2C%20I%27m%20interested%20in%20admissions%20at%20Indo%20Global%20College."
+        target="_blank" aria-label="WhatsApp Us"
+        class="wa-float fixed bottom-6 right-6 z-[999] w-[54px] h-[54px] rounded-full flex items-center justify-center no-underline"
+        style="background:#25D366;">
+        <svg viewBox="0 0 24 24" class="w-7 h-7 fill-white">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <script>
+        function scrollToForm() {
+            document.getElementById('apply').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        function handleSubmit() {
+            const n = document.getElementById('f-name').value.trim();
+            const p = document.getElementById('f-phone').value.trim();
+            const e = document.getElementById('f-email').value.trim();
+            const c = document.getElementById('f-course').value;
+            const q = document.getElementById('f-qual').value;
+            if (!n || !p || !e || !c || !q) { alert('Please fill in all required fields.'); return; }
+            if (typeof gtag !== 'undefined') { gtag('event', 'conversion', { 'send_to': 'AW-CONVERSION_ID/LABEL' }); }
+            const btn = document.querySelector('.submit-btn');
+            btn.disabled = true; btn.textContent = '⏳ Submitting…';
+            setTimeout(() => {
+                btn.style.display = 'none';
+                const msg = document.getElementById('success-msg');
+                msg.classList.remove('hidden');
+                msg.style.display = 'block';
+                msg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 1000);
+        }
+
+        document.querySelectorAll('a[href="#apply"]').forEach(a => {
+            a.addEventListener('click', e => { e.preventDefault(); scrollToForm(); });
+        });
+
+        // Scroll-triggered fade-up
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => entry.target.classList.add('visible'), i * 80);
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+    </script>
+</body>
+
+</html>

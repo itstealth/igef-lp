@@ -1,0 +1,2007 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indo Global Group of Colleges – Admissions 2025-26 | B.Tech, MBA, B.Arch | Mohali</title>
+  <meta name="description"
+    content="Punjab's top engineering & architecture college near Chandigarh. AICTE approved. B.Tech, MBA, B.Arch, BCA. 92.5% placement. Apply free for 2025-26." />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Merriweather:wght@700;900&display=swap"
+    rel="stylesheet" />
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="css/carousel/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/carousel/owl.theme.default.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            igblue: { DEFAULT: '#1B4F9C', dark: '#0f3370', deep: '#091f4a', light: '#3367c0' },
+            igred: { DEFAULT: '#CC1E1E', dark: '#a81818', light: '#e03030' },
+            igold: '#F0B429', red: '#c0281e',
+            'red-dark': '#961f17',
+            'red-deeper': '#7a1710',
+            'red-light': '#e84235',
+            'red-pale': '#fdf0ef',
+            dark: '#1a1a1a',
+            'grey-dark': '#2e2e2e',
+            grey: '#555555',
+            'grey-light': '#888888',
+            border: '#e0e0e0',
+            gold: '#f5a623',
+            'off-white': '#f5f5f5',
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            display: ['Merriweather', 'serif'],
+          },
+          backgroundImage: {
+            'hero-img': "linear-gradient(105deg,rgba(9,31,74,.93) 0%,rgba(15,51,112,.87) 42%,rgba(9,31,74,.65) 100%),url('https://images.unsplash.com/photo-1562774053-701939374585?w=1600&q=80&auto=format&fit=crop')",
+            'campus-img': "linear-gradient(135deg,rgba(15,51,112,.7) 0%,rgba(9,31,74,.5) 100%),url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=80&auto=format&fit=crop')",
+          },
+          boxShadow: {
+            'form': '0 28px 80px rgba(0,0,0,.32)',
+            'card': '0 8px 32px rgba(27,79,156,.1)',
+            'btn': '0 6px 20px rgba(204,30,30,.38)',
+            'float': '0 6px 24px rgba(204,30,30,.45)',
+          },
+          keyframes: {
+            'pulse-ring': {
+              '0%': { boxShadow: '0 0 0 0 rgba(204,30,30,.55)' },
+              '70%': { boxShadow: '0 0 0 14px rgba(204,30,30,0)' },
+              '100%': { boxShadow: '0 0 0 0 rgba(204,30,30,0)' },
+            },
+            fadeUp: {
+              from: { opacity: '0', transform: 'translateY(22px)' },
+              to: { opacity: '1', transform: 'translateY(0)' },
+            },
+          },
+          animation: {
+            'pulse-ring': 'pulse-ring 2s infinite',
+            'fadeUp': 'fadeUp .55s ease both',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    /* Custom utilities not easily doable in Tailwind config */
+    .font-display {
+      font-family: 'Merriweather', serif;
+    }
+
+    .hero-bg {
+      background-image: linear-gradient(105deg, rgba(9, 31, 74, .93) 0%, rgba(15, 51, 112, .87) 42%, rgba(9, 31, 74, .65) 100%), url('https://images.unsplash.com/photo-1562774053-701939374585?w=1600&q=80&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .campus-bg {
+      background-image: linear-gradient(135deg, rgba(15, 51, 112, .7) 0%, rgba(9, 31, 74, .5) 100%), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=80&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .placement-bg {
+      background: linear-gradient(135deg, #091f4a 0%, #0f3370 100%);
+    }
+
+    /* Reveal animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity .55s ease, transform .55s ease;
+    }
+
+    .reveal.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 {
+      transition-delay: 80ms;
+    }
+
+    .reveal-delay-2 {
+      transition-delay: 160ms;
+    }
+
+    .reveal-delay-3 {
+      transition-delay: 240ms;
+    }
+
+    .reveal-delay-4 {
+      transition-delay: 320ms;
+    }
+
+    .reveal-delay-5 {
+      transition-delay: 400ms;
+    }
+
+    .reveal-delay-6 {
+      transition-delay: 480ms;
+    }
+
+    /* Custom select arrow */
+    select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%236b7a99' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right .75rem center;
+    }
+
+    /* Nav underline hover */
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      background: #CC1E1E;
+      transition: width .2s;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    /* Mobile menu */
+    #mobile-menu {
+      transition: max-height .3s ease, opacity .3s ease;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+    }
+
+    #mobile-menu.open {
+      max-height: 600px;
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body class="font-sans text-igblue-deep bg-white antialiased">
+
+  <!-- ═══════════════════════════════════════════
+       TOP STRIP
+  ═══════════════════════════════════════════ -->
+  <div class="bg-white text-black text-xs font-semibold tracking-wide">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-y-1 gap-x-4">
+      <span class="flex items-center gap-1.5">🎓 <span>Admissions Open 2025-26 · Limited Seats · Apply
+          Now!</span></span>
+      <div class="flex items-center gap-4 flex-wrap">
+        <a href="tel:+917307211222" class="flex items-center gap-1 hover:text-igold transition-colors">📞
+          +91-7307211222</a>
+        <a href="mailto:admissions@igef.net"
+          class="hidden sm:flex items-center gap-1 hover:text-igold transition-colors">✉ contact@igef.net</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav class="sticky top-0 z-50 bg-igred border-b-[3px] border-black shadow-md">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 py-2">
+      <div class="flex items-center justify-between h-auto lg:h-auto">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 shrink-0">
+          <img src="images/logo_bold.webp" alt="Indo Global Group of Colleges" class="h-16 w-auto object-contain" />
+          <div class="leading-tight">
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <ul class="hidden lg:flex items-center gap-6 xl:gap-8">
+          <li><a href="#courses"
+              class="nav-link text-sm font-bold uppercase tracking-wide text-white hover:text-igblue transition-colors">Courses</a>
+          </li>
+          <li><a href="#about"
+              class="nav-link text-sm font-bold uppercase tracking-wide text-white hover:text-igblue transition-colors">About</a>
+          </li>
+          <li><a href="#placements"
+              class="nav-link text-sm font-bold uppercase tracking-wide text-white hover:text-igblue transition-colors">Placements</a>
+          </li>
+          <li><a href="#testimonials"
+              class="nav-link text-sm font-bold uppercase tracking-wide text-white hover:text-igblue transition-colors">Alumni</a>
+          </li>
+        </ul>
+
+        <div class="flex items-center gap-3">
+          <a href="#apply"
+            class="hidden sm:inline-block bg-white hover:bg-white/90 text-igred font-black text-xs uppercase tracking-widest px-5 py-2.5 rounded-md transition-all hover:-translate-y-0.5 shadow-btn">Apply
+            Free →</a>
+          <!-- Hamburger -->
+          <button id="hamburger" class="lg:hidden p-2 rounded-md text-igblue" aria-label="Open menu">
+            <svg id="ham-icon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden bg-igblue-deep border-t border-white/10">
+      <div class="px-4 py-3 flex flex-col gap-1">
+        <a href="#courses"
+          class="text-white font-bold uppercase tracking-wide text-sm py-2.5 border-b border-white/10 mobile-link">Courses</a>
+        <a href="#about"
+          class="text-white font-bold uppercase tracking-wide text-sm py-2.5 border-b border-white/10 mobile-link">About</a>
+        <a href="#placements"
+          class="text-white font-bold uppercase tracking-wide text-sm py-2.5 border-b border-white/10 mobile-link">Placements</a>
+        <a href="#testimonials"
+          class="text-white font-bold uppercase tracking-wide text-sm py-2.5 mobile-link">Alumni</a>
+        <a href="#apply"
+          class="mt-3 bg-igred text-white font-black text-sm uppercase tracking-widest text-center py-3 rounded-md mobile-link">Apply
+          Free →</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section id="hero" class="hero-bg relative min-h-[92vh] flex items-center">
+    <!-- Left Red Bar -->
+    <div class="absolute top-0 left-0 w-1.5 h-full bg-igred z-10"></div>
+
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 w-full py-16 lg:py-20 z-10 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-[1fr_400px] xl:grid-cols-[1fr_430px] gap-10 lg:gap-12 items-center">
+
+        <!-- LEFT: Hero Content -->
+        <div>
+          <!-- Badge -->
+          <div
+            class="inline-flex items-center gap-2 bg-white/10 border border-white/25 rounded px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-widest text-white/85 mb-5">
+            Punjab's Leading Education Group
+            <span class="text-igold">· Est. 2003</span>
+          </div>
+
+          <!-- Headline -->
+          <h1
+            class="font-display font-black text-white leading-[1.1] mb-5 text-[2.1rem] sm:text-5xl lg:text-[3.4rem] xl:text-[3.8rem]">
+            Build Your Career<br />
+            at <span class="text-igold">Indo Global</span><br />
+            <span class="underline decoration-igred decoration-[5px] underline-offset-4">Colleges</span>
+          </h1>
+
+          <!-- Sub -->
+          <p class="text-white/80 text-base sm:text-lg font-medium leading-relaxed mb-7 max-w-xl">
+            70-acre campus in the Shivalik foothills, 12 km from Chandigarh. AICTE approved. IKG PTU affiliated.
+            <strong class="text-white font-bold">#3 in Punjab for placements.</strong>
+            <strong class="text-white font-bold"> Admissions 2025-26 now open.</strong>
+          </p>
+
+          <!-- Course Pills -->
+          <div class="flex flex-wrap gap-2 mb-7">
+            <span
+              class="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 rounded px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wide"><span
+                class="w-1.5 h-1.5 rounded-full bg-igold shrink-0"></span>B.Tech Engineering</span>
+            <span
+              class="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 rounded px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wide"><span
+                class="w-1.5 h-1.5 rounded-full bg-igold shrink-0"></span>B.Arch Architecture</span>
+            <span
+              class="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 rounded px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wide"><span
+                class="w-1.5 h-1.5 rounded-full bg-igold shrink-0"></span>MBA / BBA</span>
+            <span
+              class="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 rounded px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wide"><span
+                class="w-1.5 h-1.5 rounded-full bg-igold shrink-0"></span>BCA / MCA</span>
+            <span
+              class="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 rounded px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wide"><span
+                class="w-1.5 h-1.5 rounded-full bg-igold shrink-0"></span>B.Ed / ETT</span>
+            <span
+              class="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 rounded px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wide"><span
+                class="w-1.5 h-1.5 rounded-full bg-igold shrink-0"></span>BSc Paramedical</span>
+          </div>
+
+          <!-- Stats Row -->
+          <div
+            class="inline-flex flex-wrap bg-white/10 backdrop-blur-sm border border-white/15 rounded-lg overflow-hidden">
+            <div class="px-5 py-4 border-r border-white/15 text-center min-w-[90px]">
+              <div class="text-2xl font-black text-igold">10K+</div>
+              <div class="text-[10px] font-bold text-white/55 uppercase tracking-widest mt-0.5">Alumni</div>
+            </div>
+            <div class="px-5 py-4 border-r border-white/15 text-center min-w-[90px]">
+              <div class="text-2xl font-black text-igold">92.5%</div>
+              <div class="text-[10px] font-bold text-white/55 uppercase tracking-widest mt-0.5">Placements</div>
+            </div>
+            <div class="px-5 py-4 border-r border-white/15 text-center min-w-[90px]">
+              <div class="text-2xl font-black text-igold">₹40L</div>
+              <div class="text-[10px] font-bold text-white/55 uppercase tracking-widest mt-0.5">Highest Pkg</div>
+            </div>
+            <div class="px-5 py-4 text-center min-w-[90px]">
+              <div class="text-2xl font-black text-igold">250+</div>
+              <div class="text-[10px] font-bold text-white/55 uppercase tracking-widest mt-0.5">Faculty</div>
+            </div>
+          </div>
+
+          <!-- Mobile CTA (shows below stats on mobile) -->
+          <div class="mt-6 flex items-center gap-3 lg:hidden">
+            <a href="#apply"
+              class="bg-igred hover:bg-igred-dark text-white font-black text-sm uppercase tracking-widest px-6 py-3 rounded-md transition-all shadow-btn">Apply
+              Free →</a>
+            <a href="tel:01605036000"
+              class="border-2 border-white/40 text-white font-bold text-sm px-5 py-3 rounded-md hover:bg-white/10 transition-all">📞
+              Call</a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Lead Form -->
+        <div id="apply" class="shadow-form rounded-xl overflow-hidden bg-white w-full max-w-md mx-auto lg:mx-0">
+          <!-- Form Header -->
+          <div class="bg-igblue px-7 py-5 text-center relative">
+            <div class="absolute bottom-0 left-0 right-0 h-1 bg-igred"></div>
+            <h3 class="text-lg font-black text-white uppercase tracking-wide mb-1">Free Admission Counselling</h3>
+            <p class="text-white/70 text-xs font-medium">Our advisor will call you within 24 hrs</p>
+            <div
+              class="mt-3 inline-block bg-igred text-white text-[11px] font-black uppercase tracking-widest px-3 py-1 rounded">
+              🔥 Admissions 2025-26 Open</div>
+          </div>
+
+          <!-- Form Body -->
+          <div class="p-6 sm:p-7 bg-white">
+            <div class="space-y-3">
+              <input type="text" placeholder="Full Name *"
+                class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm font-medium text-igblue-deep placeholder-slate-400 focus:border-igblue focus:outline-none focus:bg-blue-50/30 bg-slate-50 transition-colors" />
+              <input type="tel" placeholder="Mobile Number *"
+                class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm font-medium text-igblue-deep placeholder-slate-400 focus:border-igblue focus:outline-none focus:bg-blue-50/30 bg-slate-50 transition-colors" />
+              <input type="email" placeholder="Email Address"
+                class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm font-medium text-igblue-deep placeholder-slate-400 focus:border-igblue focus:outline-none focus:bg-blue-50/30 bg-slate-50 transition-colors" />
+              <select
+                class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm font-medium text-igblue-deep focus:border-igblue focus:outline-none bg-slate-50 transition-colors appearance-none pr-9">
+                <option value="" disabled selected>Select Course *</option>
+                <option>B.Tech – CSE / AI & ML</option>
+                <option>B.Tech – ECE / Mechanical / Civil</option>
+                <option>B.Arch (Architecture)</option>
+                <option>MBA / BBA</option>
+                <option>BCA / MCA</option>
+                <option>M.Tech</option>
+                <option>B.Ed / ETT</option>
+                <option>BSc Paramedical</option>
+                <option>Diploma (After 10th)</option>
+              </select>
+              <select
+                class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm font-medium text-igblue-deep focus:border-igblue focus:outline-none bg-slate-50 transition-colors appearance-none pr-9">
+                <option value="" disabled selected>Current Education Level *</option>
+                <option>10th Pass</option>
+                <option>12th Pass / Appearing</option>
+                <option>Graduate / Appearing</option>
+              </select>
+              <button onclick="alert('Thank you! Our counsellor will call you within 24 hours. 🎓')"
+                class="w-full bg-igred hover:bg-igred-dark text-white font-black text-sm uppercase tracking-widest py-3.5 rounded-lg transition-all hover:-translate-y-0.5 shadow-btn mt-1">
+                Get Free Counselling →
+              </button>
+              <p class="text-center text-[11px] text-slate-400 font-semibold pt-0.5">🔒 100% Confidential · No Spam ·
+                Call in 24 hrs</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TRUST BAR
+  ═══════════════════════════════════════════ -->
+  <div class="bg-igblue-dark">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 divide-x divide-white/10">
+        <div class="flex items-center gap-3 py-4 px-4 lg:px-5">
+          <div class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center text-base shrink-0">🏛️</div>
+          <div>
+            <div class="text-xs font-extrabold text-white uppercase tracking-wide leading-snug">AICTE Approved</div>
+            <div class="text-[10px] text-white/45 font-medium hidden sm:block">Technical Education</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 py-4 px-4 lg:px-5">
+          <div class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center text-base shrink-0">🎓</div>
+          <div>
+            <div class="text-xs font-extrabold text-white uppercase tracking-wide leading-snug">IKG PTU</div>
+            <div class="text-[10px] text-white/45 font-medium hidden sm:block">Punjab Tech University</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 py-4 px-4 lg:px-5 col-span-2 sm:col-span-1">
+          <div class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center text-base shrink-0">🏆</div>
+          <div>
+            <div class="text-xs font-extrabold text-white uppercase tracking-wide leading-snug">#3 Placement</div>
+            <div class="text-[10px] text-white/45 font-medium hidden sm:block">Rank in Punjab · PTU</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 py-4 px-4 lg:px-5">
+          <div class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center text-base shrink-0">💻</div>
+          <div>
+            <div class="text-xs font-extrabold text-white uppercase tracking-wide leading-snug">IBM CoE</div>
+            <div class="text-[10px] text-white/45 font-medium hidden sm:block">Top 10 in India</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 py-4 px-4 lg:px-5">
+          <div class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center text-base shrink-0">🌐</div>
+          <div>
+            <div class="text-xs font-extrabold text-white uppercase tracking-wide leading-snug">International MoU</div>
+            <div class="text-[10px] text-white/45 font-medium hidden sm:block">Univ. of Quebec, Canada</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section id="about" class="py-16 sm:py-20">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-20 items-center">
+        <!-- Image Block -->
+        <div class="reveal relative">
+          <img src="images/about-igef.png" alt="About Indo Global Education Foundation"
+            class="rounded-xl h-72 sm:h-96 lg:h-auto w-full object-cover" />
+          <!-- Year Badge -->
+          <div
+            class="absolute -bottom-5 -right-5 w-[88px] h-[88px] bg-igred rounded-full flex flex-col items-center justify-center border-4 border-white shadow-lg">
+            <span class="text-white font-black text-xl leading-none">2003</span>
+            <span class="text-white text-[9px] font-bold uppercase tracking-widest">Est.</span>
+          </div>
+        </div>
+
+        <!-- Text Content -->
+        <div class="reveal reveal-delay-1 mt-6 lg:mt-0">
+          <span
+            class="inline-block bg-igblue/8 text-igblue text-[11px] font-extrabold uppercase tracking-[.1em] px-3.5 py-1.5 rounded border-l-[3px] border-igred mb-4">About
+            IGEF</span>
+          <h2
+            class="font-display font-black text-igblue-deep text-3xl sm:text-4xl lg:text-[2.6rem] uppercase leading-tight mb-3">
+            Punjab's <span class="text-igred">Leading</span> Education Group</h2>
+          <p class="text-slate-500 leading-relaxed text-base mb-7">Founded in 2003 by the Indo Global Education
+            Foundation with a vision to deliver world-class education to every student. 4 institutions, 3,000+ active
+            students, and a legacy of academic excellence.</p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div
+              class="flex items-start gap-3.5 p-4 bg-slate-50 rounded-lg border-l-[3px] border-igblue hover:border-igred hover:bg-white hover:shadow-card transition-all group">
+              <div
+                class="w-10 h-10 bg-igblue group-hover:bg-igred rounded-lg flex items-center justify-center text-xl shrink-0 transition-colors">
+                🌿</div>
+              <div>
+                <h4 class="text-xs font-extrabold text-igblue-deep uppercase tracking-wide mb-1">70-Acre Green Campus
+                </h4>
+                <p class="text-xs text-slate-500 leading-relaxed">Serene setting in the Shivalik foothills, 12 km from
+                  Chandigarh.</p>
+              </div>
+            </div>
+            <div
+              class="flex items-start gap-3.5 p-4 bg-slate-50 rounded-lg border-l-[3px] border-igblue hover:border-igred hover:bg-white hover:shadow-card transition-all group">
+              <div
+                class="w-10 h-10 bg-igblue group-hover:bg-igred rounded-lg flex items-center justify-center text-xl shrink-0 transition-colors">
+                🏠</div>
+              <div>
+                <h4 class="text-xs font-extrabold text-igblue-deep uppercase tracking-wide mb-1">Boys & Girls Hostels
+                </h4>
+                <p class="text-xs text-slate-500 leading-relaxed">Secure, WiFi-enabled with 4 meals/day and medical
+                  support.</p>
+              </div>
+            </div>
+            <div
+              class="flex items-start gap-3.5 p-4 bg-slate-50 rounded-lg border-l-[3px] border-igblue hover:border-igred hover:bg-white hover:shadow-card transition-all group">
+              <div
+                class="w-10 h-10 bg-igblue group-hover:bg-igred rounded-lg flex items-center justify-center text-xl shrink-0 transition-colors">
+                🚌</div>
+              <div>
+                <h4 class="text-xs font-extrabold text-igblue-deep uppercase tracking-wide mb-1">Bus Connectivity</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">Fleet covering Chandigarh, Mohali, Panchkula, Kharar &
+                  more.</p>
+              </div>
+            </div>
+            <div
+              class="flex items-start gap-3.5 p-4 bg-slate-50 rounded-lg border-l-[3px] border-igblue hover:border-igred hover:bg-white hover:shadow-card transition-all group">
+              <div
+                class="w-10 h-10 bg-igblue group-hover:bg-igred rounded-lg flex items-center justify-center text-xl shrink-0 transition-colors">
+                🏭</div>
+              <div>
+                <h4 class="text-xs font-extrabold text-igblue-deep uppercase tracking-wide mb-1">Industry Training</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">Mandatory 6–8 week industrial internship after 4th
+                  semester.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       COURSES
+  ═══════════════════════════════════════════ -->
+  <section id="courses" class="py-16 sm:py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <!-- Section Header -->
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+        <div class="reveal">
+          <span
+            class="inline-block bg-igblue/8 text-igblue text-[11px] font-extrabold uppercase tracking-[.1em] px-3.5 py-1.5 rounded border-l-[3px] border-igred mb-3">Our
+            Programmes</span>
+          <h2 class="font-display font-black text-igblue-deep text-3xl sm:text-4xl uppercase leading-tight">20+ UG, PG &
+            <span class="text-igred">Diploma Courses</span>
+          </h2>
+        </div>
+        <a href="#apply"
+          class="reveal reveal-delay-1 self-start sm:self-auto bg-igred hover:bg-igred-dark text-white font-black text-xs uppercase tracking-widest px-6 py-3 rounded-md transition-all hover:-translate-y-0.5 shadow-btn whitespace-nowrap">Apply
+          Now →</a>
+      </div>
+
+      <!-- Courses Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Card 1 -->
+        <div
+          class="reveal bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-igblue hover:shadow-card hover:-translate-y-1 transition-all group">
+          <div class="bg-igblue px-5 py-4 flex items-center gap-3">
+            <span class="text-3xl">⚙️</span>
+            <h3 class="text-sm font-black text-white uppercase tracking-wide">B.Tech Engineering</h3>
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-slate-500 leading-relaxed mb-3">4-year AICTE-approved with IBM Centre of Excellence,
+              modern labs and industry tie-ups.</p>
+            <div class="flex flex-wrap gap-1.5 mb-3">
+              <span
+                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">CSE</span>
+              <span
+                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">ECE</span>
+              <span
+                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Mechanical</span>
+              <span
+                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Civil</span>
+              <span
+                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">AI
+                & ML</span>
+            </div>
+            <a href="#apply"
+              class="inline-flex items-center gap-1.5 text-xs font-extrabold text-igred uppercase tracking-wide hover:gap-3 transition-all">Apply
+              Now <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="reveal reveal-delay-1 bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-igred hover:shadow-card hover:-translate-y-1 transition-all group">
+          <div class="bg-igred px-5 py-4 flex items-center gap-3">
+            <span class="text-3xl">🏛️</span>
+            <h3 class="text-sm font-black text-white uppercase tracking-wide">B.Arch Architecture</h3>
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-slate-500 leading-relaxed mb-3">5-year CoA-approved degree. NATA-based admissions.
+              Award-winning design studios.</p>
+            <div class="flex flex-wrap gap-1.5 mb-3">
+              <span
+                class="bg-igred/7 text-igred border border-igred/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">CoA
+                Approved</span>
+              <span
+                class="bg-igred/7 text-igred border border-igred/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">NATA</span>
+              <span
+                class="bg-igred/7 text-igred border border-igred/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">5
+                Years</span>
+            </div>
+            <a href="#apply"
+              class="inline-flex items-center gap-1.5 text-xs font-extrabold text-igred uppercase tracking-wide hover:gap-3 transition-all">Apply
+              Now <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="reveal reveal-delay-2 bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-igblue-dark hover:shadow-card hover:-translate-y-1 transition-all group">
+          <div class="bg-igblue-dark px-5 py-4 flex items-center gap-3">
+            <span class="text-3xl">📊</span>
+            <h3 class="text-sm font-black text-white uppercase tracking-wide">MBA / Management</h3>
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-slate-500 leading-relaxed mb-3">2-year PG MBA with Marketing, Finance, HR and
+              Operations specialisations. 100% placement focus.</p>
+            <div class="flex flex-wrap gap-1.5 mb-3">
+              <span
+                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Marketing</span>
+              <span
+                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Finance</span>
+              <span
+                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">HR</span>
+            </div>
+            <a href="#apply"
+              class="inline-flex items-center gap-1.5 text-xs font-extrabold text-igred uppercase tracking-wide hover:gap-3 transition-all">Apply
+              Now <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="reveal reveal-delay-3 bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-igblue hover:shadow-card hover:-translate-y-1 transition-all group">
+          <div class="bg-igblue px-5 py-4 flex items-center gap-3">
+            <span class="text-3xl">💻</span>
+            <h3 class="text-sm font-black text-white uppercase tracking-wide">BCA / MCA</h3>
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-slate-500 leading-relaxed mb-3">Computer applications degree for the next generation
+              of software developers and AI engineers.</p>
+            <div class="flex flex-wrap gap-1.5 mb-3">
+              <span
+                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">3
+                Years UG</span>
+              <span
+                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">IBM
+                Lab</span>
+              <span
+                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">2
+                Yr PG</span>
+            </div>
+            <a href="#apply"
+              class="inline-flex items-center gap-1.5 text-xs font-extrabold text-igred uppercase tracking-wide hover:gap-3 transition-all">Apply
+              Now <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div
+          class="reveal reveal-delay-4 bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-igred hover:shadow-card hover:-translate-y-1 transition-all group">
+          <div class="bg-igred px-5 py-4 flex items-center gap-3">
+            <span class="text-3xl">🏫</span>
+            <h3 class="text-sm font-black text-white uppercase tracking-wide">B.Ed / Education</h3>
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-slate-500 leading-relaxed mb-3">NCTE-approved 2-year teacher training. Build skills
+              in pedagogy, soft skills and classroom management.</p>
+            <div class="flex flex-wrap gap-1.5 mb-3">
+              <span
+                class="bg-igred/7 text-igred border border-igred/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">NCTE</span>
+              <span
+                class="bg-igred/7 text-igred border border-igred/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">B.Ed</span>
+              <span
+                class="bg-igred/7 text-igred border border-igred/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">ETT</span>
+            </div>
+            <a href="#apply"
+              class="inline-flex items-center gap-1.5 text-xs font-extrabold text-igred uppercase tracking-wide hover:gap-3 transition-all">Apply
+              Now <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div
+          class="reveal reveal-delay-5 bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-igblue-dark hover:shadow-card hover:-translate-y-1 transition-all group">
+          <div class="bg-igblue-dark px-5 py-4 flex items-center gap-3">
+            <span class="text-3xl">🏥</span>
+            <h3 class="text-sm font-black text-white uppercase tracking-wide">BSc Paramedical</h3>
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-slate-500 leading-relaxed mb-3">UGC-approved healthcare sciences — Radiology, OT
+              Technology and Medical Lab Technology.</p>
+            <div class="flex flex-wrap gap-1.5 mb-3">
+              <span
+                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Radiology</span>
+              <span
+                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">OT
+                Tech</span>
+              <span
+                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">MLT</span>
+            </div>
+            <a href="#apply"
+              class="inline-flex items-center gap-1.5 text-xs font-extrabold text-igred uppercase tracking-wide hover:gap-3 transition-all">Apply
+              Now <span>→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PLACEMENTS
+  ═══════════════════════════════════════════ -->
+  <section id="placements" class="placement-bg relative overflow-hidden py-16 sm:py-20">
+    <!-- Decorative circles -->
+    <div class="absolute -top-20 -right-20 w-72 h-72 bg-igred/6 rounded-full pointer-events-none"></div>
+    <div class="absolute -bottom-16 -left-16 w-56 h-56 bg-white/3 rounded-full pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 relative z-10">
+      <!-- Header -->
+      <div class="text-center mb-12 reveal">
+        <span
+          class="inline-block bg-white/10 text-white text-[11px] font-extrabold uppercase tracking-[.1em] px-3.5 py-1.5 rounded border-l-[3px] border-igold mb-4">Placement
+          Record</span>
+        <h2 class="font-display font-black text-white text-3xl sm:text-4xl lg:text-5xl uppercase leading-tight">Careers
+          That <span class="text-igold">Speak for Themselves</span></h2>
+        <p class="text-white/55 text-base mt-3 max-w-xl mx-auto">4,200+ students placed in national & international
+          companies. Ranked #3 in Punjab by PTU.</p>
+      </div>
+
+      <!-- Metrics Grid -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div
+          class="reveal bg-white/6 border border-white/12 rounded-xl p-6 text-center hover:bg-white/10 hover:border-igold transition-all">
+          <div class="font-display font-black text-igold text-4xl sm:text-5xl leading-none mb-2">92.5%</div>
+          <div class="text-white/60 text-xs font-bold uppercase tracking-wide leading-tight">Overall Placement<br />Rate
+            2023-24</div>
+        </div>
+        <div
+          class="reveal reveal-delay-1 bg-white/6 border border-white/12 rounded-xl p-6 text-center hover:bg-white/10 hover:border-igold transition-all">
+          <div class="font-display font-black text-igold text-4xl sm:text-5xl leading-none mb-2">₹40L</div>
+          <div class="text-white/60 text-xs font-bold uppercase tracking-wide leading-tight">Highest
+            Package<br />Offered</div>
+        </div>
+        <div
+          class="reveal reveal-delay-2 bg-white/6 border border-white/12 rounded-xl p-6 text-center hover:bg-white/10 hover:border-igold transition-all">
+          <div class="font-display font-black text-igold text-4xl sm:text-5xl leading-none mb-2">4,200+</div>
+          <div class="text-white/60 text-xs font-bold uppercase tracking-wide leading-tight">Students Placed<br />Since
+            Inception</div>
+        </div>
+        <div
+          class="reveal reveal-delay-3 bg-white/6 border border-white/12 rounded-xl p-6 text-center hover:bg-white/10 hover:border-igold transition-all">
+          <div class="font-display font-black text-igold text-4xl sm:text-5xl leading-none mb-2">#3</div>
+          <div class="text-white/60 text-xs font-bold uppercase tracking-wide leading-tight">Placement Rank<br />In
+            Punjab · PTU</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="recruiters-section overflow-h py-16 !pb-12 sm:py-20 position-relative">
+    <div class="container">
+      <div class="mb-8 wow fadeInUp" data-wow-delay="0ms">
+        <h2 class="font-display font-black text-igblue-deep text-3xl sm:text-4xl uppercase leading-tight text-center">
+          <span class="text-igred">Our</span> Recruiters
+        </h2>
+      </div>
+      <!-- placement section -->
+      <div class="lm-container">
+        <!-- <h1 class="lm-heading">Our Recruiters</h1> -->
+
+        <div class="lm-marquee-section">
+          <!-- First Row: LTR -->
+          <div class="lm-marquee-container">
+            <div class="lm-marquee lm-marquee-ltr" id="lm-marquee-row1">
+              <!-- Logos will be duplicated by JavaScript -->
+            </div>
+          </div>
+
+          <!-- Second Row: RTL -->
+          <div class="lm-marquee-container">
+            <div class="lm-marquee lm-marquee-rtl" id="lm-marquee-row2">
+              <!-- Logos will be duplicated by JavaScript -->
+            </div>
+          </div>
+
+          <!-- Third Row: LTR -->
+          <div class="lm-marquee-container">
+            <div class="lm-marquee lm-marquee-ltr" id="lm-marquee-row3">
+              <!-- Logos will be duplicated by JavaScript -->
+            </div>
+          </div>
+          <div class="lm-marquee-container">
+            <div class="lm-marquee lm-marquee-rtl" id="lm-marquee-row4">
+              <!-- Logos will be duplicated by JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- placment section end -->
+    </div>
+  </section>
+
+  <style>
+    .recruiters-section .recruiters-item .recruiters-logo {
+      position: relative;
+      padding: 0.5rem 8px;
+      width: 100%;
+      display: block;
+      overflow: hidden;
+      -ms-transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+      text-align: center;
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .recruiters-section .recruiters-item:nth-child(5n) .recruiters-logo {
+      border-right: 0px solid var(--bg-yellow);
+    }
+
+    .recruiters-section .recruiters-item .recruiters-logo:last-child {
+      border-bottom: 0px solid var(--bg-yellow);
+    }
+
+    .recruiters-section .recruiters-btn_sec:after {
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      content: "";
+      background-color: #FFF;
+      right: 0;
+      z-index: 1;
+      top: 0;
+    }
+
+    * recruiters section marquee start */ .lm-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .lm-heading {
+      text-align: center;
+      color: #e74c3c;
+      margin-bottom: 50px;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    .lm-marquee-section {
+      margin-bottom: 40px;
+    }
+
+    .lm-marquee-container {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+
+    /* Edge blur gradients */
+    .lm-marquee-container::before,
+    .lm-marquee-container::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 100px;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .lm-marquee-container::before {
+      left: 0;
+      background: linear-gradient(to right, #fff 20%, rgba(255, 255, 255, 0));
+    }
+
+    .lm-marquee-container::after {
+      right: 0;
+      background: linear-gradient(to left, #fff 20%, rgba(255, 255, 255, 0));
+    }
+
+    .lm-marquee {
+      display: flex;
+      width: max-content;
+      animation-duration: 30s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      position: relative;
+    }
+
+    .lm-marquee-ltr {
+      animation-name: lm-scroll-ltr;
+    }
+
+    .lm-marquee-rtl {
+      animation-name: lm-scroll-rtl;
+    }
+
+    .lm-logo-card {
+      flex: 0 0 auto;
+      width: 200px;
+      height: 100px;
+      margin: 5px 15px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .lm-logo-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .lm-logo-image {
+      max-width: 100%;
+      max-height: 70px;
+      object-fit: contain;
+    }
+
+    @keyframes lm-scroll-ltr {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @keyframes lm-scroll-rtl {
+      0% {
+        transform: translateX(-50%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .lm-logo-card {
+        width: 150px;
+        height: 80px;
+        margin: 0 10px;
+      }
+
+      .lm-logo-image {
+        max-height: 50px;
+      }
+
+      .lm-marquee-container::before,
+      .lm-marquee-container::after {
+        width: 60px;
+      }
+    }
+
+    /* recruiters section  marquee end */
+  </style>
+
+  <!-- marquee start -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Add intersection observer for animation on scroll
+      const caObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('ca-animate');
+            caObserver.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      // Observe achievement cards
+      document.querySelectorAll('.ca-achievement-card').forEach(card => {
+        caObserver.observe(card);
+      });
+
+      // Add hover sound effect
+      const caCards = document.querySelectorAll('.ca-achievement-card');
+      caCards.forEach(card => {
+        card.addEventListener('mouseenter', function () {
+          // Create subtle hover effect
+          this.style.transition = 'all 0.3s ease';
+
+          // Add 3D tilt effect on mousemove
+          card.addEventListener('mousemove', caHandleTilt);
+        });
+
+        card.addEventListener('mouseleave', function () {
+          // Reset card position
+          this.style.transform = 'translateY(0)';
+          card.removeEventListener('mousemove', caHandleTilt);
+        });
+
+        // Add click interaction
+        card.addEventListener('click', function () {
+          this.classList.add('ca-clicked');
+          setTimeout(() => {
+            this.classList.remove('ca-clicked');
+          }, 500);
+
+          // Create and animate particles
+          caCreateParticles(this);
+        });
+      });
+
+      function caHandleTilt(e) {
+        const card = this;
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const deltaX = (x - centerX) / centerX;
+        const deltaY = (y - centerY) / centerY;
+
+        card.style.transform = `translateY(-10px) rotateX(${deltaY * -5}deg) rotateY(${deltaX * 5}deg)`;
+      }
+
+      function caCreateParticles(element) {
+        const rect = element.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+
+        for (let i = 0; i < 20; i++) {
+          const particle = document.createElement('div');
+          particle.className = 'ca-particle';
+          particle.style.position = 'fixed';
+          particle.style.left = `${centerX}px`;
+          particle.style.top = `${centerY}px`;
+
+          // Random movement
+          const angle = Math.random() * Math.PI * 2;
+          const distance = 50 + Math.random() * 100;
+          const duration = 500 + Math.random() * 1000;
+          const finalX = centerX + Math.cos(angle) * distance;
+          const finalY = centerY + Math.sin(angle) * distance;
+
+          document.body.appendChild(particle);
+
+          // Animate and remove
+          particle.animate([
+            { transform: 'translate(0, 0) scale(1)', opacity: 0.8 },
+            { transform: `translate(${finalX - centerX}px, ${finalY - centerY}px) scale(0)`, opacity: 0 }
+          ], {
+            duration: duration,
+            easing: 'cubic-bezier(0.1, 0.8, 0.2, 1)'
+          }).onfinish = () => {
+            particle.remove();
+          };
+        }
+      }
+    });
+  </script>
+
+
+  <!-- marquee start -->
+
+  <script>
+    // Logo data for each row
+    const lmLogoData = {
+      row1: [
+        { src: "images_webp/client/logo1.webp", alt: "Ashok Leyland" },
+        { src: "images_webp/client/logo2.webp", alt: "Cisco" },
+        { src: "images_webp/client/logo3.webp", alt: "IBM" },
+        { src: "images_webp/client/logo4.webp", alt: "IETE" },
+        { src: "images_webp/client/logo5.webp", alt: "ISTE" },
+
+      ],
+      row2: [
+        { src: "images_webp/client/logo6.webp", alt: "ISTE" },
+        { src: "images_webp/client/logo7.webp", alt: "Oracle" },
+        { src: "images_webp/client/logo8.webp", alt: "Red Hat" },
+        { src: "images_webp/client/logo9.webp", alt: "Roundglass" },
+        { src: "images_webp/client/logo10.webp", alt: "Toyota" },
+
+      ],
+      row3: [
+        { src: "images_webp/client/logo11.webp", alt: "IIT Bombay" },
+        { src: "images_webp/client/logo12.webp", alt: "IIT Kanpur" },
+        { src: "images_webp/client/logo13.webp", alt: "Toyota" },
+        { src: "images_webp/client/logo14.webp", alt: "University of Quebec" },
+        { src: "images_webp/client/logo15.webp", alt: "University of Quebec" },
+      ],
+      row4: [
+        { src: "images_webp/client/logo16.webp", alt: "ISTE" },
+        { src: "images_webp/client/logo17.webp", alt: "Oracle" },
+        { src: "images_webp/client/logo18.webp", alt: "Red Hat" },
+        { src: "images_webp/client/logo19.webp", alt: "Roundglass" },
+        { src: "images_webp/client/logo20.webp", alt: "Toyota" },
+
+      ]
+
+    };
+
+    // Function to create logo cards
+    function createLogoCard(logo) {
+      const card = document.createElement('div');
+      card.className = 'lm-logo-card';
+
+      const img = document.createElement('img');
+      img.src = logo.src;
+      img.alt = logo.alt;
+      img.className = 'lm-logo-image';
+
+      card.appendChild(img);
+      return card;
+    }
+
+    // Function to populate marquee with logos
+    function populateMarquee(marqueeId, logos) {
+      const marquee = document.getElementById(marqueeId);
+
+      // Add original set of logos
+      logos.forEach(logo => {
+        marquee.appendChild(createLogoCard(logo));
+      });
+
+      // Duplicate logos to create seamless loop
+      logos.forEach(logo => {
+        marquee.appendChild(createLogoCard(logo));
+      });
+    }
+
+    // Initialize all marquees
+    window.addEventListener('DOMContentLoaded', () => {
+      populateMarquee('lm-marquee-row1', lmLogoData.row1);
+      populateMarquee('lm-marquee-row2', lmLogoData.row2);
+      populateMarquee('lm-marquee-row3', lmLogoData.row3);
+      populateMarquee('lm-marquee-row4', lmLogoData.row4);
+      // Adjust animation speed based on screen width
+      const adjustSpeed = () => {
+        const marquees = document.querySelectorAll('.lm-marquee');
+        const speed = window.innerWidth < 768 ? '20s' : '30s';
+
+        marquees.forEach(marquee => {
+          marquee.style.animationDuration = speed;
+        });
+      };
+
+      // Initial adjustment and listen for resize
+      adjustSpeed();
+      window.addEventListener('resize', adjustSpeed);
+    });
+  </script>
+  <!-- marquee end -->
+
+  <style>
+    /* Rank card top bar */
+    .rank-card {
+      position: relative;
+      overflow: hidden;
+      transition: transform .2s, box-shadow .2s, border-color .2s;
+    }
+
+    .rank-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #c0281e, #f5a623);
+    }
+
+    .rank-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(192, 40, 30, 0.12);
+      border-color: #c0281e;
+    }
+  </style>
+
+  <section class="section-pad bg-off-white px-16 py-[72px]">
+    <div
+      class="inline-block bg-red-pale text-red font-mont font-extrabold text-[10px] tracking-[2.5px] uppercase px-3 py-1 rounded-sm mb-2.5">
+      Rankings &amp; Recognition</div>
+    <h2 class="font-mont font-black uppercase text-dark leading-[1.15] mb-3"
+      style="font-size:clamp(1.6rem,2.5vw,2.4rem);">Nationally <span class="text-red">Ranked &amp; Recognised</span>
+    </h2>
+    <div class="w-[50px] h-[3px] bg-red mb-3"></div>
+    <p class="text-grey text-[15px] max-w-[560px] leading-[1.7] mt-3">Indo Global Group of Colleges has been
+      consistently recognised by India's leading education and industry bodies for academic excellence and industry
+      interface.</p>
+
+    <!-- Ranking cards -->
+    <div class="grid gap-5 mt-11" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr));">
+
+      <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center fade-up">
+        <div class="w-14 h-14 bg-red-pale rounded-full flex items-center justify-center text-[26px] mx-auto mb-3.5">🏆
+        </div>
+        <div class="font-mont font-black text-red leading-none mb-1" style="font-size:2rem;">#3<sup
+            class="text-base">rd</sup></div>
+        <div class="font-mont font-extrabold text-[13px] text-dark uppercase tracking-wide mb-1.5">Best Placements in
+          Punjab</div>
+        <div class="text-[12px] text-grey-light font-medium mb-2.5">Punjab Technical University (PTU)</div>
+        <div class="text-[12px] text-grey leading-relaxed">Officially ranked third among all colleges in Punjab on
+          placement records by IKG Punjab Technical University, Jalandhar.</div>
+      </div>
+
+      <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center fade-up">
+        <div class="w-14 h-14 bg-red-pale rounded-full flex items-center justify-center text-[26px] mx-auto mb-3.5">🥇
+        </div>
+        <div class="font-mont font-black text-red leading-none mb-1 text-2xl">PLATINUM</div>
+        <div class="font-mont font-extrabold text-[13px] text-dark uppercase tracking-wide mb-1.5">Best Industry
+          Interface</div>
+        <div class="text-[12px] text-grey-light font-medium mb-2.5">AICTE-CII Survey of Industries</div>
+        <div class="text-[12px] text-grey leading-relaxed">Awarded Platinum rating in the AICTE-CII Industry Institute
+          Interaction Survey — highest grade for industry collaboration in Punjab.</div>
+      </div>
+
+      <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center fade-up">
+        <div class="w-14 h-14 bg-red-pale rounded-full flex items-center justify-center text-[26px] mx-auto mb-3.5">📰
+        </div>
+        <div class="font-mont font-black text-dark leading-none mb-1 text-xl">India Today</div>
+        <div class="font-mont font-extrabold text-[13px] text-dark uppercase tracking-wide mb-1.5">Top Professional
+          School</div>
+        <div class="text-[12px] text-grey-light font-medium mb-2.5">India Today Rankings, 2012</div>
+        <div class="text-[12px] text-grey leading-relaxed">Indo Global College of Engineering featured in India Today's
+          prestigious list of top professional schools in North India.</div>
+      </div>
+
+      <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center fade-up">
+        <div class="w-14 h-14 bg-red-pale rounded-full flex items-center justify-center text-[26px] mx-auto mb-3.5">🎖️
+        </div>
+        <div class="font-mont font-black text-dark leading-none mb-1 text-xl">CMAI</div>
+        <div class="font-mont font-extrabold text-[13px] text-dark uppercase tracking-wide mb-1.5">Excellent Industry
+          Interface Award</div>
+        <div class="text-[12px] text-grey-light font-medium mb-2.5">CMAI National Punjab Education Awards, 2013</div>
+        <div class="text-[12px] text-grey leading-relaxed">Recognised for outstanding industry-academia partnership and
+          consistent efforts to bridge the gap between education and employment.</div>
+      </div>
+
+      <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center fade-up">
+        <div class="w-14 h-14 bg-red-pale rounded-full flex items-center justify-center text-[26px] mx-auto mb-3.5">🪖
+        </div>
+        <div class="font-mont font-black text-dark leading-none mb-1" style="font-size:1.1rem;">Army &amp; Navy</div>
+        <div class="font-mont font-extrabold text-[13px] text-dark uppercase tracking-wide mb-1.5">Nodal Centre for
+          Officer Recruitment</div>
+        <div class="text-[12px] text-grey-light font-medium mb-2.5">Indian Army &amp; Indian Navy — UES</div>
+        <div class="text-[12px] text-grey leading-relaxed">Served as a Nodal Centre for Indian Army and Indian Navy
+          Commissioned Officer recruitment under the University Entry Scheme (UES).</div>
+      </div>
+
+      <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center fade-up">
+        <div class="w-14 h-14 bg-red-pale rounded-full flex items-center justify-center text-[26px] mx-auto mb-3.5">🖥️
+        </div>
+        <div class="font-mont font-black text-dark leading-none mb-1 text-xl">IBM CoE</div>
+        <div class="font-mont font-extrabold text-[13px] text-dark uppercase tracking-wide mb-1.5">IBM Centre of
+          Excellence</div>
+        <div class="text-[12px] text-grey-light font-medium mb-2.5">IBM India Partnership</div>
+        <div class="text-[12px] text-grey leading-relaxed">One of very few colleges in North India to host an on-campus
+          IBM Centre of Excellence, giving students access to global tech resources.</div>
+      </div>
+
+    </div>
+
+    <!-- Accreditation badges -->
+    <div class="flex flex-wrap gap-3.5 mt-11 justify-center">
+      <div
+        class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
+        style="padding:10px 18px;">✅ AICTE Approved</div>
+      <div
+        class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
+        style="padding:10px 18px;">✅ CoA (Council of Architecture)</div>
+      <div
+        class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
+        style="padding:10px 18px;">✅ NCTE Approved</div>
+      <div
+        class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
+        style="padding:10px 18px;">✅ IKG PTU Affiliated</div>
+      <div
+        class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
+        style="padding:10px 18px;">✅ Panjab University Affiliated</div>
+      <div
+        class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
+        style="padding:10px 18px;">✅ MoU — EC-Council USA</div>
+      <div
+        class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
+        style="padding:10px 18px;">✅ MoU — Pearson Education USA</div>
+    </div>
+  </section>
+
+  <section class="section-pad px-16 py-[72px]" style="background:linear-gradient(135deg,#7a1710,#c0281e);">
+    <div
+      class="inline-block font-mont font-extrabold text-[10px] tracking-[2.5px] uppercase px-3 py-1 rounded-sm mb-2.5 text-white/90"
+      style="background:rgba(255,255,255,0.12);">Why Choose Us</div>
+    <h2 class="font-mont font-black uppercase text-white leading-[1.15] mb-3"
+      style="font-size:clamp(1.6rem,2.5vw,2.4rem);">Why 3,000+ Students Choose <span class="text-gold">Indo
+        Global</span></h2>
+    <div class="w-[50px] h-[3px] bg-gold mb-3"></div>
+    <p class="text-white/65 text-[15px] max-w-[560px] leading-[1.7] mt-3">Punjab's Platinum-rated institution,
+      benchmarked by AICTE-CII for industry interface excellence.</p>
+
+    <div class="grid gap-5 mt-11" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr));">
+      <div class="fade-up rounded p-6.5 border border-white/10 hover:bg-white/10 transition-colors duration-200"
+        style="background:rgba(255,255,255,0.06);padding:26px;">
+        <div class="text-3xl mb-3">🎓</div>
+        <div class="font-mont font-extrabold text-[14px] text-gold uppercase tracking-wide mb-2">20+ Years of Excellence
+        </div>
+        <div class="text-white/65 text-[13px] leading-[1.7]">Founded in 2003 with a mission to provide world-class
+          education. Two decades of producing industry-ready graduates across Punjab and beyond.</div>
+      </div>
+      <div class="fade-up rounded p-6.5 border border-white/10 hover:bg-white/10 transition-colors duration-200"
+        style="background:rgba(255,255,255,0.06);padding:26px;">
+        <div class="text-3xl mb-3">🏅</div>
+        <div class="font-mont font-extrabold text-[14px] text-gold uppercase tracking-wide mb-2">Ranked #3 in Punjab by
+          PTU</div>
+        <div class="text-white/65 text-[13px] leading-[1.7]">AICTE-CII Platinum Award for Best Industry Interface.
+          Consistently recognised for quality education and exceptional student outcomes.</div>
+      </div>
+      <div class="fade-up rounded p-6.5 border border-white/10 hover:bg-white/10 transition-colors duration-200"
+        style="background:rgba(255,255,255,0.06);padding:26px;">
+        <div class="text-3xl mb-3">🤝</div>
+        <div class="font-mont font-extrabold text-[14px] text-gold uppercase tracking-wide mb-2">IBM Centre of
+          Excellence</div>
+        <div class="text-white/65 text-[13px] leading-[1.7]">On-campus IBM CoE with active industry partnerships —
+          Wipro, Infosys, ICICI Bank, Vodafone, and 150+ top companies visit annually.</div>
+      </div>
+      <div class="fade-up rounded p-6.5 border border-white/10 hover:bg-white/10 transition-colors duration-200"
+        style="background:rgba(255,255,255,0.06);padding:26px;">
+        <div class="text-3xl mb-3">🌿</div>
+        <div class="font-mont font-extrabold text-[14px] text-gold uppercase tracking-wide mb-2">World-Class 35-Acre
+          Campus</div>
+        <div class="text-white/65 text-[13px] leading-[1.7]">Lush green campus in Shivalik foothills, 5 km from
+          Chandigarh. Modern labs, smart classrooms, hostels, sports facilities and more.</div>
+      </div>
+      <div class="fade-up rounded p-6.5 border border-white/10 hover:bg-white/10 transition-colors duration-200"
+        style="background:rgba(255,255,255,0.06);padding:26px;">
+        <div class="text-3xl mb-3">💼</div>
+        <div class="font-mont font-extrabold text-[14px] text-gold uppercase tracking-wide mb-2">Strong Placement
+          Support</div>
+        <div class="text-white/65 text-[13px] leading-[1.7]">Dedicated placement cell with aptitude training, mock
+          interviews and entrepreneurship programs — 92.5% placed every year.</div>
+      </div>
+      <div class="fade-up rounded p-6.5 border border-white/10 hover:bg-white/10 transition-colors duration-200"
+        style="background:rgba(255,255,255,0.06);padding:26px;">
+        <div class="text-3xl mb-3">🎁</div>
+        <div class="font-mont font-extrabold text-[14px] text-gold uppercase tracking-wide mb-2">Merit Scholarships
+        </div>
+        <div class="text-white/65 text-[13px] leading-[1.7]">Scholarships for students scoring 80%+. Financial aid
+          available to make quality education accessible to every deserving student.</div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .ranking-section {
+      background: #fdfdfd;
+      position: relative;
+      overflow: hidden;
+      padding: 60px 0;
+    }
+
+    .ranking-section .widget-title h2 {
+      margin-bottom: 40px;
+      line-height: 1.3;
+      text-align: left;
+    }
+
+    .rank-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 240px;
+      height: 240px;
+      margin: 0 auto;
+    }
+
+    .ranking-section .crown_ab {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ranking-section .crown_ab img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .rankingitem,
+    .ranking-content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ranking-logo {
+      background: #f0f0f0;
+      border-radius: 50%;
+      width: 165px;
+      height: 165px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 25px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .ranking-logo img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    #rank-slider .owl-dots {
+      margin-top: 30px !important;
+      text-align: center;
+    }
+
+    #rank-slider .owl-dot span {
+      background: #e0e0e0 !important;
+      width: 10px !important;
+      height: 10px !important;
+      margin: 5px 6px !important;
+      border-radius: 50% !important;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+
+    #rank-slider .owl-dot.active span,
+    #rank-slider .owl-dot:hover span {
+      background: #1B4F9C !important;
+    }
+
+    .position-relative {
+      position: relative !important;
+    }
+
+    .container {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 1200px;
+    }
+  </style>
+
+  <section class="position-relative ranking-section py-8" data-scroll-index='5' id="tieups">
+    <div class="container">
+      <div class="position-relative zIndex2">
+        <div class="wow fadeInUp px-4 mb-10 text-center">
+          <h2 class="font-display font-black text-igblue-deep text-3xl sm:text-4xl uppercase leading-tight">
+            <span class="text-igred">Accreditation & Industry</span><br> Connect @ IGEF
+          </h2>
+        </div>
+        <div class="rankingBox mt-2">
+          <!-- slider -->
+          <div class="owl-carousel owl-theme text-center" id="rank-slider">
+            <div class="items position-relative rank-item rankbg1 wow fadeInUp">
+              <div class="crown_ab"><img class="img-fluid" src="images_webp/crown.webp" alt="" /></div>
+              <div class="rankingitem">
+                <div class="ranking-content">
+                  <div class="mb-1 ranking-logo text-center"><img class="img-fluid" src="images_webp/client/1.webp"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items position-relative rank-item rankbg1 wow fadeInUp">
+              <div class="crown_ab"><img class="img-fluid" src="images_webp/crown.webp" alt="" /></div>
+              <div class="rankingitem">
+                <div class="ranking-content">
+                  <div class="mb-1 ranking-logo text-center"><img class="img-fluid" src="images_webp/client/2.webp"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items position-relative rank-item rankbg1 wow fadeInUp">
+              <div class="crown_ab"><img class="img-fluid" src="images_webp/crown.webp" alt="" /></div>
+              <div class="rankingitem">
+                <div class="ranking-content">
+                  <div class="mb-1 ranking-logo text-center"><img class="img-fluid" src="images_webp/client/3.webp"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items position-relative rank-item rankbg1 wow fadeInUp">
+              <div class="crown_ab"><img class="img-fluid" src="images_webp/crown.webp" alt="" /></div>
+              <div class="rankingitem">
+                <div class="ranking-content">
+                  <div class="mb-1 ranking-logo text-center"><img class="img-fluid" src="images_webp/client/4.webp"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items position-relative rank-item rankbg1 wow fadeInUp">
+              <div class="crown_ab"><img class="img-fluid" src="images_webp/crown.webp" alt="" /></div>
+              <div class="rankingitem">
+                <div class="ranking-content">
+                  <div class="mb-1 ranking-logo text-center"><img class="img-fluid" src="images_webp/client/6.webp"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items position-relative rank-item rankbg1 wow fadeInUp">
+              <div class="crown_ab"><img class="img-fluid" src="images_webp/crown.webp" alt="" /></div>
+              <div class="rankingitem">
+                <div class="ranking-content">
+                  <div class="mb-1 ranking-logo text-center"><img class="img-fluid" src="images_webp/client/7.webp"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items position-relative rank-item rankbg1 wow fadeInUp">
+              <div class="crown_ab"><img class="img-fluid" src="images_webp/crown.webp" alt="" /></div>
+              <div class="rankingitem">
+                <div class="ranking-content">
+                  <div class="mb-1 ranking-logo text-center"><img class="img-fluid" src="images_webp/client/8.webp"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items position-relative rank-item rankbg1 wow fadeInUp">
+              <div class="crown_ab"><img class="img-fluid" src="images_webp/crown.webp" alt="" /></div>
+              <div class="rankingitem">
+                <div class="ranking-content">
+                  <div class="mb-1 ranking-logo text-center"><img class="img-fluid" src="images_webp/client/9.webp"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items position-relative rank-item rankbg1 wow fadeInUp">
+              <div class="crown_ab"><img class="img-fluid" src="images_webp/crown.webp" alt="" /></div>
+              <div class="rankingitem">
+                <div class="ranking-content">
+                  <div class="mb-1 ranking-logo text-center"><img class="img-fluid" src="images_webp/client/10.webp"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items position-relative rank-item rankbg1 wow fadeInUp">
+              <div class="crown_ab"><img class="img-fluid" src="images_webp/crown.webp" alt="" /></div>
+              <div class="rankingitem">
+                <div class="ranking-content">
+                  <div class="mb-1 ranking-logo text-center"><img class="img-fluid" src="images_webp/client/11.webp"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items position-relative rank-item rankbg1 wow fadeInUp">
+              <div class="crown_ab"><img class="img-fluid" src="images_webp/crown.webp" alt="" /></div>
+              <div class="rankingitem">
+                <div class="ranking-content">
+                  <div class="mb-1 ranking-logo text-center"><img class="img-fluid" src="images_webp/client/12.webp"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items position-relative rank-item rankbg1 wow fadeInUp">
+              <div class="crown_ab"><img class="img-fluid" src="images_webp/crown.webp" alt="" /></div>
+              <div class="rankingitem">
+                <div class="ranking-content">
+                  <div class="mb-1 ranking-logo text-center"><img class="img-fluid" src="images_webp/client/13.webp"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items position-relative rank-item rankbg1 wow fadeInUp">
+              <div class="crown_ab"><img class="img-fluid" src="images_webp/crown.webp" alt="" /></div>
+              <div class="rankingitem">
+                <div class="ranking-content">
+                  <div class="mb-1 ranking-logo text-center"><img class="img-fluid" src="images_webp/client/14.webp"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items position-relative rank-item rankbg1 wow fadeInUp">
+              <div class="crown_ab"><img class="img-fluid" src="images_webp/crown.webp" alt="" /></div>
+              <div class="rankingitem">
+                <div class="ranking-content">
+                  <div class="mb-1 ranking-logo text-center"><img class="img-fluid" src="images_webp/client/15.webp"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items position-relative rank-item rankbg1 wow fadeInUp">
+              <div class="crown_ab"><img class="img-fluid" src="images_webp/crown.webp" alt="" /></div>
+              <div class="rankingitem">
+                <div class="ranking-content">
+                  <div class="mb-1 ranking-logo text-center"><img class="img-fluid" src="images_webp/client/16.webp"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items position-relative rank-item rankbg1 wow fadeInUp">
+              <div class="crown_ab"><img class="img-fluid" src="images_webp/crown.webp" alt="" /></div>
+              <div class="rankingitem">
+                <div class="ranking-content">
+                  <div class="mb-1 ranking-logo text-center"><img class="img-fluid" src="images_webp/client/17.webp"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items position-relative rank-item rankbg1 wow fadeInUp">
+              <div class="crown_ab"><img class="img-fluid" src="images_webp/crown.webp" alt="" /></div>
+              <div class="rankingitem">
+                <div class="ranking-content">
+                  <div class="mb-1 ranking-logo text-center"><img class="img-fluid" src="images_webp/client/18.webp"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items position-relative rank-item rankbg1 wow fadeInUp">
+              <div class="crown_ab"><img class="img-fluid" src="images_webp/crown.webp" alt="" /></div>
+              <div class="rankingitem">
+                <div class="ranking-content">
+                  <div class="mb-1 ranking-logo text-center"><img class="img-fluid" src="images_webp/client/20.webp"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════════ -->
+  <section id="testimonials" class="py-16 sm:py-20 lg:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="text-center mb-10 reveal">
+        <span
+          class="inline-block bg-igblue/8 text-igblue text-[11px] font-extrabold uppercase tracking-[.1em] px-3.5 py-1.5 rounded border-l-[3px] border-igred mb-3">Alumni
+          Stories</span>
+        <h2 class="font-display font-black text-igblue-deep text-3xl sm:text-4xl uppercase leading-tight">Hear From Our
+          <span class="text-igred">Graduates</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div
+          class="reveal bg-slate-50 border border-slate-200 rounded-xl p-6 relative hover:border-igblue hover:shadow-card transition-all">
+          <div class="absolute top-4 right-5 font-serif text-7xl text-igblue/6 leading-none select-none">"</div>
+          <div class="text-amber-400 text-sm tracking-widest mb-3">★★★★★</div>
+          <p class="text-slate-600 text-sm leading-relaxed italic mb-5">"The training sessions were very practical and
+            focused on real-world skills. I got immense support throughout my placement journey, and I'm grateful to be
+            starting my career at BYJU'S."</p>
+          <div class="flex items-center gap-3 border-t border-slate-200 pt-4">
+            <div
+              class="w-10 h-10 rounded-full bg-igblue flex items-center justify-center font-bold text-white text-base shrink-0">
+              A</div>
+            <div>
+              <div class="text-sm font-extrabold text-igblue-deep">Aditya Kumar Srivastwa</div>
+              <div class="text-[11px] font-bold text-igred uppercase tracking-wide">Placed at BYJU'S
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="reveal reveal-delay-1 bg-slate-50 border border-slate-200 rounded-xl p-6 relative hover:border-igblue hover:shadow-card transition-all">
+          <div class="absolute top-4 right-5 font-serif text-7xl text-igblue/6 leading-none select-none">"</div>
+          <div class="text-amber-400 text-sm tracking-widest mb-3">★★★★★</div>
+          <p class="text-slate-600 text-sm leading-relaxed italic mb-5">"I never imagined landing such a good offer
+            right after college. The faculty and placement team were with me every step of the way. Huge thanks for
+            guiding me to this opportunity."</p>
+          <div class="flex items-center gap-3 border-t border-slate-200 pt-4">
+            <div
+              class="w-10 h-10 rounded-full bg-igblue flex items-center justify-center font-bold text-white text-base shrink-0">
+              K</div>
+            <div>
+              <div class="text-sm font-extrabold text-igblue-deep">Kohinoor Prajapat</div>
+              <div class="text-[11px] font-bold text-igred uppercase tracking-wide">Engineering Graduate</div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="reveal reveal-delay-2 bg-slate-50 border border-slate-200 rounded-xl p-6 relative hover:border-igblue hover:shadow-card transition-all md:col-span-2 lg:col-span-1">
+          <div class="absolute top-4 right-5 font-serif text-7xl text-igblue/6 leading-none select-none">"</div>
+          <div class="text-amber-400 text-sm tracking-widest mb-3">★★★★★</div>
+          <p class="text-slate-600 text-sm leading-relaxed italic mb-5">"It was the hands-on project experience and mock
+            interviews that really helped me stand out. I'm proud to be joining Simran IT and thankful to my mentors for
+            their constant encouragement."</p>
+          <div class="flex items-center gap-3 border-t border-slate-200 pt-4">
+            <div
+              class="w-10 h-10 rounded-full bg-igblue flex items-center justify-center font-bold text-white text-base shrink-0">
+              M</div>
+            <div>
+              <div class="text-sm font-extrabold text-igblue-deep">Mukul Seth</div>
+              <div class="text-[11px] font-bold text-igred uppercase tracking-wide">Placed at Simran IT</div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="reveal bg-slate-50 border border-slate-200 rounded-xl p-6 relative hover:border-igblue hover:shadow-card transition-all">
+          <div class="absolute top-4 right-5 font-serif text-7xl text-igblue/6 leading-none select-none">"</div>
+          <div class="text-amber-400 text-sm tracking-widest mb-3">★★★★★</div>
+          <p class="text-slate-600 text-sm leading-relaxed italic mb-5">"Getting placed at Amazon was a dream come true.
+            The personalized guidance I received during my preparation made all the difference. Truly a life-changing
+            experience!"</p>
+          <div class="flex items-center gap-3 border-t border-slate-200 pt-4">
+            <div
+              class="w-10 h-10 rounded-full bg-igblue flex items-center justify-center font-bold text-white text-base shrink-0">
+              A</div>
+            <div>
+              <div class="text-sm font-extrabold text-igblue-deep">Abhishek Kaushal</div>
+              <div class="text-[11px] font-bold text-igred uppercase tracking-wide">Placed at Amazon</div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="reveal reveal-delay-1 bg-slate-50 border border-slate-200 rounded-xl p-6 relative hover:border-igblue hover:shadow-card transition-all md:col-span-2 lg:col-span-1">
+          <div class="absolute top-4 right-5 font-serif text-7xl text-igblue/6 leading-none select-none">"</div>
+          <div class="text-amber-400 text-sm tracking-widest mb-3">★★★★★</div>
+          <p class="text-slate-600 text-sm leading-relaxed italic mb-5">"The exposure we got to industry trends, along
+            with rigorous coding sessions and real-time case studies, helped me grow in confidence. Joining Cerner is
+            just the beginning!"</p>
+          <div class="flex items-center gap-3 border-t border-slate-200 pt-4">
+            <div
+              class="w-10 h-10 rounded-full bg-igblue flex items-center justify-center font-bold text-white text-base shrink-0">
+              G</div>
+            <div>
+              <div class="text-sm font-extrabold text-igblue-deep">Gurpreet Randhawa</div>
+              <div class="text-[11px] font-bold text-igred uppercase tracking-wide">Placed at Cerner</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ACCREDITATIONS
+  ═══════════════════════════════════════════ -->
+  <!-- <div class="bg-igblue py-5">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 flex flex-wrap items-center justify-center gap-3">
+      <span class="text-white/45 text-[10px] font-extrabold uppercase tracking-widest mr-2">Approved &amp; Recognised
+        By:</span>
+      <span
+        class="bg-white/12 border border-white/20 text-white font-black text-xs uppercase tracking-widest px-4 py-2 rounded hover:bg-white/20 transition-colors cursor-default">AICTE</span>
+      <span
+        class="bg-white/12 border border-white/20 text-white font-black text-xs uppercase tracking-widest px-4 py-2 rounded hover:bg-white/20 transition-colors cursor-default">IKG
+        PTU</span>
+      <span
+        class="bg-white/12 border border-white/20 text-white font-black text-xs uppercase tracking-widest px-4 py-2 rounded hover:bg-white/20 transition-colors cursor-default">CoA</span>
+      <span
+        class="bg-white/12 border border-white/20 text-white font-black text-xs uppercase tracking-widest px-4 py-2 rounded hover:bg-white/20 transition-colors cursor-default">NCTE</span>
+      <span
+        class="bg-white/12 border border-white/20 text-white font-black text-xs uppercase tracking-widest px-4 py-2 rounded hover:bg-white/20 transition-colors cursor-default">UGC</span>
+      <span
+        class="bg-white/12 border border-white/20 text-white font-black text-xs uppercase tracking-widest px-4 py-2 rounded hover:bg-white/20 transition-colors cursor-default">IBM
+        CoE</span>
+      <span
+        class="bg-white/12 border border-white/20 text-white font-black text-xs uppercase tracking-widest px-4 py-2 rounded hover:bg-white/20 transition-colors cursor-default">Govt.
+        of Punjab</span>
+    </div>
+  </div> -->
+
+  <!-- ═══════════════════════════════════════════
+       CTA SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="bg-slate-50 border-t-4 border-igred py-14 sm:py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+        <div class="reveal">
+          <span
+            class="inline-block bg-igblue/8 text-igblue text-[11px] font-extrabold uppercase tracking-[.1em] px-3.5 py-1.5 rounded border-l-[3px] border-igred mb-3">Admissions
+            2025-26 Open</span>
+          <h2 class="font-display font-black text-igblue-deep text-3xl sm:text-4xl uppercase leading-tight">Your Dream
+            Career <span class="text-igred">Starts Today</span></h2>
+          <p class="text-slate-500 text-base leading-relaxed mt-2 max-w-xl">Limited seats. Apply for free and get a
+            callback from our expert admission team within 24 hours.</p>
+        </div>
+        <div class="reveal reveal-delay-1 flex flex-col sm:flex-row gap-3 lg:shrink-0">
+          <a href="#apply"
+            class="bg-igred hover:bg-igred-dark text-white font-black text-sm uppercase tracking-widest px-8 py-4 rounded-lg text-center transition-all hover:-translate-y-0.5 shadow-btn">Apply
+            for Free →</a>
+          <a href="tel:+917307211222"
+            class="border-2 border-igblue text-igblue hover:bg-igblue hover:text-white font-black text-sm uppercase tracking-widest px-6 py-4 rounded-lg text-center transition-all">📞
+            +91-7307211222</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="bg-igblue-deep text-white/65 pt-14 pb-6">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <!-- Brand -->
+        <div class="sm:col-span-2 lg:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center shrink-0">
+              <svg width="22" height="22" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="17" cy="13" r="9" stroke="white" stroke-width="2" />
+                <path d="M8 13 Q17 20 26 13" stroke="white" stroke-width="1.5" fill="none" />
+                <line x1="17" y1="4" x2="17" y2="22" stroke="white" stroke-width="1.5" />
+                <line x1="8" y1="26" x2="26" y2="26" stroke="white" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div>
+              <div class="text-sm font-black text-white uppercase tracking-tight leading-tight">Indo Global Group of
+                Colleges</div>
+              <div class="text-[10px] text-white/35 font-semibold uppercase tracking-widest">igef.net</div>
+            </div>
+          </div>
+          <p class="text-xs leading-relaxed text-white/45 mb-5">Punjab's leading education group with 4 institutions on
+            a 70-acre campus in the Shivalik foothills, 12 km from Chandigarh. Established 2003.</p>
+          <div class="space-y-2.5">
+            <a href="tel:01605036000"
+              class="flex items-start gap-2 text-xs text-white/50 hover:text-igold transition-colors">📞 0160-5036000 /
+              7307211222</a>
+            <a href="mailto:admissions@igef.net"
+              class="flex items-start gap-2 text-xs text-white/50 hover:text-igold transition-colors">✉
+              admissions@igef.net</a>
+            <a href="#" class="flex items-start gap-2 text-xs text-white/50 hover:text-igold transition-colors">📍 Indo
+              Global Education City, Abhipur, Mohali – 140109, Punjab</a>
+            <a href="https://igef.net" target="_blank" rel="noopener"
+              class="flex items-start gap-2 text-xs text-white/50 hover:text-igold transition-colors">🌐
+              www.igef.net</a>
+          </div>
+        </div>
+
+        <!-- Courses -->
+        <div>
+          <h4 class="text-xs font-black text-white uppercase tracking-widest mb-5 pb-2.5 border-b-2 border-igred">
+            Courses</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">B.Tech
+                Engineering</a></li>
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">B.Arch
+                Architecture</a></li>
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">MBA /
+                BBA</a></li>
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">BCA /
+                MCA</a></li>
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">B.Ed /
+                ETT</a></li>
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">BSc
+                Paramedical</a></li>
+            <li><a href="#apply"
+                class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Polytechnic / Diploma</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Admissions -->
+        <div>
+          <h4 class="text-xs font-black text-white uppercase tracking-widest mb-5 pb-2.5 border-b-2 border-igred">
+            Admissions</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Apply
+                Online</a></li>
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Fee
+                Structure</a></li>
+            <li><a href="#apply"
+                class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Scholarships</a></li>
+            <li><a href="#apply"
+                class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Eligibility Criteria</a>
+            </li>
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Download
+                Brochure</a></li>
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">JEE Main /
+                NATA</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-xs font-black text-white uppercase tracking-widest mb-5 pb-2.5 border-b-2 border-igred">Quick
+            Links</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#placements"
+                class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Placements</a></li>
+            <li><a href="#about" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Campus
+                Life</a></li>
+            <li><a href="#testimonials"
+                class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Alumni</a></li>
+            <li><a href="https://igef.net" target="_blank" rel="noopener"
+                class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Official Website</a></li>
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Contact
+                Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div
+        class="border-t border-white/8 pt-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-white/25 font-semibold">
+        <span>© 2025 Indo Global Education Foundation (IGEF). All rights reserved.</span>
+        <div class="flex gap-5">
+          <a href="#" class="hover:text-white/60 transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-white/60 transition-colors">Terms of Use</a>
+          <a href="#" class="hover:text-white/60 transition-colors">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       FLOATING CALL BUTTON
+  ═══════════════════════════════════════════ -->
+  <a href="tel:01605036000" title="Call for Admissions"
+    class="fixed bottom-6 right-6 z-[300] bg-igred text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-float animate-pulse-ring hover:scale-110 transition-transform">
+    📞
+  </a>
+
+  <!-- ═══════════════════════════════════════════
+       JS: Mobile Menu + Scroll Reveal
+  ═══════════════════════════════════════════ -->
+  <script>
+    // Mobile hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    });
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    revealEls.forEach(el => io.observe(el));
+
+    // Smooth scroll for anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+
+  <!-- Owl Carousel JS -->
+  <script src="css/carousel/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

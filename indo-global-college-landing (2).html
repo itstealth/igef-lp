@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indo Global Group of Colleges – Admissions 2025-26 | B.Tech, MBA, B.Arch | Mohali</title>
+  <meta name="description"
+    content="Punjab's top engineering & architecture college near Chandigarh. AICTE approved. B.Tech, MBA, B.Arch, BCA. 92.5% placement. Apply free for 2025-26." />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Merriweather:wght@700;900&display=swap"
+    rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            igblue: { DEFAULT: '#1B4F9C', dark: '#0f3370', deep: '#091f4a', light: '#3367c0' },
+            igred: { DEFAULT: '#CC1E1E', dark: '#a81818', light: '#e03030' },
+            igold: '#F0B429',
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            display: ['Merriweather', 'serif'],
+          },
+          backgroundImage: {
+            'hero-img': "linear-gradient(105deg,rgba(9,31,74,.93) 0%,rgba(15,51,112,.87) 42%,rgba(9,31,74,.65) 100%),url('https://images.unsplash.com/photo-1562774053-701939374585?w=1600&q=80&auto=format&fit=crop')",
+            'campus-img': "linear-gradient(135deg,rgba(15,51,112,.7) 0%,rgba(9,31,74,.5) 100%),url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=80&auto=format&fit=crop')",
+          },
+          boxShadow: {
+            'form': '0 28px 80px rgba(0,0,0,.32)',
+            'card': '0 8px 32px rgba(27,79,156,.1)',
+            'btn': '0 6px 20px rgba(204,30,30,.38)',
+            'float': '0 6px 24px rgba(204,30,30,.45)',
+          },
+          keyframes: {
+            'pulse-ring': {
+              '0%': { boxShadow: '0 0 0 0 rgba(204,30,30,.55)' },
+              '70%': { boxShadow: '0 0 0 14px rgba(204,30,30,0)' },
+              '100%': { boxShadow: '0 0 0 0 rgba(204,30,30,0)' },
+            },
+            fadeUp: {
+              from: { opacity: '0', transform: 'translateY(22px)' },
+              to: { opacity: '1', transform: 'translateY(0)' },
+            },
+          },
+          animation: {
+            'pulse-ring': 'pulse-ring 2s infinite',
+            'fadeUp': 'fadeUp .55s ease both',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    /* Custom utilities not easily doable in Tailwind config */
+    .font-display {
+      font-family: 'Merriweather', serif;
+    }
+
+    .hero-bg {
+      background-image: linear-gradient(105deg, rgba(9, 31, 74, .93) 0%, rgba(15, 51, 112, .87) 42%, rgba(9, 31, 74, .65) 100%), url('https://images.unsplash.com/photo-1562774053-701939374585?w=1600&q=80&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .campus-bg {
+      background-image: linear-gradient(135deg, rgba(15, 51, 112, .7) 0%, rgba(9, 31, 74, .5) 100%), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=80&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .placement-bg {
+      background: linear-gradient(135deg, #091f4a 0%, #0f3370 100%);
+    }
+
+    /* Reveal animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity .55s ease, transform .55s ease;
+    }
+
+    .reveal.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 {
+      transition-delay: 80ms;
+    }
+
+    .reveal-delay-2 {
+      transition-delay: 160ms;
+    }
+
+    .reveal-delay-3 {
+      transition-delay: 240ms;
+    }
+
+    .reveal-delay-4 {
+      transition-delay: 320ms;
+    }
+
+    .reveal-delay-5 {
+      transition-delay: 400ms;
+    }
+
+    .reveal-delay-6 {
+      transition-delay: 480ms;
+    }
+
+    /* Custom select arrow */
+    select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%236b7a99' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right .75rem center;
+    }
+
+    /* Nav underline hover */
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      background: #CC1E1E;
+      transition: width .2s;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    /* Mobile menu */
+    #mobile-menu {
+      transition: max-height .3s ease, opacity .3s ease;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+    }
+
+    #mobile-menu.open {
+      max-height: 600px;
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body class="font-sans text-igblue-deep bg-white antialiased">
+
+  <!-- ═══════════════════════════════════════════
+       TOP STRIP
+  ═══════════════════════════════════════════ -->
+  <div class="bg-igred text-white text-xs font-semibold tracking-wide">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-y-1 gap-x-4">
+      <span class="flex items-center gap-1.5">🎓 <span>Admissions Open 2025-26 · Limited Seats · Apply
+          Now!</span></span>
+      <div class="flex items-center gap-4 flex-wrap">
+        <a href="tel:01605036000" class="flex items-center gap-1 hover:text-igold transition-colors">📞 0160-5036000</a>
+        <a href="mailto:admissions@igef.net"
+          class="hidden sm:flex items-center gap-1 hover:text-igold transition-colors">✉ admissions@igef.net</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav class="sticky top-0 z-50 bg-white border-b-[3px] border-igblue shadow-md">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-[70px]">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 shrink-0">
+          <div class="w-11 h-11 bg-igblue rounded-full flex items-center justify-center shrink-0">
+            <svg width="26" height="26" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="17" cy="13" r="9" stroke="white" stroke-width="2" />
+              <path d="M8 13 Q17 20 26 13" stroke="white" stroke-width="1.5" fill="none" />
+              <line x1="17" y1="4" x2="17" y2="22" stroke="white" stroke-width="1.5" />
+              <line x1="8" y1="26" x2="26" y2="26" stroke="white" stroke-width="2" stroke-linecap="round" />
+              <line x1="12" y1="30" x2="22" y2="30" stroke="white" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="leading-tight">
+            <div class="text-xs sm:text-sm font-black text-igblue uppercase tracking-tight">Indo Global Group of
+              Colleges</div>
+            <div class="text-[10px] font-semibold text-igred uppercase tracking-widest hidden sm:block">Est. 2003 ·
+              Abhipur, Mohali · Punjab</div>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <ul class="hidden lg:flex items-center gap-6 xl:gap-8">
+          <li><a href="#courses"
+              class="nav-link text-sm font-bold uppercase tracking-wide text-igblue-dark hover:text-igblue transition-colors">Courses</a>
+          </li>
+          <li><a href="#about"
+              class="nav-link text-sm font-bold uppercase tracking-wide text-igblue-dark hover:text-igblue transition-colors">About</a>
+          </li>
+          <li><a href="#placements"
+              class="nav-link text-sm font-bold uppercase tracking-wide text-igblue-dark hover:text-igblue transition-colors">Placements</a>
+          </li>
+          <li><a href="#testimonials"
+              class="nav-link text-sm font-bold uppercase tracking-wide text-igblue-dark hover:text-igblue transition-colors">Alumni</a>
+          </li>
+        </ul>
+
+        <div class="flex items-center gap-3">
+          <a href="#apply"
+            class="hidden sm:inline-block bg-igred hover:bg-igred-dark text-white font-black text-xs uppercase tracking-widest px-5 py-2.5 rounded-md transition-all hover:-translate-y-0.5 shadow-btn">Apply
+            Free →</a>
+          <!-- Hamburger -->
+          <button id="hamburger" class="lg:hidden p-2 rounded-md text-igblue" aria-label="Open menu">
+            <svg id="ham-icon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden bg-igblue-deep border-t border-white/10">
+      <div class="px-4 py-3 flex flex-col gap-1">
+        <a href="#courses"
+          class="text-white font-bold uppercase tracking-wide text-sm py-2.5 border-b border-white/10 mobile-link">Courses</a>
+        <a href="#about"
+          class="text-white font-bold uppercase tracking-wide text-sm py-2.5 border-b border-white/10 mobile-link">About</a>
+        <a href="#placements"
+          class="text-white font-bold uppercase tracking-wide text-sm py-2.5 border-b border-white/10 mobile-link">Placements</a>
+        <a href="#testimonials"
+          class="text-white font-bold uppercase tracking-wide text-sm py-2.5 mobile-link">Alumni</a>
+        <a href="#apply"
+          class="mt-3 bg-igred text-white font-black text-sm uppercase tracking-widest text-center py-3 rounded-md mobile-link">Apply
+          Free →</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section id="hero" class="hero-bg relative min-h-[92vh] flex items-center">
+    <!-- Left Red Bar -->
+    <div class="absolute top-0 left-0 w-1.5 h-full bg-igred z-10"></div>
+
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 w-full py-16 lg:py-20 z-10 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-[1fr_400px] xl:grid-cols-[1fr_430px] gap-10 lg:gap-12 items-center">
+
+        <!-- LEFT: Hero Content -->
+        <div>
+          <!-- Badge -->
+          <div
+            class="inline-flex items-center gap-2 bg-white/10 border border-white/25 rounded px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-widest text-white/85 mb-5">
+            Punjab's Leading Education Group
+            <span class="text-igold">· Est. 2003</span>
+          </div>
+
+          <!-- Headline -->
+          <h1
+            class="font-display font-black text-white leading-[1.1] mb-5 text-[2.1rem] sm:text-5xl lg:text-[3.4rem] xl:text-[3.8rem]">
+            Build Your Career<br />
+            at <span class="text-igold">Indo Global</span><br />
+            <span class="underline decoration-igred decoration-[5px] underline-offset-4">Colleges</span>
+          </h1>
+
+          <!-- Sub -->
+          <p class="text-white/80 text-base sm:text-lg font-medium leading-relaxed mb-7 max-w-xl">
+            70-acre campus in the Shivalik foothills, 12 km from Chandigarh. AICTE approved. IKG PTU affiliated.
+            <strong class="text-white font-bold">#3 in Punjab for placements.</strong>
+            <strong class="text-white font-bold"> Admissions 2025-26 now open.</strong>
+          </p>
+
+          <!-- Course Pills -->
+          <div class="flex flex-wrap gap-2 mb-7">
+            <span
+              class="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 rounded px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wide"><span
+                class="w-1.5 h-1.5 rounded-full bg-igold shrink-0"></span>B.Tech Engineering</span>
+            <span
+              class="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 rounded px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wide"><span
+                class="w-1.5 h-1.5 rounded-full bg-igold shrink-0"></span>B.Arch Architecture</span>
+            <span
+              class="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 rounded px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wide"><span
+                class="w-1.5 h-1.5 rounded-full bg-igold shrink-0"></span>MBA / BBA</span>
+            <span
+              class="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 rounded px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wide"><span
+                class="w-1.5 h-1.5 rounded-full bg-igold shrink-0"></span>BCA / MCA</span>
+            <span
+              class="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 rounded px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wide"><span
+                class="w-1.5 h-1.5 rounded-full bg-igold shrink-0"></span>B.Ed / ETT</span>
+            <span
+              class="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 rounded px-3 py-1.5 text-xs font-bold text-white uppercase tracking-wide"><span
+                class="w-1.5 h-1.5 rounded-full bg-igold shrink-0"></span>BSc Paramedical</span>
+          </div>
+
+          <!-- Stats Row -->
+          <div
+            class="inline-flex flex-wrap bg-white/10 backdrop-blur-sm border border-white/15 rounded-lg overflow-hidden">
+            <div class="px-5 py-4 border-r border-white/15 text-center min-w-[90px]">
+              <div class="text-2xl font-black text-igold">10K+</div>
+              <div class="text-[10px] font-bold text-white/55 uppercase tracking-widest mt-0.5">Alumni</div>
+            </div>
+            <div class="px-5 py-4 border-r border-white/15 text-center min-w-[90px]">
+              <div class="text-2xl font-black text-igold">92.5%</div>
+              <div class="text-[10px] font-bold text-white/55 uppercase tracking-widest mt-0.5">Placements</div>
+            </div>
+            <div class="px-5 py-4 border-r border-white/15 text-center min-w-[90px]">
+              <div class="text-2xl font-black text-igold">₹40L</div>
+              <div class="text-[10px] font-bold text-white/55 uppercase tracking-widest mt-0.5">Highest Pkg</div>
+            </div>
+            <div class="px-5 py-4 text-center min-w-[90px]">
+              <div class="text-2xl font-black text-igold">250+</div>
+              <div class="text-[10px] font-bold text-white/55 uppercase tracking-widest mt-0.5">Faculty</div>
+            </div>
+          </div>
+
+          <!-- Mobile CTA (shows below stats on mobile) -->
+          <div class="mt-6 flex items-center gap-3 lg:hidden">
+            <a href="#apply"
+              class="bg-igred hover:bg-igred-dark text-white font-black text-sm uppercase tracking-widest px-6 py-3 rounded-md transition-all shadow-btn">Apply
+              Free →</a>
+            <a href="tel:01605036000"
+              class="border-2 border-white/40 text-white font-bold text-sm px-5 py-3 rounded-md hover:bg-white/10 transition-all">📞
+              Call</a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Lead Form -->
+        <div id="apply" class="shadow-form rounded-xl overflow-hidden bg-white w-full max-w-md mx-auto lg:mx-0">
+          <!-- Form Header -->
+          <div class="bg-igblue px-7 py-5 text-center relative">
+            <div class="absolute bottom-0 left-0 right-0 h-1 bg-igred"></div>
+            <h3 class="text-lg font-black text-white uppercase tracking-wide mb-1">Free Admission Counselling</h3>
+            <p class="text-white/70 text-xs font-medium">Our advisor will call you within 24 hrs</p>
+            <div
+              class="mt-3 inline-block bg-igred text-white text-[11px] font-black uppercase tracking-widest px-3 py-1 rounded">
+              🔥 Admissions 2025-26 Open</div>
+          </div>
+
+          <!-- Form Body -->
+          <div class="p-6 sm:p-7 bg-white">
+            <div class="space-y-3">
+              <input type="text" placeholder="Full Name *"
+                class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm font-medium text-igblue-deep placeholder-slate-400 focus:border-igblue focus:outline-none focus:bg-blue-50/30 bg-slate-50 transition-colors" />
+              <input type="tel" placeholder="Mobile Number *"
+                class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm font-medium text-igblue-deep placeholder-slate-400 focus:border-igblue focus:outline-none focus:bg-blue-50/30 bg-slate-50 transition-colors" />
+              <input type="email" placeholder="Email Address"
+                class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm font-medium text-igblue-deep placeholder-slate-400 focus:border-igblue focus:outline-none focus:bg-blue-50/30 bg-slate-50 transition-colors" />
+              <select
+                class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm font-medium text-igblue-deep focus:border-igblue focus:outline-none bg-slate-50 transition-colors appearance-none pr-9">
+                <option value="" disabled selected>Select Course *</option>
+                <option>B.Tech – CSE / AI & ML</option>
+                <option>B.Tech – ECE / Mechanical / Civil</option>
+                <option>B.Arch (Architecture)</option>
+                <option>MBA / BBA</option>
+                <option>BCA / MCA</option>
+                <option>M.Tech</option>
+                <option>B.Ed / ETT</option>
+                <option>BSc Paramedical</option>
+                <option>Diploma (After 10th)</option>
+              </select>
+              <select
+                class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm font-medium text-igblue-deep focus:border-igblue focus:outline-none bg-slate-50 transition-colors appearance-none pr-9">
+                <option value="" disabled selected>Current Education Level *</option>
+                <option>10th Pass</option>
+                <option>12th Pass / Appearing</option>
+                <option>Graduate / Appearing</option>
+              </select>
+              <button onclick="alert('Thank you! Our counsellor will call you within 24 hours. 🎓')"
+                class="w-full bg-igred hover:bg-igred-dark text-white font-black text-sm uppercase tracking-widest py-3.5 rounded-lg transition-all hover:-translate-y-0.5 shadow-btn mt-1">
+                Get Free Counselling →
+              </button>
+              <p class="text-center text-[11px] text-slate-400 font-semibold pt-0.5">🔒 100% Confidential · No Spam ·
+                Call in 24 hrs</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TRUST BAR
+  ═══════════════════════════════════════════ -->
+  <div class="bg-igblue-dark">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 divide-x divide-white/10">
+        <div class="flex items-center gap-3 py-4 px-4 lg:px-5">
+          <div class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center text-base shrink-0">🏛️</div>
+          <div>
+            <div class="text-xs font-extrabold text-white uppercase tracking-wide leading-snug">AICTE Approved</div>
+            <div class="text-[10px] text-white/45 font-medium hidden sm:block">Technical Education</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 py-4 px-4 lg:px-5">
+          <div class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center text-base shrink-0">🎓</div>
+          <div>
+            <div class="text-xs font-extrabold text-white uppercase tracking-wide leading-snug">IKG PTU</div>
+            <div class="text-[10px] text-white/45 font-medium hidden sm:block">Punjab Tech University</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 py-4 px-4 lg:px-5 col-span-2 sm:col-span-1">
+          <div class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center text-base shrink-0">🏆</div>
+          <div>
+            <div class="text-xs font-extrabold text-white uppercase tracking-wide leading-snug">#3 Placement</div>
+            <div class="text-[10px] text-white/45 font-medium hidden sm:block">Rank in Punjab · PTU</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 py-4 px-4 lg:px-5">
+          <div class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center text-base shrink-0">💻</div>
+          <div>
+            <div class="text-xs font-extrabold text-white uppercase tracking-wide leading-snug">IBM CoE</div>
+            <div class="text-[10px] text-white/45 font-medium hidden sm:block">Top 10 in India</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 py-4 px-4 lg:px-5">
+          <div class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center text-base shrink-0">🌐</div>
+          <div>
+            <div class="text-xs font-extrabold text-white uppercase tracking-wide leading-snug">International MoU</div>
+            <div class="text-[10px] text-white/45 font-medium hidden sm:block">Univ. of Quebec, Canada</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section id="about" class="py-16 sm:py-20 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-20 items-center">
+        <!-- Image Block -->
+        <div class="reveal relative">
+          <div
+            class="campus-bg rounded-xl h-72 sm:h-96 lg:h-[460px] flex flex-col items-center justify-center text-center text-white p-8">
+            <h3 class="font-display font-black text-2xl sm:text-3xl lg:text-4xl leading-tight uppercase">Indo
+              Global<br />Education City</h3>
+            <p class="text-white/70 text-sm font-medium mt-2">Abhipur, Mohali · Punjab, India</p>
+            <p class="text-white/55 text-xs font-semibold mt-1 uppercase tracking-widest">70-Acre Campus in the
+              Shivaliks</p>
+          </div>
+          <!-- Year Badge -->
+          <div
+            class="absolute -bottom-5 -right-5 w-[88px] h-[88px] bg-igred rounded-full flex flex-col items-center justify-center border-4 border-white shadow-lg">
+            <span class="text-white font-black text-xl leading-none">2003</span>
+            <span class="text-white text-[9px] font-bold uppercase tracking-widest">Est.</span>
+          </div>
+        </div>
+
+        <!-- Text Content -->
+        <div class="reveal reveal-delay-1 mt-6 lg:mt-0">
+          <span
+            class="inline-block bg-igblue/8 text-igblue text-[11px] font-extrabold uppercase tracking-[.1em] px-3.5 py-1.5 rounded border-l-[3px] border-igred mb-4">About
+            IGEF</span>
+          <h2
+            class="font-display font-black text-igblue-deep text-3xl sm:text-4xl lg:text-[2.6rem] uppercase leading-tight mb-3">
+            Punjab's <span class="text-igred">Leading</span> Education Group</h2>
+          <p class="text-slate-500 leading-relaxed text-base mb-7">Founded in 2003 by the Indo Global Education
+            Foundation with a vision to deliver world-class education to every student. 4 institutions, 3,000+ active
+            students, and a legacy of academic excellence.</p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div
+              class="flex items-start gap-3.5 p-4 bg-slate-50 rounded-lg border-l-[3px] border-igblue hover:border-igred hover:bg-white hover:shadow-card transition-all group">
+              <div
+                class="w-10 h-10 bg-igblue group-hover:bg-igred rounded-lg flex items-center justify-center text-xl shrink-0 transition-colors">
+                🌿</div>
+              <div>
+                <h4 class="text-xs font-extrabold text-igblue-deep uppercase tracking-wide mb-1">70-Acre Green Campus
+                </h4>
+                <p class="text-xs text-slate-500 leading-relaxed">Serene setting in the Shivalik foothills, 12 km from
+                  Chandigarh.</p>
+              </div>
+            </div>
+            <div
+              class="flex items-start gap-3.5 p-4 bg-slate-50 rounded-lg border-l-[3px] border-igblue hover:border-igred hover:bg-white hover:shadow-card transition-all group">
+              <div
+                class="w-10 h-10 bg-igblue group-hover:bg-igred rounded-lg flex items-center justify-center text-xl shrink-0 transition-colors">
+                🏠</div>
+              <div>
+                <h4 class="text-xs font-extrabold text-igblue-deep uppercase tracking-wide mb-1">Boys & Girls Hostels
+                </h4>
+                <p class="text-xs text-slate-500 leading-relaxed">Secure, WiFi-enabled with 4 meals/day and medical
+                  support.</p>
+              </div>
+            </div>
+            <div
+              class="flex items-start gap-3.5 p-4 bg-slate-50 rounded-lg border-l-[3px] border-igblue hover:border-igred hover:bg-white hover:shadow-card transition-all group">
+              <div
+                class="w-10 h-10 bg-igblue group-hover:bg-igred rounded-lg flex items-center justify-center text-xl shrink-0 transition-colors">
+                🚌</div>
+              <div>
+                <h4 class="text-xs font-extrabold text-igblue-deep uppercase tracking-wide mb-1">Bus Connectivity</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">Fleet covering Chandigarh, Mohali, Panchkula, Kharar &
+                  more.</p>
+              </div>
+            </div>
+            <div
+              class="flex items-start gap-3.5 p-4 bg-slate-50 rounded-lg border-l-[3px] border-igblue hover:border-igred hover:bg-white hover:shadow-card transition-all group">
+              <div
+                class="w-10 h-10 bg-igblue group-hover:bg-igred rounded-lg flex items-center justify-center text-xl shrink-0 transition-colors">
+                🏭</div>
+              <div>
+                <h4 class="text-xs font-extrabold text-igblue-deep uppercase tracking-wide mb-1">Industry Training</h4>
+                <p class="text-xs text-slate-500 leading-relaxed">Mandatory 6–8 week industrial internship after 4th
+                  semester.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       COURSES
+  ═══════════════════════════════════════════ -->
+  <section id="courses" class="py-16 sm:py-20 lg:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-12 reveal">
+        <span
+          class="inline-block bg-igblue/8 text-igblue text-[11px] font-extrabold uppercase tracking-[.1em] px-3.5 py-1.5 rounded border-l-[3px] border-igred mb-3">Our
+          Programmes</span>
+        <h2 class="font-display font-black text-igblue-deep text-3xl sm:text-4xl uppercase leading-tight">Explore Top
+          Courses at <span class="text-igred">Indo Global College</span></h2>
+        <p class="text-slate-500 text-base mt-3 max-w-2xl mx-auto">Discover a wide range of courses designed to prepare
+          you for success in your chosen field. From engineering to management, we offer diverse educational pathways.
+        </p>
+      </div>
+
+      <!-- Courses Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- 1. Bachelor of Architecture (B.Arch) -->
+        <div
+          class="reveal bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-card hover:-translate-y-1 transition-all group">
+          <img src="images/barch.jpeg" alt="Bachelor of Architecture (B.Arch)" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-base font-black text-igblue-deep leading-snug mb-1">Bachelor of Architecture (B.Arch)</h3>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-4">Architecture</p>
+            <a href="#apply"
+              class="block text-center bg-igblue-deep text-white text-sm font-bold uppercase tracking-wide py-2.5 rounded-lg hover:bg-igred transition-colors">View
+              Details</a>
+          </div>
+        </div>
+
+        <!-- 2. B.Tech Civil Engineering -->
+        <div
+          class="reveal reveal-delay-1 bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-card hover:-translate-y-1 transition-all group">
+          <img src="images/btech-civil.jpeg" alt="B.Tech Civil Engineering" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-base font-black text-igblue-deep leading-snug mb-1">B.Tech Civil Engineering</h3>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-4">B.Tech / B.Tech Lateral Entry
+            </p>
+            <a href="#apply"
+              class="block text-center bg-igblue-deep text-white text-sm font-bold uppercase tracking-wide py-2.5 rounded-lg hover:bg-igred transition-colors">View
+              Details</a>
+          </div>
+        </div>
+
+        <!-- 3. B.Tech Computer Science Engineering -->
+        <div
+          class="reveal reveal-delay-2 bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-card hover:-translate-y-1 transition-all group">
+          <img src="images/btech-comp.jpeg" alt="B.Tech Computer Science Engineering" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-base font-black text-igblue-deep leading-snug mb-1">B.Tech Computer Science Engineering</h3>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-4">B.Tech / B.Tech Lateral Entry
+            </p>
+            <a href="#apply"
+              class="block text-center bg-igblue-deep text-white text-sm font-bold uppercase tracking-wide py-2.5 rounded-lg hover:bg-igred transition-colors">View
+              Details</a>
+          </div>
+        </div>
+
+        <!-- 4. B.Tech Electronics & Communication Engineering -->
+        <div
+          class="reveal reveal-delay-3 bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-card hover:-translate-y-1 transition-all group">
+          <img src="images/btech-elec.jpeg" alt="B.Tech Electronics &amp; Communication Engineering"
+            class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-base font-black text-igblue-deep leading-snug mb-1">B.Tech Electronics &amp; Communication
+              Engineering</h3>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-4">B.Tech / B.Tech Lateral Entry
+            </p>
+            <a href="#apply"
+              class="block text-center bg-igblue-deep text-white text-sm font-bold uppercase tracking-wide py-2.5 rounded-lg hover:bg-igred transition-colors">View
+              Details</a>
+          </div>
+        </div>
+
+        <!-- 5. B.Tech Mechanical Engineering -->
+        <div
+          class="reveal reveal-delay-4 bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-card hover:-translate-y-1 transition-all group">
+          <img src="images/btech-mech.jpeg" alt="B.Tech Mechanical Engineering" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-base font-black text-igblue-deep leading-snug mb-1">B.Tech Mechanical Engineering</h3>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-4">B.Tech / B.Tech Lateral Entry
+            </p>
+            <a href="#apply"
+              class="block text-center bg-igblue-deep text-white text-sm font-bold uppercase tracking-wide py-2.5 rounded-lg hover:bg-igred transition-colors">View
+              Details</a>
+          </div>
+        </div>
+
+        <!-- 6. M.Tech Civil Engineering -->
+        <div
+          class="reveal reveal-delay-5 bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-card hover:-translate-y-1 transition-all group">
+          <img src="images/mtech-civil.jpeg" alt="M.Tech Civil Engineering" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-base font-black text-igblue-deep leading-snug mb-1">M.Tech Civil Engineering</h3>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-4">M.Tech</p>
+            <a href="#apply"
+              class="block text-center bg-igblue-deep text-white text-sm font-bold uppercase tracking-wide py-2.5 rounded-lg hover:bg-igred transition-colors">View
+              Details</a>
+          </div>
+        </div>
+
+        <!-- 7. M.Tech Computer Science Engineering -->
+        <div
+          class="reveal reveal-delay-6 bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-card hover:-translate-y-1 transition-all group">
+          <img src="images/mtech-comp.jpeg" alt="M.Tech Computer Science Engineering" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-base font-black text-igblue-deep leading-snug mb-1">M.Tech Computer Science Engineering</h3>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-4">M.Tech</p>
+            <a href="#apply"
+              class="block text-center bg-igblue-deep text-white text-sm font-bold uppercase tracking-wide py-2.5 rounded-lg hover:bg-igred transition-colors">View
+              Details</a>
+          </div>
+        </div>
+
+        <!-- 8. M.Tech Electronics & Communication Engineering -->
+        <div
+          class="reveal bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-card hover:-translate-y-1 transition-all group">
+          <img src="images/mtech-elec.jpeg" alt="M.Tech Electronics &amp; Communication Engineering"
+            class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-base font-black text-igblue-deep leading-snug mb-1">M.Tech Electronics &amp; Communication
+              Engineering</h3>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-4">M.Tech</p>
+            <a href="#apply"
+              class="block text-center bg-igblue-deep text-white text-sm font-bold uppercase tracking-wide py-2.5 rounded-lg hover:bg-igred transition-colors">View
+              Details</a>
+          </div>
+        </div>
+
+        <!-- 9. Bachelor of Business Administration (BBA) -->
+        <div
+          class="reveal reveal-delay-1 bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-card hover:-translate-y-1 transition-all group">
+          <img src="images/bba.jpeg" alt="Bachelor of Business Administration (BBA)" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-base font-black text-igblue-deep leading-snug mb-1">Bachelor of Business Administration
+              (BBA)</h3>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-4">Management and Technology</p>
+            <a href="#apply"
+              class="block text-center bg-igblue-deep text-white text-sm font-bold uppercase tracking-wide py-2.5 rounded-lg hover:bg-igred transition-colors">View
+              Details</a>
+          </div>
+        </div>
+
+        <!-- 10. Bachelor of Computer Applications (BCA) -->
+        <div
+          class="reveal reveal-delay-2 bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-card hover:-translate-y-1 transition-all group">
+          <img src="images/bca.jpeg" alt="Bachelor of Computer Applications (BCA)" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-base font-black text-igblue-deep leading-snug mb-1">Bachelor of Computer Applications (BCA)
+            </h3>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-4">Management and Technology</p>
+            <a href="#apply"
+              class="block text-center bg-igblue-deep text-white text-sm font-bold uppercase tracking-wide py-2.5 rounded-lg hover:bg-igred transition-colors">View
+              Details</a>
+          </div>
+        </div>
+
+        <!-- 11. Master of Business Administration (MBA) -->
+        <div
+          class="reveal reveal-delay-3 bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-card hover:-translate-y-1 transition-all group">
+          <img src="images/mba.jpeg" alt="Master of Business Administration (MBA)" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-base font-black text-igblue-deep leading-snug mb-1">Master of Business Administration (MBA)
+            </h3>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-4">Management and Technology</p>
+            <a href="#apply"
+              class="block text-center bg-igblue-deep text-white text-sm font-bold uppercase tracking-wide py-2.5 rounded-lg hover:bg-igred transition-colors">View
+              Details</a>
+          </div>
+        </div>
+
+        <!-- 12. Polytechnic (Diploma) in Civil Engineering -->
+        <div
+          class="reveal reveal-delay-4 bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-card hover:-translate-y-1 transition-all group">
+          <img src="images/poly-civil.jpeg" alt="Polytechnic (Diploma) in Civil Engineering"
+            class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-base font-black text-igblue-deep leading-snug mb-1">Polytechnic (Diploma) in Civil
+              Engineering</h3>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-4">Polytechnic / Polytechnic
+              Lateral Entry</p>
+            <a href="#apply"
+              class="block text-center bg-igblue-deep text-white text-sm font-bold uppercase tracking-wide py-2.5 rounded-lg hover:bg-igred transition-colors">View
+              Details</a>
+          </div>
+        </div>
+
+        <!-- 13. Polytechnic (Diploma) in Mechanical Engineering -->
+        <div
+          class="reveal reveal-delay-5 bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-card hover:-translate-y-1 transition-all group">
+          <img src="images/poly-mech.jpeg" alt="Polytechnic (Diploma) in Mechanical Engineering"
+            class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-base font-black text-igblue-deep leading-snug mb-1">Polytechnic (Diploma) in Mechanical
+              Engineering</h3>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-4">Polytechnic / Polytechnic
+              Lateral Entry</p>
+            <a href="#apply"
+              class="block text-center bg-igblue-deep text-white text-sm font-bold uppercase tracking-wide py-2.5 rounded-lg hover:bg-igred transition-colors">View
+              Details</a>
+          </div>
+        </div>
+
+        <!-- 14. B.Sc Medical Laboratory Sciences -->
+        <div
+          class="reveal reveal-delay-6 bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-card hover:-translate-y-1 transition-all group">
+          <img src="images/bsc-medical.jpeg" alt="B.Sc Medical Laboratory Sciences" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-base font-black text-igblue-deep leading-snug mb-1">B.Sc Medical Laboratory Sciences</h3>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-4">Paramedical Courses</p>
+            <a href="#apply"
+              class="block text-center bg-igblue-deep text-white text-sm font-bold uppercase tracking-wide py-2.5 rounded-lg hover:bg-igred transition-colors">View
+              Details</a>
+          </div>
+        </div>
+
+        <!-- 15. B.Sc Operation Theatre Technology -->
+        <div
+          class="reveal bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-card hover:-translate-y-1 transition-all group">
+          <img src="images/bsc-operation.jpeg" alt="B.Sc Operation Theatre Technology" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-base font-black text-igblue-deep leading-snug mb-1">B.Sc Operation Theatre Technology</h3>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-4">Paramedical Courses</p>
+            <a href="#apply"
+              class="block text-center bg-igblue-deep text-white text-sm font-bold uppercase tracking-wide py-2.5 rounded-lg hover:bg-igred transition-colors">View
+              Details</a>
+          </div>
+        </div>
+
+        <!-- 16. B.Sc Radiology & Imaging Technology -->
+        <div
+          class="reveal reveal-delay-1 bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-card hover:-translate-y-1 transition-all group">
+          <img src="images/bsc-radio.jpeg" alt="B.Sc Radiology &amp; Imaging Technology"
+            class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-base font-black text-igblue-deep leading-snug mb-1">B.Sc Radiology &amp; Imaging Technology
+            </h3>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-4">Paramedical Courses</p>
+            <a href="#apply"
+              class="block text-center bg-igblue-deep text-white text-sm font-bold uppercase tracking-wide py-2.5 rounded-lg hover:bg-igred transition-colors">View
+              Details</a>
+          </div>
+        </div>
+
+        <!-- 17. B.Sc Cardiac Care Technology -->
+        <div
+          class="reveal reveal-delay-2 bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-card hover:-translate-y-1 transition-all group">
+          <img src="images/bsc-cct.jpeg" alt="B.Sc Cardiac Care Technology" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-base font-black text-igblue-deep leading-snug mb-1">B.Sc Cardiac Care Technology</h3>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-4">Paramedical Courses</p>
+            <a href="#apply"
+              class="block text-center bg-igblue-deep text-white text-sm font-bold uppercase tracking-wide py-2.5 rounded-lg hover:bg-igred transition-colors">View
+              Details</a>
+          </div>
+        </div>
+
+        <!-- 18. M.Sc Radiology & Imaging Technology -->
+        <div
+          class="reveal reveal-delay-3 bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-card hover:-translate-y-1 transition-all group">
+          <img src="images/msc-rit.jpeg" alt="M.Sc Radiology &amp; Imaging Technology" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-base font-black text-igblue-deep leading-snug mb-1">M.Sc Radiology &amp; Imaging Technology
+            </h3>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-4">Paramedical Courses</p>
+            <a href="#apply"
+              class="block text-center bg-igblue-deep text-white text-sm font-bold uppercase tracking-wide py-2.5 rounded-lg hover:bg-igred transition-colors">View
+              Details</a>
+          </div>
+        </div>
+
+        <!-- 19. M.Sc Medical Laboratory Sciences (Biochemistry) -->
+        <div
+          class="reveal reveal-delay-4 bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-card hover:-translate-y-1 transition-all group">
+          <img src="images/msc-mls.jpeg" alt="M.Sc Medical Laboratory Sciences (Biochemistry)"
+            class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-base font-black text-igblue-deep leading-snug mb-1">M.Sc Medical Laboratory Sciences
+              (Biochemistry)</h3>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-4">Paramedical Courses</p>
+            <a href="#apply"
+              class="block text-center bg-igblue-deep text-white text-sm font-bold uppercase tracking-wide py-2.5 rounded-lg hover:bg-igred transition-colors">View
+              Details</a>
+          </div>
+        </div>
+
+        <!-- 20. Bachelor of Pharmacy (B.Pharmacy) -->
+        <div
+          class="reveal reveal-delay-5 bg-white rounded-xl overflow-hidden border border-slate-200 hover:shadow-card hover:-translate-y-1 transition-all group">
+          <img src="images/bpharmacy.jpeg" alt="Bachelor of Pharmacy (B.Pharmacy)" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-base font-black text-igblue-deep leading-snug mb-1">Bachelor of Pharmacy (B.Pharmacy)</h3>
+            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wide mb-4">Pharmacy</p>
+            <a href="#apply"
+              class="block text-center bg-igblue-deep text-white text-sm font-bold uppercase tracking-wide py-2.5 rounded-lg hover:bg-igred transition-colors">View
+              Details</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PLACEMENTS
+  ═══════════════════════════════════════════ -->
+  <section id="placements" class="placement-bg relative overflow-hidden py-16 sm:py-20 lg:py-24">
+    <!-- Decorative circles -->
+    <div class="absolute -top-20 -right-20 w-72 h-72 bg-igred/6 rounded-full pointer-events-none"></div>
+    <div class="absolute -bottom-16 -left-16 w-56 h-56 bg-white/3 rounded-full pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 relative z-10">
+      <!-- Header -->
+      <div class="text-center mb-12 reveal">
+        <span
+          class="inline-block bg-white/10 text-white text-[11px] font-extrabold uppercase tracking-[.1em] px-3.5 py-1.5 rounded border-l-[3px] border-igold mb-4">Placement
+          Record</span>
+        <h2 class="font-display font-black text-white text-3xl sm:text-4xl lg:text-5xl uppercase leading-tight">Careers
+          That <span class="text-igold">Speak for Themselves</span></h2>
+        <p class="text-white/55 text-base mt-3 max-w-xl mx-auto">4,200+ students placed in national & international
+          companies. Ranked #3 in Punjab by PTU.</p>
+      </div>
+
+      <!-- Metrics Grid -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+        <div
+          class="reveal bg-white/6 border border-white/12 rounded-xl p-6 text-center hover:bg-white/10 hover:border-igold transition-all">
+          <div class="font-display font-black text-igold text-4xl sm:text-5xl leading-none mb-2">92.5%</div>
+          <div class="text-white/60 text-xs font-bold uppercase tracking-wide leading-tight">Overall Placement<br />Rate
+            2023-24</div>
+        </div>
+        <div
+          class="reveal reveal-delay-1 bg-white/6 border border-white/12 rounded-xl p-6 text-center hover:bg-white/10 hover:border-igold transition-all">
+          <div class="font-display font-black text-igold text-4xl sm:text-5xl leading-none mb-2">₹40L</div>
+          <div class="text-white/60 text-xs font-bold uppercase tracking-wide leading-tight">Highest
+            Package<br />Offered</div>
+        </div>
+        <div
+          class="reveal reveal-delay-2 bg-white/6 border border-white/12 rounded-xl p-6 text-center hover:bg-white/10 hover:border-igold transition-all">
+          <div class="font-display font-black text-igold text-4xl sm:text-5xl leading-none mb-2">4,200+</div>
+          <div class="text-white/60 text-xs font-bold uppercase tracking-wide leading-tight">Students Placed<br />Since
+            Inception</div>
+        </div>
+        <div
+          class="reveal reveal-delay-3 bg-white/6 border border-white/12 rounded-xl p-6 text-center hover:bg-white/10 hover:border-igold transition-all">
+          <div class="font-display font-black text-igold text-4xl sm:text-5xl leading-none mb-2">#3</div>
+          <div class="text-white/60 text-xs font-bold uppercase tracking-wide leading-tight">Placement Rank<br />In
+            Punjab · PTU</div>
+        </div>
+      </div>
+
+      <!-- Recruiters -->
+      <div class="reveal">
+        <p class="text-center text-[11px] font-extrabold text-white/40 uppercase tracking-widest mb-4">Top Recruiters
+        </p>
+        <div class="flex flex-wrap gap-2.5 justify-center">
+          <span
+            class="bg-white/7 border border-white/13 rounded-md px-4 py-2.5 text-xs font-extrabold text-white/75 uppercase tracking-wide hover:border-igold hover:bg-white/13 hover:text-white transition-all cursor-default">BYJU'S</span>
+          <span
+            class="bg-white/7 border border-white/13 rounded-md px-4 py-2.5 text-xs font-extrabold text-white/75 uppercase tracking-wide hover:border-igold hover:bg-white/13 hover:text-white transition-all cursor-default">Infosys</span>
+          <span
+            class="bg-white/7 border border-white/13 rounded-md px-4 py-2.5 text-xs font-extrabold text-white/75 uppercase tracking-wide hover:border-igold hover:bg-white/13 hover:text-white transition-all cursor-default">Wipro</span>
+          <span
+            class="bg-white/7 border border-white/13 rounded-md px-4 py-2.5 text-xs font-extrabold text-white/75 uppercase tracking-wide hover:border-igold hover:bg-white/13 hover:text-white transition-all cursor-default">TCS</span>
+          <span
+            class="bg-white/7 border border-white/13 rounded-md px-4 py-2.5 text-xs font-extrabold text-white/75 uppercase tracking-wide hover:border-igold hover:bg-white/13 hover:text-white transition-all cursor-default">HCL
+            Technologies</span>
+          <span
+            class="bg-white/7 border border-white/13 rounded-md px-4 py-2.5 text-xs font-extrabold text-white/75 uppercase tracking-wide hover:border-igold hover:bg-white/13 hover:text-white transition-all cursor-default">IBM</span>
+          <span
+            class="bg-white/7 border border-white/13 rounded-md px-4 py-2.5 text-xs font-extrabold text-white/75 uppercase tracking-wide hover:border-igold hover:bg-white/13 hover:text-white transition-all cursor-default">Edifecs</span>
+          <span
+            class="bg-white/7 border border-white/13 rounded-md px-4 py-2.5 text-xs font-extrabold text-white/75 uppercase tracking-wide hover:border-igold hover:bg-white/13 hover:text-white transition-all cursor-default">Mahindra</span>
+          <span
+            class="bg-white/7 border border-white/13 rounded-md px-4 py-2.5 text-xs font-extrabold text-white/75 uppercase tracking-wide hover:border-igold hover:bg-white/13 hover:text-white transition-all cursor-default">L&T</span>
+          <span
+            class="bg-white/7 border border-white/13 rounded-md px-4 py-2.5 text-xs font-extrabold text-white/75 uppercase tracking-wide hover:border-igold hover:bg-white/13 hover:text-white transition-all cursor-default">BHEL</span>
+          <span
+            class="bg-white/7 border border-white/13 rounded-md px-4 py-2.5 text-xs font-extrabold text-white/75 uppercase tracking-wide hover:border-igold hover:bg-white/13 hover:text-white transition-all cursor-default">NTPC</span>
+          <span
+            class="bg-white/7 border border-white/13 rounded-md px-4 py-2.5 text-xs font-extrabold text-white/75 uppercase tracking-wide hover:border-igold hover:bg-white/13 hover:text-white transition-all cursor-default">Accenture</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════════ -->
+  <section id="testimonials" class="py-16 sm:py-20 lg:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="text-center mb-10 reveal">
+        <span
+          class="inline-block bg-igblue/8 text-igblue text-[11px] font-extrabold uppercase tracking-[.1em] px-3.5 py-1.5 rounded border-l-[3px] border-igred mb-3">Alumni
+          Stories</span>
+        <h2 class="font-display font-black text-igblue-deep text-3xl sm:text-4xl uppercase leading-tight">Hear From Our
+          <span class="text-igred">Graduates</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div
+          class="reveal bg-slate-50 border border-slate-200 rounded-xl p-6 relative hover:border-igblue hover:shadow-card transition-all">
+          <div class="absolute top-4 right-5 font-serif text-7xl text-igblue/6 leading-none select-none">"</div>
+          <div class="text-amber-400 text-sm tracking-widest mb-3">★★★★★</div>
+          <p class="text-slate-600 text-sm leading-relaxed italic mb-5">"Being campus-selected in my 3rd year was a
+            dream. The faculty's unwavering support made it possible. Indo Global gave me not just knowledge — but the
+            confidence to excel."</p>
+          <div class="flex items-center gap-3 border-t border-slate-200 pt-4">
+            <div
+              class="w-10 h-10 rounded-full bg-igblue flex items-center justify-center font-bold text-white text-base shrink-0">
+              R</div>
+            <div>
+              <div class="text-sm font-extrabold text-igblue-deep">Rahul Sharma</div>
+              <div class="text-[11px] font-bold text-igred uppercase tracking-wide">B.Tech CSE '22 · Placed at Infosys
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="reveal reveal-delay-1 bg-slate-50 border border-slate-200 rounded-xl p-6 relative hover:border-igblue hover:shadow-card transition-all">
+          <div class="absolute top-4 right-5 font-serif text-7xl text-igblue/6 leading-none select-none">"</div>
+          <div class="text-amber-400 text-sm tracking-widest mb-3">★★★★★</div>
+          <p class="text-slate-600 text-sm leading-relaxed italic mb-5">"I completed B.Tech Civil with 89.10% and
+            secured a Junior Executive Engineer post at a Maharatna CPSU. The HOD and faculty guided me immensely
+            throughout my preparation."</p>
+          <div class="flex items-center gap-3 border-t border-slate-200 pt-4">
+            <div
+              class="w-10 h-10 rounded-full bg-igblue flex items-center justify-center font-bold text-white text-base shrink-0">
+              U</div>
+            <div>
+              <div class="text-sm font-extrabold text-igblue-deep">Ugam Kumar Sharma</div>
+              <div class="text-[11px] font-bold text-igred uppercase tracking-wide">B.Tech Civil · Junior Executive
+                Engineer</div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="reveal reveal-delay-2 bg-slate-50 border border-slate-200 rounded-xl p-6 relative hover:border-igblue hover:shadow-card transition-all md:col-span-2 lg:col-span-1">
+          <div class="absolute top-4 right-5 font-serif text-7xl text-igblue/6 leading-none select-none">"</div>
+          <div class="text-amber-400 text-sm tracking-widest mb-3">★★★★★</div>
+          <p class="text-slate-600 text-sm leading-relaxed italic mb-5">"Indo Global laid the foundation for my career.
+            As a PMI-PMP certified engineer, I now work at Yapı Merkezi in Riyadh — driving large-scale international
+            infrastructure projects."</p>
+          <div class="flex items-center gap-3 border-t border-slate-200 pt-4">
+            <div
+              class="w-10 h-10 rounded-full bg-igblue flex items-center justify-center font-bold text-white text-base shrink-0">
+              H</div>
+            <div>
+              <div class="text-sm font-extrabold text-igblue-deep">Harpreet Bains</div>
+              <div class="text-[11px] font-bold text-igred uppercase tracking-wide">Planning Engineer · Yapı Merkezi,
+                Riyadh</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ACCREDITATIONS
+  ═══════════════════════════════════════════ -->
+  <div class="bg-igblue py-5">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 flex flex-wrap items-center justify-center gap-3">
+      <span class="text-white/45 text-[10px] font-extrabold uppercase tracking-widest mr-2">Approved &amp; Recognised
+        By:</span>
+      <span
+        class="bg-white/12 border border-white/20 text-white font-black text-xs uppercase tracking-widest px-4 py-2 rounded hover:bg-white/20 transition-colors cursor-default">AICTE</span>
+      <span
+        class="bg-white/12 border border-white/20 text-white font-black text-xs uppercase tracking-widest px-4 py-2 rounded hover:bg-white/20 transition-colors cursor-default">IKG
+        PTU</span>
+      <span
+        class="bg-white/12 border border-white/20 text-white font-black text-xs uppercase tracking-widest px-4 py-2 rounded hover:bg-white/20 transition-colors cursor-default">CoA</span>
+      <span
+        class="bg-white/12 border border-white/20 text-white font-black text-xs uppercase tracking-widest px-4 py-2 rounded hover:bg-white/20 transition-colors cursor-default">NCTE</span>
+      <span
+        class="bg-white/12 border border-white/20 text-white font-black text-xs uppercase tracking-widest px-4 py-2 rounded hover:bg-white/20 transition-colors cursor-default">UGC</span>
+      <span
+        class="bg-white/12 border border-white/20 text-white font-black text-xs uppercase tracking-widest px-4 py-2 rounded hover:bg-white/20 transition-colors cursor-default">IBM
+        CoE</span>
+      <span
+        class="bg-white/12 border border-white/20 text-white font-black text-xs uppercase tracking-widest px-4 py-2 rounded hover:bg-white/20 transition-colors cursor-default">Govt.
+        of Punjab</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       CTA SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="bg-slate-50 border-t-4 border-igred py-14 sm:py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+        <div class="reveal">
+          <span
+            class="inline-block bg-igblue/8 text-igblue text-[11px] font-extrabold uppercase tracking-[.1em] px-3.5 py-1.5 rounded border-l-[3px] border-igred mb-3">Admissions
+            2025-26 Open</span>
+          <h2 class="font-display font-black text-igblue-deep text-3xl sm:text-4xl uppercase leading-tight">Your Dream
+            Career <span class="text-igred">Starts Today</span></h2>
+          <p class="text-slate-500 text-base leading-relaxed mt-2 max-w-xl">Limited seats. Apply for free and get a
+            callback from our expert admission team within 24 hours.</p>
+        </div>
+        <div class="reveal reveal-delay-1 flex flex-col sm:flex-row gap-3 lg:shrink-0">
+          <a href="#apply"
+            class="bg-igred hover:bg-igred-dark text-white font-black text-sm uppercase tracking-widest px-8 py-4 rounded-lg text-center transition-all hover:-translate-y-0.5 shadow-btn">Apply
+            for Free →</a>
+          <a href="tel:01605036000"
+            class="border-2 border-igblue text-igblue hover:bg-igblue hover:text-white font-black text-sm uppercase tracking-widest px-6 py-4 rounded-lg text-center transition-all">📞
+            0160-5036000</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="bg-igblue-deep text-white/65 pt-14 pb-6">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <!-- Brand -->
+        <div class="sm:col-span-2 lg:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center shrink-0">
+              <svg width="22" height="22" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="17" cy="13" r="9" stroke="white" stroke-width="2" />
+                <path d="M8 13 Q17 20 26 13" stroke="white" stroke-width="1.5" fill="none" />
+                <line x1="17" y1="4" x2="17" y2="22" stroke="white" stroke-width="1.5" />
+                <line x1="8" y1="26" x2="26" y2="26" stroke="white" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div>
+              <div class="text-sm font-black text-white uppercase tracking-tight leading-tight">Indo Global Group of
+                Colleges</div>
+              <div class="text-[10px] text-white/35 font-semibold uppercase tracking-widest">igef.net</div>
+            </div>
+          </div>
+          <p class="text-xs leading-relaxed text-white/45 mb-5">Punjab's leading education group with 4 institutions on
+            a 70-acre campus in the Shivalik foothills, 12 km from Chandigarh. Established 2003.</p>
+          <div class="space-y-2.5">
+            <a href="tel:01605036000"
+              class="flex items-start gap-2 text-xs text-white/50 hover:text-igold transition-colors">📞 0160-5036000 /
+              7307211222</a>
+            <a href="mailto:admissions@igef.net"
+              class="flex items-start gap-2 text-xs text-white/50 hover:text-igold transition-colors">✉
+              admissions@igef.net</a>
+            <a href="#" class="flex items-start gap-2 text-xs text-white/50 hover:text-igold transition-colors">📍 Indo
+              Global Education City, Abhipur, Mohali – 140109, Punjab</a>
+            <a href="https://igef.net" target="_blank" rel="noopener"
+              class="flex items-start gap-2 text-xs text-white/50 hover:text-igold transition-colors">🌐
+              www.igef.net</a>
+          </div>
+        </div>
+
+        <!-- Courses -->
+        <div>
+          <h4 class="text-xs font-black text-white uppercase tracking-widest mb-5 pb-2.5 border-b-2 border-igred">
+            Courses</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">B.Tech
+                Engineering</a></li>
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">B.Arch
+                Architecture</a></li>
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">MBA /
+                BBA</a></li>
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">BCA /
+                MCA</a></li>
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">B.Ed /
+                ETT</a></li>
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">BSc
+                Paramedical</a></li>
+            <li><a href="#apply"
+                class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Polytechnic / Diploma</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Admissions -->
+        <div>
+          <h4 class="text-xs font-black text-white uppercase tracking-widest mb-5 pb-2.5 border-b-2 border-igred">
+            Admissions</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Apply
+                Online</a></li>
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Fee
+                Structure</a></li>
+            <li><a href="#apply"
+                class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Scholarships</a></li>
+            <li><a href="#apply"
+                class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Eligibility Criteria</a>
+            </li>
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Download
+                Brochure</a></li>
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">JEE Main /
+                NATA</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-xs font-black text-white uppercase tracking-widest mb-5 pb-2.5 border-b-2 border-igred">Quick
+            Links</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#placements"
+                class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Placements</a></li>
+            <li><a href="#about" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Campus
+                Life</a></li>
+            <li><a href="#testimonials"
+                class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Alumni</a></li>
+            <li><a href="https://igef.net" target="_blank" rel="noopener"
+                class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Official Website</a></li>
+            <li><a href="#apply" class="text-xs text-white/45 hover:text-igold transition-colors font-medium">Contact
+                Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div
+        class="border-t border-white/8 pt-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-white/25 font-semibold">
+        <span>© 2025 Indo Global Education Foundation (IGEF). All rights reserved.</span>
+        <div class="flex gap-5">
+          <a href="#" class="hover:text-white/60 transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-white/60 transition-colors">Terms of Use</a>
+          <a href="#" class="hover:text-white/60 transition-colors">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       FLOATING CALL BUTTON
+  ═══════════════════════════════════════════ -->
+  <a href="tel:01605036000" title="Call for Admissions"
+    class="fixed bottom-6 right-6 z-[300] bg-igred text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-float animate-pulse-ring hover:scale-110 transition-transform">
+    📞
+  </a>
+
+  <!-- ═══════════════════════════════════════════
+       JS: Mobile Menu + Scroll Reveal
+  ═══════════════════════════════════════════ -->
+  <script>
+    // Mobile hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    });
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    revealEls.forEach(el => io.observe(el));
+
+    // Smooth scroll for anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
