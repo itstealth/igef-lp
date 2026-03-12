@@ -523,182 +523,316 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
-       COURSES
-  ═══════════════════════════════════════════ -->
-  <section id="courses" class="py-16 sm:py-20 bg-slate-100">
-    <div class="max-w-7xl mx-auto px-4 lg:px-8">
-      <!-- Section Header -->
-      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
-        <div class="reveal">
-          <span
-            class="inline-block bg-igblue/8 text-igblue text-[11px] font-extrabold uppercase tracking-[.1em] px-3.5 py-1.5 rounded border-l-[3px] border-igred mb-3">Our
-            Programmes</span>
-          <h2 class="font-display font-black text-igblue-deep text-3xl sm:text-4xl uppercase leading-tight">20+ UG, PG &
-            <span class="text-igred">Diploma Courses</span>
-          </h2>
-        </div>
-        <a href="#apply"
-          class="reveal reveal-delay-1 self-start sm:self-auto bg-igred hover:bg-igred-dark text-white font-black text-xs uppercase tracking-widest px-6 py-3 rounded-md transition-all hover:-translate-y-0.5 shadow-btn whitespace-nowrap">Apply
-          Now →</a>
+  <!-- COURSES -->
+  <style>
+    :root {
+      --red: #c0281e;
+      --red-dark: #961f17;
+      --red-deeper: #7a1710;
+      --red-light: #e84235;
+      --red-pale: #fdf0ef;
+      --white: #ffffff;
+      --off-white: #f5f5f5;
+      --dark: #1a1a1a;
+      --grey-dark: #2e2e2e;
+      --grey: #555555;
+      --grey-light: #888888;
+      --border: #e0e0e0;
+      --gold-accent: #f5a623;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .section {
+      padding: 72px 60px;
+    }
+
+    .section.bg-light {
+      background: var(--off-white);
+    }
+
+    .section.bg-red {
+      background: linear-gradient(135deg, var(--red-deeper), var(--red));
+    }
+
+    .sec-label {
+      display: inline-block;
+      background: var(--red-pale);
+      color: var(--red);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 2px;
+      margin-bottom: 10px;
+    }
+
+    .sec-label.on-dark {
+      background: rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .sec-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.6rem, 2.5vw, 2.4rem);
+      font-weight: 900;
+      color: var(--dark);
+      text-transform: uppercase;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .sec-title.on-dark {
+      color: var(--white);
+    }
+
+    .sec-title .red {
+      color: var(--red);
+    }
+
+    .sec-title .gold {
+      color: var(--gold-accent);
+    }
+
+    .sec-sub {
+      color: var(--grey);
+      font-size: 15px;
+      max-width: 560px;
+      line-height: 1.7;
+    }
+
+    .sec-sub.on-dark {
+      color: rgba(255, 255, 255, 0.65);
+    }
+
+    .sec-divider {
+      width: 50px;
+      height: 3px;
+      background: var(--red);
+      margin: 14px 0 0;
+    }
+
+    .sec-divider.gold {
+      background: var(--gold-accent);
+    }
+
+    @media (max-width: 960px) {
+      .section {
+        padding: 56px 28px;
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(22px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-up {
+      opacity: 0;
+    }
+
+    .fade-up.visible {
+      animation: fadeUp 0.55s ease both;
+    }
+
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 16px;
+      margin-top: 44px;
+    }
+
+    @media (min-width: 640px) {
+      .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .courses-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .course-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 4px;
+      padding: 22px 20px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    }
+
+    .course-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--red);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+    }
+
+    .course-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 36px rgba(192, 40, 30, 0.12);
+      border-color: var(--red);
+    }
+
+    .course-card:hover::after {
+      transform: scaleX(1);
+    }
+
+    .course-icon {
+      width: 46px;
+      height: 46px;
+      background: var(--red-pale);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      margin-bottom: 14px;
+    }
+
+    .course-name {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      color: var(--dark);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .course-meta {
+      color: var(--grey);
+      font-size: 12px;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .course-badge {
+      display: inline-block;
+      background: var(--red);
+      color: white;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 2px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .course-arrow {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: var(--red);
+      font-size: 18px;
+      opacity: 0;
+      transform: translateX(-4px);
+      transition: all 0.2s;
+    }
+
+    .course-card:hover .course-arrow {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  </style>
+  <section class="section bg-light">
+    <div class="sec-label">Programs Offered</div>
+    <h2 class="sec-title">Choose Your <span class="red">Program</span></h2>
+    <div class="sec-divider"></div>
+    <p class="sec-sub" style="margin-top:12px;">20+ undergraduate, postgraduate & diploma programs across engineering,
+      management, architecture, education and more.</p>
+    <div class="courses-grid">
+      <div class="course-card reveal" onclick="document.querySelector('#apply').scrollIntoView({ behavior: 'smooth' })">
+        <span class="course-arrow">→</span>
+        <div class="course-icon">⚙️</div>
+        <div class="course-name">Engineering (B.Tech)</div>
+        <div class="course-meta">Mech, CSE, ECE, Civil</div>
+        <span class="course-badge">AICTE Approved</span>
       </div>
-
-      <!-- Courses Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <!-- Card 1 -->
-        <div
-          class="reveal bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-igblue hover:shadow-card hover:-translate-y-1 transition-all group">
-          <div class="bg-igblue px-5 py-4 flex items-center gap-3">
-            <span class="text-3xl">⚙️</span>
-            <h3 class="text-sm font-black text-white uppercase tracking-wide">B.Tech Engineering</h3>
-          </div>
-          <div class="p-5">
-            <p class="text-xs text-slate-500 leading-relaxed mb-3">4-year AICTE-approved with IBM Centre of Excellence,
-              modern labs and industry tie-ups.</p>
-            <div class="flex flex-wrap gap-1.5 mb-3">
-              <span
-                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">CSE</span>
-              <span
-                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">ECE</span>
-              <span
-                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Mechanical</span>
-              <span
-                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Civil</span>
-              <span
-                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">AI
-                & ML</span>
-            </div>
-            <a href="#apply"
-              class="inline-flex items-center gap-1.5 text-xs font-extrabold text-igred uppercase tracking-wide hover:gap-3 transition-all">Apply
-              Now <span>→</span></a>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div
-          class="reveal reveal-delay-1 bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-igred hover:shadow-card hover:-translate-y-1 transition-all group">
-          <div class="bg-igred px-5 py-4 flex items-center gap-3">
-            <span class="text-3xl">🏛️</span>
-            <h3 class="text-sm font-black text-white uppercase tracking-wide">B.Arch Architecture</h3>
-          </div>
-          <div class="p-5">
-            <p class="text-xs text-slate-500 leading-relaxed mb-3">5-year CoA-approved degree. NATA-based admissions.
-              Award-winning design studios.</p>
-            <div class="flex flex-wrap gap-1.5 mb-3">
-              <span
-                class="bg-igred/7 text-igred border border-igred/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">CoA
-                Approved</span>
-              <span
-                class="bg-igred/7 text-igred border border-igred/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">NATA</span>
-              <span
-                class="bg-igred/7 text-igred border border-igred/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">5
-                Years</span>
-            </div>
-            <a href="#apply"
-              class="inline-flex items-center gap-1.5 text-xs font-extrabold text-igred uppercase tracking-wide hover:gap-3 transition-all">Apply
-              Now <span>→</span></a>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div
-          class="reveal reveal-delay-2 bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-igblue-dark hover:shadow-card hover:-translate-y-1 transition-all group">
-          <div class="bg-igblue-dark px-5 py-4 flex items-center gap-3">
-            <span class="text-3xl">📊</span>
-            <h3 class="text-sm font-black text-white uppercase tracking-wide">MBA / Management</h3>
-          </div>
-          <div class="p-5">
-            <p class="text-xs text-slate-500 leading-relaxed mb-3">2-year PG MBA with Marketing, Finance, HR and
-              Operations specialisations. 100% placement focus.</p>
-            <div class="flex flex-wrap gap-1.5 mb-3">
-              <span
-                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Marketing</span>
-              <span
-                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Finance</span>
-              <span
-                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">HR</span>
-            </div>
-            <a href="#apply"
-              class="inline-flex items-center gap-1.5 text-xs font-extrabold text-igred uppercase tracking-wide hover:gap-3 transition-all">Apply
-              Now <span>→</span></a>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div
-          class="reveal reveal-delay-3 bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-igblue hover:shadow-card hover:-translate-y-1 transition-all group">
-          <div class="bg-igblue px-5 py-4 flex items-center gap-3">
-            <span class="text-3xl">💻</span>
-            <h3 class="text-sm font-black text-white uppercase tracking-wide">BCA / MCA</h3>
-          </div>
-          <div class="p-5">
-            <p class="text-xs text-slate-500 leading-relaxed mb-3">Computer applications degree for the next generation
-              of software developers and AI engineers.</p>
-            <div class="flex flex-wrap gap-1.5 mb-3">
-              <span
-                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">3
-                Years UG</span>
-              <span
-                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">IBM
-                Lab</span>
-              <span
-                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">2
-                Yr PG</span>
-            </div>
-            <a href="#apply"
-              class="inline-flex items-center gap-1.5 text-xs font-extrabold text-igred uppercase tracking-wide hover:gap-3 transition-all">Apply
-              Now <span>→</span></a>
-          </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div
-          class="reveal reveal-delay-4 bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-igred hover:shadow-card hover:-translate-y-1 transition-all group">
-          <div class="bg-igred px-5 py-4 flex items-center gap-3">
-            <span class="text-3xl">🏫</span>
-            <h3 class="text-sm font-black text-white uppercase tracking-wide">B.Ed / Education</h3>
-          </div>
-          <div class="p-5">
-            <p class="text-xs text-slate-500 leading-relaxed mb-3">NCTE-approved 2-year teacher training. Build skills
-              in pedagogy, soft skills and classroom management.</p>
-            <div class="flex flex-wrap gap-1.5 mb-3">
-              <span
-                class="bg-igred/7 text-igred border border-igred/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">NCTE</span>
-              <span
-                class="bg-igred/7 text-igred border border-igred/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">B.Ed</span>
-              <span
-                class="bg-igred/7 text-igred border border-igred/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">ETT</span>
-            </div>
-            <a href="#apply"
-              class="inline-flex items-center gap-1.5 text-xs font-extrabold text-igred uppercase tracking-wide hover:gap-3 transition-all">Apply
-              Now <span>→</span></a>
-          </div>
-        </div>
-
-        <!-- Card 6 -->
-        <div
-          class="reveal reveal-delay-5 bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-igblue-dark hover:shadow-card hover:-translate-y-1 transition-all group">
-          <div class="bg-igblue-dark px-5 py-4 flex items-center gap-3">
-            <span class="text-3xl">🏥</span>
-            <h3 class="text-sm font-black text-white uppercase tracking-wide">BSc Paramedical</h3>
-          </div>
-          <div class="p-5">
-            <p class="text-xs text-slate-500 leading-relaxed mb-3">UGC-approved healthcare sciences — Radiology, OT
-              Technology and Medical Lab Technology.</p>
-            <div class="flex flex-wrap gap-1.5 mb-3">
-              <span
-                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Radiology</span>
-              <span
-                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">OT
-                Tech</span>
-              <span
-                class="bg-igblue/7 text-igblue border border-igblue/15 text-[10px] font-bold px-2 py-0.5 rounded uppercase">MLT</span>
-            </div>
-            <a href="#apply"
-              class="inline-flex items-center gap-1.5 text-xs font-extrabold text-igred uppercase tracking-wide hover:gap-3 transition-all">Apply
-              Now <span>→</span></a>
-          </div>
-        </div>
+      <div class="course-card reveal" onclick="document.querySelector('#apply').scrollIntoView({ behavior: 'smooth' })">
+        <span class="course-arrow">→</span>
+        <div class="course-icon">🏛️</div>
+        <div class="course-name">Architecture</div>
+        <div class="course-meta">B.Arch</div>
+        <span class="course-badge">CoA Approved</span>
+      </div>
+      <div class="course-card reveal" onclick="document.querySelector('#apply').scrollIntoView({ behavior: 'smooth' })">
+        <span class="course-arrow">→</span>
+        <div class="course-icon">🎓</div>
+        <div class="course-name">Engineering (M.Tech)</div>
+        <div class="course-meta">Civil, CSE, ECE</div>
+        <span class="course-badge">AICTE Approved</span>
+      </div>
+      <div class="course-card reveal" onclick="document.querySelector('#apply').scrollIntoView({ behavior: 'smooth' })">
+        <span class="course-arrow">→</span>
+        <div class="course-icon">�</div>
+        <div class="course-name">Management</div>
+        <div class="course-meta">BBA, MBA</div>
+        <span class="course-badge">UGC/AICTE</span>
+      </div>
+      <div class="course-card reveal" onclick="document.querySelector('#apply').scrollIntoView({ behavior: 'smooth' })">
+        <span class="course-arrow">→</span>
+        <div class="course-icon">🔧</div>
+        <div class="course-name">Engineering (Diploma)</div>
+        <div class="course-meta">Mech, Computer Engg</div>
+        <span class="course-badge">AICTE Approved</span>
+      </div>
+      <div class="course-card reveal" onclick="document.querySelector('#apply').scrollIntoView({ behavior: 'smooth' })">
+        <span class="course-arrow">→</span>
+        <div class="course-icon">🏥</div>
+        <div class="course-name">Paramedical Courses</div>
+        <div class="course-meta">B.Sc/M.Sc in MLS, Radio, OT, Cardiac</div>
+        <span class="course-badge">UGC Approved</span>
+      </div>
+      <div class="course-card reveal" onclick="document.querySelector('#apply').scrollIntoView({ behavior: 'smooth' })">
+        <span class="course-arrow">→</span>
+        <div class="course-icon">💻</div>
+        <div class="course-name">Computer</div>
+        <div class="course-meta">BCA</div>
+        <span class="course-badge">UGC Approved</span>
+      </div>
+      <div class="course-card reveal" onclick="document.querySelector('#apply').scrollIntoView({ behavior: 'smooth' })">
+        <span class="course-arrow">→</span>
+        <div class="course-icon">�</div>
+        <div class="course-name">Pharmacy</div>
+        <div class="course-meta">B.Pharm</div>
+        <span class="course-badge">PCI Approved</span>
       </div>
     </div>
   </section>
@@ -1184,7 +1318,7 @@
       class="inline-block bg-red-pale text-red font-mont font-extrabold text-[10px] tracking-[2.5px] uppercase px-3 py-1 rounded-sm mb-2.5">
       Rankings &amp; Recognition</div>
     <h2 class="font-mont font-black uppercase text-dark leading-[1.15] mb-3"
-      style="font-size:clamp(1.6rem,2.5vw,2.4rem);">Nationally <span class="text-red">Ranked &amp; Recognised</span>
+      style="font-size:clamp(1.6rem,2.5vw,2.4rem);">Nationally <span class="text-red">Ranked & Recognised</span>
     </h2>
     <div class="w-[50px] h-[3px] bg-red mb-3"></div>
     <p class="text-grey text-[15px] max-w-[560px] leading-[1.7] mt-3">Indo Global Group of Colleges has been
@@ -1192,9 +1326,9 @@
       interface.</p>
 
     <!-- Ranking cards -->
-    <div class="grid gap-5 mt-11" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr));">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-11">
 
-      <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center fade-up">
+      <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center reveal">
         <div class="w-14 h-14 bg-red-pale rounded-full flex items-center justify-center text-[26px] mx-auto mb-3.5">🏆
         </div>
         <div class="font-mont font-black text-red leading-none mb-1" style="font-size:2rem;">#3<sup
@@ -1206,7 +1340,7 @@
           placement records by IKG Punjab Technical University, Jalandhar.</div>
       </div>
 
-      <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center fade-up">
+      <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center reveal reveal-delay-1">
         <div class="w-14 h-14 bg-red-pale rounded-full flex items-center justify-center text-[26px] mx-auto mb-3.5">🥇
         </div>
         <div class="font-mont font-black text-red leading-none mb-1 text-2xl">PLATINUM</div>
@@ -1217,7 +1351,7 @@
           Interaction Survey — highest grade for industry collaboration in Punjab.</div>
       </div>
 
-      <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center fade-up">
+      <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center reveal reveal-delay-2">
         <div class="w-14 h-14 bg-red-pale rounded-full flex items-center justify-center text-[26px] mx-auto mb-3.5">📰
         </div>
         <div class="font-mont font-black text-dark leading-none mb-1 text-xl">India Today</div>
@@ -1228,7 +1362,7 @@
           prestigious list of top professional schools in North India.</div>
       </div>
 
-      <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center fade-up">
+      <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center reveal reveal-delay-3">
         <div class="w-14 h-14 bg-red-pale rounded-full flex items-center justify-center text-[26px] mx-auto mb-3.5">🎖️
         </div>
         <div class="font-mont font-black text-dark leading-none mb-1 text-xl">CMAI</div>
@@ -1239,7 +1373,7 @@
           consistent efforts to bridge the gap between education and employment.</div>
       </div>
 
-      <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center fade-up">
+      <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center reveal reveal-delay-4">
         <div class="w-14 h-14 bg-red-pale rounded-full flex items-center justify-center text-[26px] mx-auto mb-3.5">🪖
         </div>
         <div class="font-mont font-black text-dark leading-none mb-1" style="font-size:1.1rem;">Army &amp; Navy</div>
@@ -1250,7 +1384,7 @@
           Commissioned Officer recruitment under the University Entry Scheme (UES).</div>
       </div>
 
-      <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center fade-up">
+      <div class="rank-card bg-white border-[1.5px] border-border rounded-md p-7 text-center reveal reveal-delay-5">
         <div class="w-14 h-14 bg-red-pale rounded-full flex items-center justify-center text-[26px] mx-auto mb-3.5">🖥️
         </div>
         <div class="font-mont font-black text-dark leading-none mb-1 text-xl">IBM CoE</div>
@@ -1261,94 +1395,6 @@
           IBM Centre of Excellence, giving students access to global tech resources.</div>
       </div>
 
-    </div>
-
-    <!-- Accreditation badges -->
-    <div class="flex flex-wrap gap-3.5 mt-11 justify-center">
-      <div
-        class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
-        style="padding:10px 18px;">✅ AICTE Approved</div>
-      <div
-        class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
-        style="padding:10px 18px;">✅ CoA (Council of Architecture)</div>
-      <div
-        class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
-        style="padding:10px 18px;">✅ NCTE Approved</div>
-      <div
-        class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
-        style="padding:10px 18px;">✅ IKG PTU Affiliated</div>
-      <div
-        class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
-        style="padding:10px 18px;">✅ Panjab University Affiliated</div>
-      <div
-        class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
-        style="padding:10px 18px;">✅ MoU — EC-Council USA</div>
-      <div
-        class="bg-white border-[1.5px] border-border rounded px-4.5 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-dark hover:border-red hover:bg-red-pale hover:text-red transition-colors duration-200 cursor-default"
-        style="padding:10px 18px;">✅ MoU — Pearson Education USA</div>
-    </div>
-  </section>
-
-  <section class="section-pad px-16 py-[72px]" style="background:linear-gradient(135deg,#7a1710,#c0281e);">
-    <div
-      class="inline-block font-mont font-extrabold text-[10px] tracking-[2.5px] uppercase px-3 py-1 rounded-sm mb-2.5 text-white/90"
-      style="background:rgba(255,255,255,0.12);">Why Choose Us</div>
-    <h2 class="font-mont font-black uppercase text-white leading-[1.15] mb-3"
-      style="font-size:clamp(1.6rem,2.5vw,2.4rem);">Why 3,000+ Students Choose <span class="text-gold">Indo
-        Global</span></h2>
-    <div class="w-[50px] h-[3px] bg-gold mb-3"></div>
-    <p class="text-white/65 text-[15px] max-w-[560px] leading-[1.7] mt-3">Punjab's Platinum-rated institution,
-      benchmarked by AICTE-CII for industry interface excellence.</p>
-
-    <div class="grid gap-5 mt-11" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr));">
-      <div class="fade-up rounded p-6.5 border border-white/10 hover:bg-white/10 transition-colors duration-200"
-        style="background:rgba(255,255,255,0.06);padding:26px;">
-        <div class="text-3xl mb-3">🎓</div>
-        <div class="font-mont font-extrabold text-[14px] text-gold uppercase tracking-wide mb-2">20+ Years of Excellence
-        </div>
-        <div class="text-white/65 text-[13px] leading-[1.7]">Founded in 2003 with a mission to provide world-class
-          education. Two decades of producing industry-ready graduates across Punjab and beyond.</div>
-      </div>
-      <div class="fade-up rounded p-6.5 border border-white/10 hover:bg-white/10 transition-colors duration-200"
-        style="background:rgba(255,255,255,0.06);padding:26px;">
-        <div class="text-3xl mb-3">🏅</div>
-        <div class="font-mont font-extrabold text-[14px] text-gold uppercase tracking-wide mb-2">Ranked #3 in Punjab by
-          PTU</div>
-        <div class="text-white/65 text-[13px] leading-[1.7]">AICTE-CII Platinum Award for Best Industry Interface.
-          Consistently recognised for quality education and exceptional student outcomes.</div>
-      </div>
-      <div class="fade-up rounded p-6.5 border border-white/10 hover:bg-white/10 transition-colors duration-200"
-        style="background:rgba(255,255,255,0.06);padding:26px;">
-        <div class="text-3xl mb-3">🤝</div>
-        <div class="font-mont font-extrabold text-[14px] text-gold uppercase tracking-wide mb-2">IBM Centre of
-          Excellence</div>
-        <div class="text-white/65 text-[13px] leading-[1.7]">On-campus IBM CoE with active industry partnerships —
-          Wipro, Infosys, ICICI Bank, Vodafone, and 150+ top companies visit annually.</div>
-      </div>
-      <div class="fade-up rounded p-6.5 border border-white/10 hover:bg-white/10 transition-colors duration-200"
-        style="background:rgba(255,255,255,0.06);padding:26px;">
-        <div class="text-3xl mb-3">🌿</div>
-        <div class="font-mont font-extrabold text-[14px] text-gold uppercase tracking-wide mb-2">World-Class 35-Acre
-          Campus</div>
-        <div class="text-white/65 text-[13px] leading-[1.7]">Lush green campus in Shivalik foothills, 5 km from
-          Chandigarh. Modern labs, smart classrooms, hostels, sports facilities and more.</div>
-      </div>
-      <div class="fade-up rounded p-6.5 border border-white/10 hover:bg-white/10 transition-colors duration-200"
-        style="background:rgba(255,255,255,0.06);padding:26px;">
-        <div class="text-3xl mb-3">💼</div>
-        <div class="font-mont font-extrabold text-[14px] text-gold uppercase tracking-wide mb-2">Strong Placement
-          Support</div>
-        <div class="text-white/65 text-[13px] leading-[1.7]">Dedicated placement cell with aptitude training, mock
-          interviews and entrepreneurship programs — 92.5% placed every year.</div>
-      </div>
-      <div class="fade-up rounded p-6.5 border border-white/10 hover:bg-white/10 transition-colors duration-200"
-        style="background:rgba(255,255,255,0.06);padding:26px;">
-        <div class="text-3xl mb-3">🎁</div>
-        <div class="font-mont font-extrabold text-[14px] text-gold uppercase tracking-wide mb-2">Merit Scholarships
-        </div>
-        <div class="text-white/65 text-[13px] leading-[1.7]">Scholarships for students scoring 80%+. Financial aid
-          available to make quality education accessible to every deserving student.</div>
-      </div>
     </div>
   </section>
 
