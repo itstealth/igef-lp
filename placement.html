@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Placements</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Merriweather:wght@700;900&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        igblue: { DEFAULT: '#1B4F9C', dark: '#0f3370', deep: '#091f4a', light: '#3367c0' },
+                        igred: { DEFAULT: '#CC1E1E', dark: '#a81818', light: '#e03030' },
+                        igold: '#F0B429', red: '#c0281e',
+                        'red-dark': '#961f17',
+                        'red-deeper': '#7a1710',
+                        'red-light': '#e84235',
+                        'red-pale': '#fdf0ef',
+                        dark: '#1a1a1a',
+                        'grey-dark': '#2e2e2e',
+                        grey: '#555555',
+                        'grey-light': '#888888',
+                        border: '#e0e0e0',
+                        gold: '#f5a623',
+                        'off-white': '#f5f5f5',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        display: ['Merriweather', 'serif'],
+                    },
+                    boxShadow: {
+                        'card-light': '0 8px 30px rgba(0,0,0,0.06)',
+                        'card-hover': '0 20px 40px rgba(27,79,156,0.12)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .font-display {
+            font-family: 'Merriweather', serif;
+        }
+
+        .light-card {
+            background: #ffffff;
+            border: 1.5px solid #e0e0e0;
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-6px);
+            border-color: #CC1E1E;
+            /* igred */
+        }
+
+        .bg-pattern {
+            background-image:
+                radial-gradient(#1B4F9C 0.5px, transparent 0.5px),
+                radial-gradient(#1B4F9C 0.5px, #fdfdfd 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            opacity: 0.03;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .animate-float-delayed {
+            animation: float 3s ease-in-out infinite;
+            animation-delay: 1.5s;
+        }
+    </style>
+    <base target="_blank">
+</head>
+
+<body class="bg-off-white min-h-screen text-dark">
+
+    <!-- Top Placements Section -->
+    <section class="relative py-20 px-4 overflow-hidden bg-white">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 bg-pattern"></div>
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-red-pale rounded-full blur-[80px] -z-10 opacity-60">
+        </div>
+        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-50/50 rounded-full blur-[80px] -z-10"></div>
+
+        <div class="relative max-w-7xl mx-auto z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-16 space-y-4">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-pale border border-red-light text-igred text-sm font-bold tracking-wide uppercase mb-4">
+                    <span class="w-2 h-2 rounded-full bg-igred animate-pulse"></span>
+                    Success Stories
+                </div>
+                <h2 class="text-4xl md:text-5xl lg:text-[54px] font-black text-igblue-deep font-display leading-tight">
+                    Our Top <span class="text-igred">Placements</span>
+                </h2>
+                <div class="w-16 h-1.5 bg-igold mx-auto rounded-full mt-2 mb-4"></div>
+                <p class="text-grey text-lg max-w-2xl mx-auto leading-relaxed mt-4">
+                    We are proud to announce that our students have secured positions at
+                    <span class="text-igblue font-bold">world-class companies</span> with exceptional packages.
+                </p>
+            </div>
+
+            <!-- Stats Overview -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14 max-w-4xl mx-auto">
+                <div class="text-center p-5 rounded-2xl bg-white shadow-card-light border border-slate-100">
+                    <div class="text-3xl font-black text-igblue mb-1">500+</div>
+                    <div class="text-[13px] font-bold uppercase tracking-wider text-grey-light">Placements</div>
+                </div>
+                <div
+                    class="text-center p-5 rounded-2xl bg-white shadow-card-light border border-slate-100 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-igred"></div>
+                    <div class="text-3xl font-black text-igred mb-1">₹40L</div>
+                    <div class="text-[13px] font-bold uppercase tracking-wider text-grey-light">Highest Package</div>
+                </div>
+                <div class="text-center p-5 rounded-2xl bg-white shadow-card-light border border-slate-100">
+                    <div class="text-3xl font-black text-igblue mb-1">50+</div>
+                    <div class="text-[13px] font-bold uppercase tracking-wider text-grey-light">Companies</div>
+                </div>
+                <div class="text-center p-5 rounded-2xl bg-white shadow-card-light border border-slate-100">
+                    <div class="text-3xl font-black text-igold mb-1">98%</div>
+                    <div class="text-[13px] font-bold uppercase tracking-wider text-grey-light">Success Rate</div>
+                </div>
+            </div>
+
+            <!-- Placement Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8">
+
+                <!-- Card 1: Cerner -->
+                <div class="group relative animate-float">
+                    <div
+                        class="relative light-card rounded-2xl p-6 h-full card-hover shadow-card-light group-hover:shadow-card-hover bg-white flex flex-col items-center">
+                        <div class="absolute -top-3">
+                            <span
+                                class="px-4 py-1 bg-igred text-white text-[11px] font-black uppercase tracking-widest rounded shadow-md border border-red-dark">
+                                TOP PACKAGE
+                            </span>
+                        </div>
+
+                        <div
+                            class="h-[70px] w-full flex items-center justify-center mb-5 bg-slate-50 rounded-xl mt-3 border border-slate-100">
+                            <div class="text-2xl font-black text-igblue-deep tracking-wider uppercase">CERNER</div>
+                        </div>
+
+                        <div class="text-center space-y-4 w-full">
+                            <h3 class="text-[17px] font-bold text-dark mb-1">Gurpreet Randhawa</h3>
+                            <div class="bg-red-pale py-3 px-4 rounded-lg">
+                                <div class="text-2xl font-black text-igred">₹40 LPA</div>
+                            </div>
+
+                            <div
+                                class="flex items-center justify-center gap-2 text-grey text-sm pt-4 border-t border-slate-100 w-full font-medium">
+                                <svg class="w-[18px] h-[18px] text-igold" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                Bengaluru
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Amazon -->
+                <div class="group relative animate-float-delayed">
+                    <div
+                        class="relative light-card rounded-2xl p-6 h-full card-hover shadow-card-light group-hover:shadow-card-hover bg-white flex flex-col items-center">
+                        <div
+                            class="h-[70px] w-full flex items-center justify-center mb-5 bg-slate-50 rounded-xl mt-3 border border-slate-100">
+                            <div class="text-2xl font-black text-dark tracking-tight">
+                                amazon<span class="text-igold">.in</span>
+                            </div>
+                        </div>
+
+                        <div class="text-center space-y-4 w-full">
+                            <h3 class="text-[17px] font-bold text-dark mb-1">Abhishek Kaushal</h3>
+                            <div class="bg-slate-50 py-3 px-4 rounded-lg border border-slate-100">
+                                <div class="text-2xl font-black text-igblue">₹30 LPA</div>
+                            </div>
+
+                            <div
+                                class="flex items-center justify-center gap-2 text-grey text-sm pt-4 border-t border-slate-100 w-full font-medium">
+                                <svg class="w-[18px] h-[18px] text-igold" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                Bengaluru
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Trantor -->
+                <div class="group relative animate-float">
+                    <div
+                        class="relative light-card rounded-2xl p-6 h-full card-hover shadow-card-light group-hover:shadow-card-hover bg-white flex flex-col items-center">
+                        <div
+                            class="h-[70px] w-full flex items-center justify-center mb-5 bg-slate-50 rounded-xl mt-3 border border-slate-100">
+                            <div class="flex items-center gap-2">
+                                <div class="w-7 h-7 bg-igblue rounded flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-xl font-black text-igblue-deep tracking-wider">TRANTOR</span>
+                            </div>
+                        </div>
+
+                        <div class="text-center space-y-4 w-full">
+                            <h3 class="text-[17px] font-bold text-dark mb-1">Raj Kumar</h3>
+                            <div class="bg-slate-50 py-3 px-4 rounded-lg border border-slate-100">
+                                <div class="text-2xl font-black text-igblue">₹20 LPA</div>
+                            </div>
+
+                            <div
+                                class="flex items-center justify-center gap-2 text-grey text-sm pt-4 border-t border-slate-100 w-full font-medium">
+                                <svg class="w-[18px] h-[18px] text-igold" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                Chandigarh
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Cerebry -->
+                <div class="group relative animate-float-delayed">
+                    <div
+                        class="relative light-card rounded-2xl p-6 h-full card-hover shadow-card-light group-hover:shadow-card-hover bg-white flex flex-col items-center">
+                        <div
+                            class="h-[70px] w-full flex items-center justify-center mb-5 bg-slate-50 rounded-xl mt-3 border border-slate-100">
+                            <div class="flex items-center gap-2">
+                                <div
+                                    class="w-8 h-8 rounded-full border-4 border-igblue-light flex items-center justify-center">
+                                    <div class="w-2.5 h-2.5 bg-igblue-light rounded-full"></div>
+                                </div>
+                                <span class="text-xl font-black text-dark tracking-widest">CEREBRY</span>
+                            </div>
+                        </div>
+
+                        <div class="text-center space-y-4 w-full">
+                            <h3 class="text-[17px] font-bold text-dark mb-1">Abhishek Jha</h3>
+                            <div class="bg-slate-50 py-3 px-4 rounded-lg border border-slate-100">
+                                <div class="text-2xl font-black text-igblue">₹18 LPA</div>
+                            </div>
+
+                            <div
+                                class="flex items-center justify-center gap-2 text-grey text-sm pt-4 border-t border-slate-100 w-full font-medium">
+                                <svg class="w-[18px] h-[18px] text-igold" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                Chandigarh
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA Button -->
+            <div class="text-center mt-12 pb-8">
+                <button
+                    class="inline-flex items-center gap-2 bg-igred hover:bg-[#a81818] text-white font-black text-[13px] uppercase tracking-widest px-8 py-4 rounded transition-all hover:-translate-y-1 shadow-[0_6px_20px_rgba(204,30,30,0.38)]">
+                    View All Success Stories
+                    <span class="text-lg leading-none">→</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
